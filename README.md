@@ -1,7 +1,7 @@
 # ![image](https://s3-ap-southeast-2.amazonaws.com/suredrop-downloads/SureDropLogo50x50.png)  SureDrop 
 The most secure file sharing tool, with 100% control over file location and data sovereignty. Modern businesses have embraced flexible working practices and mobility to realise significant improvements in productivity, business continuity, workforce morale and cost efficiency. Across the globe there is an increasing demand for applications that allow remote users to share, sync and collaborate securely with colleagues, customers and suppliers. Anytime and anywhere! Watch the overview for details:
 
-[![Watch the video](https://img.youtube.com/vi/MQYQ9lCl608/maxresdefault.jpg)](https://youtu.be/MQYQ9lCl608)
+<a href="https://youtu.be/MQYQ9lCl608" target="_blank"><img src="https://img.youtube.com/vi/MQYQ9lCl608/maxresdefault.jpg"></a>
 
 # Motivation
 SureDrop provides the usability, familiarity and convenience of a drop box, file sharing application; plus the implementation of best-in-class security. It represents a new way to enjoy secure file sharing and collaboration and has been subjected to rigorous testing and due diligence with a number of large multi-national organisations.
