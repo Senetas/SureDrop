@@ -9,7 +9,7 @@ New Install - Windows 2019
 Before starting this install you will need to contact support and obtain
 the following:
 
-.. code:: sh
+
 
    a) Username
    b) Password
@@ -81,23 +81,6 @@ Pre Requisites
       [System.Environment]::SetEnvironmentVariable("DOCKER_FIPS", "1", "Machine")  
 
 
-#. Run the following command:
-
-   .. code:: sh
-      
-      docker swarm init --advertise-addr [HOST-IP]
-
-   Where `[HOST-IP]` is the IP address of the windows 2016 Server static ip set earlier.
-
-
-#. Create two windows shares for storing the document data (can be on
-   the same server), and create an account that has full access to them:
-
-   .. code:: sh
-
-      \\[HOST-IP]\STORAGE01
-      \\[HOST-IP]\STORAGE02
-
 
 
 Installation of SureDrop
@@ -149,7 +132,7 @@ Installation of SureDrop
 
 #. If everything is successful then the previous step should have opened
    the login page in your browser with 3 empty fields, company name,
-   user name, and password. Please enter SureDrop in the first input box
+   user name, and password. Please enter **SureDrop** in the first input box
    (for Company Name) and press tab or click on the next input box. This
    will take you to the create company page which allows the user to
    configure certain critical parameters of the system. The Create
