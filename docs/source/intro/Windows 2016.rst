@@ -66,17 +66,11 @@ Pre Requisites
 #. **Reboot the server again**
 
 
-#. Using an :guilabel:`admin powershell` run the following command:
-
-   .. code:: sh
-
-      docker swarm init --advertise-addr [HOST-IP]
-
-   Where `[HOST-IP]` is the IP address of the windows 2016 Server.
 
 
-#. Create two windows shares for storing the document data (can be on
-   the same server), and create an account that has full access to them:
+
+#. If you want to use remote SMB shares create two windows shares for storing the document data 
+   (can be on the same server), and create an account that has full access to them:
 
    .. code:: sh
 
@@ -106,7 +100,7 @@ Installation of SureDrop
 
    .. code:: sh
 
-      wget "https://s3-ap-southeast-2.amazonaws.com/suredrop-downloads/compose/create-suredrop.bat" -outfile "create-suredrop.bat";./create-suredrop.bat
+      wget "https://install.suredrop.com.au/create-suredrop.bat" -outfile "create-suredrop.bat";./create-suredrop.bat
 
    .. Note::
    

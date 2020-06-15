@@ -90,7 +90,7 @@ Installation of SureDrop
 
    .. code:: sh
 
-      wget "https://s3-ap-southeast-2.amazonaws.com/suredrop-downloads/compose/create-suredrop.bat" -outfile "create-suredrop.bat";./create-suredrop.bat
+      wget "https://install.suredrop.com.au/create-suredrop.bat" -outfile "create-suredrop.bat";./create-suredrop.bat
 
    .. Note:: 
    
