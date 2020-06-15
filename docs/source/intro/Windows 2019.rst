@@ -16,6 +16,16 @@ the following:
    c) Activation Key
    d) The Version of SureDrop to Install
 
+.. admonition:: Prefer watching over reading?
+
+   Check out `this <https://youtu.be/GTRl6cFH9jQ>`_ screencast video.
+   
+   .. raw:: html
+   
+       <div style="text-align: center; margin-bottom: 2em;">
+       <iframe width="100%" height="350" src="https://www.youtube.com/embed/GTRl6cFH9jQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+       </div>
+
 Pre Requisites
 --------------
 
@@ -92,14 +102,20 @@ Installation of SureDrop
 
       wget "https://install.suredrop.com.au/create-suredrop.bat" -outfile "create-suredrop.bat";./create-suredrop.bat
 
-   .. Note:: 
+   .. Note::
    
-      *This bat file will ask a series of questions and create the
-      SureDrop instance. As part of this install an :guilabel:`answers.bat` file
-      will be created in the same directory. Do not delete this file as it
-      will be required to run an update if required, however please ensure
-      the security on this file is locked down as this file contains secret
-      information such as passwords in plain text*
+      This bat file will ask a series of questions and create the
+      SureDrop instance. As part of this install an :guilabel:`answers.bat`
+      file will be created in the same directory. Do not delete this
+      file as it will be required to run an update if required, however
+      please ensure the security on this file is locked down as this
+      file contains secret information such as passwords in plain text.
+      Ensure that there is one and only one ``admin powershell``
+      window attempting the installation, multiple windows pointing to
+      the install directory or storage locations will fail the
+      installation. The install script is designed with defaults. Every
+      feature is not relevant / required by all clients, so when not
+      sure about any step it is wise to choose the default values.
 
 
 #. | Make sure you enter :guilabel:`2019` when asked for the Compose Version to use.
