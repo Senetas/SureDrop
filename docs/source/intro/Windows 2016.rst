@@ -66,33 +66,6 @@ Pre Requisites
 #. **Reboot the server again**
 
 
-
-
-
-#. If you want to use remote SMB shares create two windows shares for storing the document data 
-   (can be on the same server), and create an account that has full access to them:
-
-   .. code:: sh
-
-      \\[HOST-IP]\STORAGE01
-      \\[HOST-IP]\STORAGE02
-
-   .. Note:: 
-    
-      If you create these SMB shares on a different machine (within
-      a domain) then please ensure that the user account has full access
-      to them. An easy way to verify is to use the :guilabel:`net use` command
-      with the user credentials. To give the appropriate access rights and
-      to add them to the ACL list please right click on the folder and
-      choose Properties. Then on Sharing tab click Advanced Sharing ->
-      Permissions and add the user account with Full Control permissions
-      and click OK. Then on the Security tab click Advance button and add
-      the user with Full Control permissions on the folder , sub folders
-      and files and click OK and finally click Apply and Close on the
-      Properties window. Remember to give these permissions for both the
-      primary and backup storage folders.
-
-
 Installation of SureDrop
 ------------------------
 
