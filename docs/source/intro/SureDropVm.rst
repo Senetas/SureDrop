@@ -13,7 +13,7 @@ the following:
 
 .. admonition:: Prefer watching over reading?
 
-   Check out `this <https://youtu.be/GTRl6cFH9jQ>`_ screencast video.
+   Check out `this <https://youtu.be/iymHek_5MPU>`_ screencast video.
    
    .. raw:: html
    
