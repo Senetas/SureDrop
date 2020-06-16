@@ -436,6 +436,7 @@ consideration.
 
 #. **Restart the docker host**
 
+.. _upgrade:
 
 Upgrading or diagnosing a SureDrop instance
 -------------------------------------------
