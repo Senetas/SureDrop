@@ -10,8 +10,6 @@ Both are kept up to date with the latest releases, so you will always
 get the latest updates no matter which version you run, however there
 are reasons as to why you would run the different versions.
 
-Both versions run as a Docker ``Stack``.
-
 *The Windows 2016 version has the following caveats:*
 -----------------------------------------------------
 
@@ -140,7 +138,7 @@ the same name)
                   ,public_config_data)
             VALUES
                   ('SureDrop'
-                  ,'Data Source=[DB SERVER];Initial Catalog=Master;User Id=[USERNAME];Password=[PASSWORD]'
+                  ,'Data Source=[DB SERVER];Initial Catalog=Core;User Id=[USERNAME];Password=[PASSWORD]'
        ,'{
          "scan_endpoint": "https://lab.votiro.com/disarmer/api/disarmer/v4",
          "azure_options": {

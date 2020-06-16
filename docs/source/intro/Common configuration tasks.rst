@@ -1,6 +1,17 @@
 Common configuration tasks
 ==========================
 
+Disabling the Firewall
+----------------------
+
+Disable the firewall as it will interfere with connectivity to the docker containers.
+
+In an :guilabel:`admin powershell` run the following command.
+
+.. code:: sh
+
+	Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled False
+
 Disabling CPU Parking
 ---------------------
 
@@ -37,7 +48,7 @@ Setting Virus Scanners to Exclude the Docker Container Cache
 When running Docker on a host it is prudent to exclude the docker cache
 location from real time scanning.
 
-The default location is :guilabel:`C:\ProgramData\docker`
+The default location is :guilabel:`C:\\ProgramData\\docker`
 
 McAfee
 ~~~~~~

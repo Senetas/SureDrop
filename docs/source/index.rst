@@ -38,6 +38,7 @@ FAQs, etc. about SureDrop.
    /intro/Common configuration tasks
    /intro/Windows 2016
    /intro/Windows 2019
+   /intro/SureDropVm
    /intro/Create cloud login
    /intro/Uninstall
    /intro/Diagnostics
