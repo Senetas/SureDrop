@@ -369,4 +369,12 @@ Version 2.10.16 - 30th April 2020
 -  **Remember me**: There were some minor problems with the way SureDrop
    handles cookies when the ``Remember Me`` option was not selected.
 
+Version 2.10.17 - 16th June 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+-  **Expand STA**: Thales had requested for expanding :guilabel:`STA` to
+   :guilabel:`Safenet Trusted Access`. This has now been updated in GUI.
+
+-  **Rename context menu**: We were told that the right-click context menu
+   ``Download as zip`` was a misnomer and should be renamed to its actual
+   functionality ``Zip selected files``. This has now been updated in GUI.
