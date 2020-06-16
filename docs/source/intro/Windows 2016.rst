@@ -63,11 +63,11 @@ Pre Requisites
 
    .. code:: sh
 
-      Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
+      [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
-      Install-Package -Name docker -ProviderName DockerMsftProvider -Force
+      Install-Module DockerMsftProvider -Force
 
-      Restart-Computer -Force  
+      Install-Package Docker -ProviderName DockerMsftProvider -Force
 
    .. Note::
 
