@@ -185,7 +185,7 @@ Installation of SureDrop
 	This is the email address of the *admin* user.
 	Typically this would be the email address of the person responsible for administering SureDrop.
 
-	.. code:: 
+	.. code:: sh
 
 		4) Mail Server Configuration
 		Admin Email Address: rob.linton@senetas.com
@@ -210,7 +210,7 @@ Installation of SureDrop
 
 		
 
-	.. code::
+	.. code:: sh
 
 		Do you wish to use the default Amazon AWS Mail Server? [Y/n]:y
 
@@ -249,15 +249,15 @@ Installation of SureDrop
 
 #. If you want to configure a custom server certificate for HTTPS then you can do it here.
 
-	By default an \*.xip.suredrop.com.au certificate is installed. For POC's and trils this is fine. 
+	By default an \*.xip.suredrop.com.au certificate is installed. For POC's and trials this is fine. 
 	You may wish to use your own certificate for production installs.
 
-	.. CODE:: sh
+	.. code:: sh
 
 		6) Customer PKI
 		Do you want to use a custom HTTPS server certificate for TLS [N/y]:n
 
-#. You may want to configure a syslog or Splunk server for logs. 
+#. You may want to configure a Syslog or Splunk server for logs. 
 
 	By default SureDrop writes logs to an internal location within the container stack.
 	You can retrieve these logs by running :guilabel:`create-suredrop.bat` again and selecting the :guilabel:`diagnostics` option.
