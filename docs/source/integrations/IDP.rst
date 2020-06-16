@@ -10,9 +10,9 @@ Contents
     -  `Setup SureDrop for Azure AD <#setup-suredrop-for-azure-ad>`__
 -  `Windows Server Active Directory
    Integration <#windows-server-active-directory-integration>`__
--  `STA Integration <#sta-integration>`__
-    -  `Setup STA <#setup-sta>`__
-    -  `Setup SureDrop for STA <#setup-suredrop-for-sta>`__
+-  `Safenet Trusted Access Integration <#safenet-trusted-access-integration>`__
+    -  `Setup Safenet Trusted Access <#setup-safenet-trusted-access>`__
+    -  `Setup SureDrop for Safenet Trusted Access <#setup-suredrop-for-safenet-trusted-access>`__
 -  `Known issues <#known-issues>`__
 
 Introduction
@@ -306,18 +306,18 @@ powershell command to find the correct value. For example,
 
 .. _sta:
 
-STA Integration
----------------
+Safenet Trusted Access Integration
+----------------------------------
 
-SafeNet Trusted Access has been integrated with SureDrop using
+SafeNet Trusted Access (STA) has been integrated with SureDrop using
 `OIDC <https://openid.net/connect/>`__ protocol. The configuration
 (similar to Azure) is a two step process. First the administrator needs
 to configure STA (create groups, users, an OIDC application) and then
 configure SureDrop to connect to the IDP. SureDrop then downloads the
 user information and allows SSO (single-sign-on) using STA.
 
-Setup STA
-~~~~~~~~~
+Setup Safenet Trusted Access
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you know how to setup STA then please skip to the next section,
 otherwise
@@ -365,8 +365,8 @@ A typical setup would look similar to this:
 .. figure:: ../images/2.10.0/STA+Setup.png
    :alt: STA Setup
 
-Setup SureDrop for STA
-~~~~~~~~~~~~~~~~~~~~~~
+Setup SureDrop for Safenet Trusted Access
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To open the STA Integration dialog go to the admin page. If the side-bar
 menu is in normal state (not collapsed) then expand the Identity
