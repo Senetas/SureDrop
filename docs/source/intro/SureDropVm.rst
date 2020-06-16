@@ -54,7 +54,7 @@ the following:
 
 	.. note::
 
-	You will need the password to log in provided by the SureDrop team
+	   You will need the password to log in provided by the SureDrop team
 
 #. Run the ``Configure SureDrop`` application on the desktop.
 
