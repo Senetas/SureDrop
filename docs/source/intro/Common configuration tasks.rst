@@ -23,6 +23,17 @@ Disable CPU parking by running the following 2 commands.
     
     Powercfg -setactive scheme_current
 
+Disabling administrator password expiry
+---------------------------------------
+
+This can be completed with
+PowerShell using a command similar to this:
+
+.. code:: sh
+
+    Set-LocalUser -Name "administrator" -PasswordNeverExpires 1
+
+
 Configuring a proxy server for Docker
 -------------------------------------
 
