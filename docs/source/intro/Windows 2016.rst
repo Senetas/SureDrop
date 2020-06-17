@@ -84,8 +84,6 @@ Installation of SureDrop
 
    .. code:: sh
 
-   	  [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-
       wget "https://s3-ap-southeast-2.amazonaws.com/suredrop-downloads/compose/create-suredrop.bat" -outfile "create-suredrop.bat";./create-suredrop.bat
 
    .. Note::
