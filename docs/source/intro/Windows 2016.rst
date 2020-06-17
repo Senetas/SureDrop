@@ -69,6 +69,8 @@ Pre Requisites
 
       Install-Package Docker -ProviderName DockerMsftProvider -Force
 
+	  Restart-Computer -Force 
+
    .. Note::
 
       You may be asked ``NuGet provider is required to continue``, if
