@@ -61,20 +61,6 @@ Solution
 #. Open an ``admin power-shell`` and browse to the SureDrop installation
    directory.
 
-#. Tear down the SureDrop stack with the command
-
-   .. code:: sh
-
-       docker stack rm suredrop
-
-   Don't worry your data is safely stored and can be reused to spin up
-   the stack after solving the problem.
-
-#. Run the command
-
-   .. code:: sh
-
-       docker swarm leave -f
 
 #. Run the commands
 
@@ -110,11 +96,6 @@ Solution
 
 #. Restart the VM.
 
-#. Reinitialise the docker swarm with the command
-
-   .. code:: sh
-
-      docker swarm init --advertise-addr [HOST-IP]
 
    where the ``[HOST-IP]`` is the static IP address of your VM.
 
@@ -122,7 +103,7 @@ Solution
 
    .. code:: sh
 
-      ./create-suredrop.bat answers.bat
+      ./suredrop start
 
    to reinitialise the docker stack using the previously saved answers
    and reusing the data persisted using docker volumes.
