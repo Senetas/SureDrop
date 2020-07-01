@@ -1,0 +1,497 @@
+Version 2.7.x
+=============
+
+Table of contents
+-----------------
+
+-  `Introduction <#introduction>`__
+-  `Version information <#version-information>`__
+-  `Deliverables <#deliverables>`__
+-  Feature requests / enhancements implemented
+-  `GUI revamp <#gui-revamp>`__
+-  `Groups <#groups>`__
+-  `Admin page <#admin-page>`__
+-  `Upgrades <#upgrades>`__
+-  `Air gapped SureDrop <#air-gapped-suredrop>`__
+-  `Windows 2019 <#windows-2019>`__
+-  `Defects resolved <#defects-resolved>`__
+-  ``%`` in file name
+-  SMTP errors
+-  Visual indicators for group policy
+-  ``administrators`` group removed
+-  Azure AD
+-  `Upgrade <#upgrade>`__
+-  `Downgrade <#downgrade>`__
+-  `Minor Releases <#minor-releases>`__
+
+Introduction
+------------
+
+Welcome to the June 2019 release of SureDrop version 2.7.0. There are a
+few significant updates in this version that we hope you will like, some
+of the key highlights include:
+
+-  `GUI revamp <#gui-revamp>`__
+-  `Groups <#groups>`__
+-  `Admin page <#admin-page>`__
+-  `Upgrades <#upgrades>`__
+-  `Air gapped SureDrop <#air-gapped-suredrop>`__
+-  `Windows 2019 <#windows-2019>`__
+
+You can watch the SureDrop
+`overview <https://www.youtube.com/watch?v=MQYQ9lCl608>`__ and
+`walk-through <https://www.youtube.com/watch?v=hq71-FLh-eg>`__ videos in
+case you're not familiar with the system. Other technical know-hows
+about the product can be found here in
+`SureDrop Documentation <https://suredrop.readthedocs.io>`__.
+
+Version Information
+-------------------
+
++------------------+-------------------+
+| Component        | Version           |
++==================+===================+
+| Docker images    | ``2.7.0-final``   |
++------------------+-------------------+
+| User Interface   | ``2.7.0-final``   |
++------------------+-------------------+
+| API              | ``2.7.0``         |
++------------------+-------------------+
+| Database         | ``2.7.0``         |
++------------------+-------------------+
+
+Deliverables
+------------
+
+-  **Docker images** - which can either be downloaded from `Docker
+   Hub <https://hub.docker.com/>`__ with the credentials provided during
+   installation; or through the ``create-suredrop.bat`` installation and
+   upgrade script.
+
+-  **Docker volumes** - which are installed automagically as part of the
+   installation process. We now have a volume associated with each of
+   our containers.
+
+-  **Release notes** - which is this document itself.
+
+Feature requests / enhancements implemented
+-------------------------------------------
+
+GUI revamp
+~~~~~~~~~~
+
+We have completely redesigned and streamlined our GUI to make it
+snazzier, user friendly and easy to use. The introduction of a
+collapsible sidebar for the groups and admin functions provide more real
+estate for smaller screens. The user management page has been decoupled
+from the groups and moved to where it always belonged; in the admin
+page. Company settings have moved to the admin page too. User management
+for groups is done by clicking the button with a plus sign. There's a
+lot more intuitive simplifications to delight the user.
+
+Groups
+~~~~~~
+
+SureDrop now has the ability to rename groups and have multiple groups
+with the same name. Group policy edits are now more streamlined in the
+GUI. We've also added visual indicators for whether a group is read only
+or has sharing disabled. The default ``administrators`` group in older
+versions has now been removed due to security reasons. The group names
+have been obfuscated by using a SHA256 hash. This not only hides the
+group name in the storage location but also gives us the ability to have
+some special characters like a space in the group name. Groups imported
+from Azure AD or other windows directory services have a colon ``:``
+character in their unique identifier.
+
+Admin page
+~~~~~~~~~~
+
+SureDrop now has an admin page for customising company settings and
+managing users. This page can be opened only by a SureDrop
+administrator.
+
+Upgrades
+~~~~~~~~
+
+SureDrop now creates the client database on the fly during initialising
+the company. Database upgrades for on-prem installations are no longer
+complicated (as the previous release notes stated). The system
+administrator needs to login to the system after a backend upgrade, and
+open the company settings dialog from within the general settings menu
+in the admin page. This window gives the administrator the ability to
+upgrade his database with a single click!!
+
+Air gapped SureDrop
+~~~~~~~~~~~~~~~~~~~
+
+SureDrop can now operate in an air gapped on-prem network without
+internet connectivity. We've enhanced the GUI and backend by removing
+any dependency on external resources at runtime. However, it still needs
+internet connectivity to install the system. There are a couple of minor
+caveats to this deployment model
+
+-  The brand logo will need to be locally sourced from inside the air
+   gapped network.
+
+-  The ``xip.suredrop.com.au`` X.509 certificate will no longer work or
+   be valid. So the user either needs to setup custom private key
+   infrastructure or use the IP address of the server in the browser.
+
+Windows 2019
+~~~~~~~~~~~~
+
+SureDrop can now be installed on-prem on a Windows 2019 server! The
+install instructions can be found :doc:`here <../intro/Windows 2019>`.
+
+.. Note::
+   Prior versions only support windows 2016 for on-prem deployments.
+
+Defects resolved
+----------------
+
+-  **``%`` in file name** - This was an edge case wherein you could
+   upload files with a ``%`` character in the file name but trying to
+   download such files caused a ``400 Bad Request`` in nginx reverse
+   proxy and the system to logout.
+-  **SMTP errors** - We've added some extra logging around SMTP failures
+   which now enable us to further narrow down the failure(s) as user or
+   system errors.
+-  **Visual indicators for group policy** - We've added visual
+   indicators for whether a group is read only or has sharing disabled
+   on the top right hand corner of the screen.
+-  **``administrators`` group removed** - Previous versions had a
+   default administrators group created when the system was initialised.
+   Problem was that group was encrypted using a default key in the
+   database. We've now removed that group and allowed the user to create
+   their own groups using their own encryption keys.
+-  **Azure AD** - Importing users from Azure AD failed if the unique ID
+   exceeded 100 characters. This limit has now been increased to 200
+   characters. The unique ID is longer than usual because it is made out
+   of the Azure application's tenant ID and the user's full name, ID and
+   phone number.
+
+Upgrade
+-------
+
+SureDrop upgrade process is seamless and easy via the
+``create-suredrop.bat`` script as described in 
+:ref:`upgrade`.
+
+Downgrade
+---------
+
+SureDrop is a continuously delivered system, it **does not support
+downgrades**. In case of any new or induced bugs we fix them and move
+forward in terms of versioning.
+
+Minor Releases
+--------------
+
+Version 2.7.1 - 21st June 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Download file**: Files uploaded using previous versions of SureDrop
+   (any version before 2.7.0) could not be downloaded after upgrading to
+   2.7.0. This was due to hashing the group names using SHA256 hash. It
+   was resolved by falling back to the legacy group names without the
+   hash in case the file could not be found in the new location.
+
+.. raw:: html
+
+   <hr>
+
+Version 2.7.2 - 21st June 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Browser caching**: It was noticed that most Chromium browsers were
+   aggressively caching SureDrop's HTML, CSS and JavaScript code. Due to
+   this aggressive caching the system didn't work well after an upgrade,
+   especially if the upgrade had any changes to those UI components.
+
+.. raw:: html
+
+   <hr>
+
+Version 2.7.3 - 26th June 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Large file uploads** - Files larger than 10 GB are now broken into
+   100 MB chunks instead of the previous 10 MB chunks. This is done to
+   reduce the performance overhead on the client browsers and make it
+   more usable.
+-  **Upload progress bar** - We discovered that during an upload if the
+   user clicked on some other group or tried to use some other module of
+   SureDrop, then he would lose the ability to get back to the progress
+   bar. There was no way to view the progress of say a large file upload
+   after moving away from the current group. This has now been resolved
+   and the progress bar is always visible to the current user until the
+   session is valid and the upload queue is not empty.
+-  **Apostrophe in group description** - We resolved a minor issue with
+   apostrophe character ``'`` in the group description. Earlier while
+   creating a group this would get converted to an underscore ``_`` but
+   could be changed to an apostrophe using ``Edit Group`` functionality.
+   Now, group descriptions can contain apostrophe characters.
+
+.. raw:: html
+
+   <hr>
+
+Version 2.7.4 - 27th June 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Health check** - now prints the running container names only, not
+   the process status of the entire docker stack.
+
+-  **Init screen** - used to popup on SaaS installations after upgrading
+   backend version.
+
+.. raw:: html
+
+   <hr>
+
+Version 2.7.5 - 28th June 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Logging** - sensitive information such as connection strings and
+   passwords have been redacted from server logs.
+
+-  **Tour** - used to popup every time the user logged in and there was
+   no groups. Now it remembers the user selection and pops up only once
+   at the first login.
+
+-  **Resizing browser** - Sometimes the window did not draw correctly
+   the first time it was loaded, a refresh was required to properly draw
+   the screen.
+
+.. raw:: html
+
+   <hr>
+
+Version 2.7.6 - 3rd July 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Certificate errors** - sending automated emails from SureDrop was
+   failing due to certificate validation errors from custom SMTP
+   servers. SureDrop now trusts all x509 certificates while sending
+   automated emails.
+
+.. raw:: html
+
+   <hr>
+
+Version 2.7.7 - 9th July 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Azure federated login** - was not working because SureDrop couldn't
+   figure out the rest API endpoint after the redirect from Microsoft.
+   This was a timing issue which was resolved by adding the rest
+   endpoint as a state information in the federated login request. This
+   state information is passed back in the response and therefore
+   SureDrop doesn't need any further lookup for it.
+
+-  **Azure/LDAP sync** - SureDrop adds users while synchronising Azure
+   AD or local LDAP directories. If the user existed in the system it
+   was deleting their passwords while doing so. This lead to a timing
+   bug when the administrator enabled 2FA for the entire company, the
+   LDAP users couldn't login any more if the background synchronisation
+   happened before they attempted their first login with 2FA enabled.
+   The issue has been corrected by not deleting the user password when
+   adding them as part of synchronisation. This is a right fix because
+   the login credentials for these imported users are managed in Azure
+   AD or LDAP directory, not in SureDrop.
+
+-  **Validate button in welcome page** - The validate button in the
+   welcome page for enabling 2FA was not working. This is supposed to
+   validate the 2FA code and redirect the user to the login page if
+   successful or show a meaningful error message to the user. This has
+   now been fixed as per this expectation.
+
+.. raw:: html
+
+   <hr>
+
+Version 2.7.8 - 12th July 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Init screen** - The init screen now refreshes correctly after the
+   init button is pressed.
+
+-  **Update init screen** - It is now possible to update the defaults in
+   the init screen from the admin page
+
+.. raw:: html
+
+   <hr>
+
+Version 2.7.9 - 17th July 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **ICAP Server** - SureDrop now supports installing and configuring an
+   open source :doc:`ICAP <../integrations/ICAP>` server.
+
+.. raw:: html
+
+   <hr>
+
+Version 2.7.10 - 25th July 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Default sorting of file table** - Between versions 1.2.18 and 2.7.9
+   we had lost the ability to sort the table containing files and
+   folders correctly. This defect has now been fixed and now all folders
+   are listed before files and they're all sorted alphabetically by
+   default.
+
+.. raw:: html
+
+   <hr>
+
+Version 2.7.11 - 26th July 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Browser Caching** - In some cased the browser cache would not allow
+   the new version of SureDrop to be loaded in the browser. By default
+   the Index.html page has now been set to *no-store* via the http
+   header which should prevent this from happening in the future.
+
+.. code:: yaml
+
+        location = /index.html {
+          internal;
+          add_header Cache-Control 'no-store';
+        }
+
+.. raw:: html
+
+   <hr>
+
+Version 2.7.12 - 1st August 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Resolved issue where sub-directories were incorrectly created one
+   directory up when creating a new directory.
+-  Resolved issue where the group list on the left did not refresh
+   correctly
+
+.. raw:: html
+
+   <hr>
+
+Version 2.7.13 - 16th August 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Resolved XSS scripting vulnerability.
+-  Resolved issue where forward and back slashes were interpreted
+   incorrectly
+-  Resolved issue where some documents were shown twice in the document
+   list
+-  Resolved issue where the group icons were not visible if disabled.
+-  Resolved issue where add/remove users was displayed incorrectly for
+   external windows groups
+
+.. raw:: html
+
+   <hr>
+
+Version 2.7.14 - 22nd August 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Resolved multiple email alerts sent from sharing a folder or file
+-  Email alerts are now only sent when a file a shared file is
+   downloaded, and the filename is now highlighted.
+-  Fixed an issue where some files did not display correctly when
+   shared.
+-  Fixed an issue where email file notifications showed the group GUID
+   instead of the group name
+
+.. raw:: html
+
+   <hr>
+
+Version 2.7.15 - 26nd August 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Resolved issue where certificates were not installed correctly
+
+.. raw:: html
+
+   <hr>
+
+Version 2.7.16 - 29th August 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  Resolved issue where DNS hosts were not resolving correctly
+-  Added option to reboot docker stack to create-suredrop
+-  Added separate option to install a root ca to create-suredrop
+
+.. raw:: html
+
+   <hr>
+
+Version 2.7.17 - 6th September 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Delete folder keeps folder structure** – create a new folder with
+   the same name as a deleted folder and it used to show up all old
+   subdirectories and files of the older one. Creating a new folder with
+   the same name as a deleted or purged folder has now been restricted.
+   Please ask your system administrator to recover the older folder.
+-  **XSS filter removed ALL ``&``** - we made it impossible to add a
+   ``&lt;`` (good) but also broke ``R&D`` (unfortunate). Thus we have
+   added the ability to use ``&`` in the secure group name and folder
+   names. We still however don't allow ``&`` character in the company
+   name and file name.
+-  **Multiline group description** - it was impossible to add multiline
+   descriptions for groups as pressing the ``Enter`` key used to close
+   the modal window. We've corrected this and now the user can enter
+   multiline descriptions using ``Enter``. That means to close the modal
+   window the user either needs to click on the submit buttons or press
+   the ``Esc`` key.
+-  **Downloading deleted files from shares** - SureDrop now doesn't
+   allow downloading files which are not available (deleted / purged /
+   processing / unavailable) from file share links. Deleted files can
+   still be downloaded from within SureDrop if the user has appropriate
+   permissions.
+-  **Icons missing** - Few dropdown menu icons were missing from the
+   ``Bulk Actions`` button in ``Group Membership`` section.
+-  **Grammar in shared page** - The page for accessing shared files had
+   a grammatical error. It used to say ``the page will expire ...`` for
+   expired pages. This has been resolved and the new heading reads
+   ``This page expired ...``
+-  **Failed to download shared files** - If file(s) were shared without
+   the ``Receive notifications`` option selected, users couldn't
+   download those files from the shared link. Clicking the file(s) would
+   result in a JSON response
+   ``{"error":"Object reference not set to an instance of an object."}``.
+   It was a coding error and has now been resolved.
+-  **SureDrop Tour** - The ``Show Tour`` user preference is now a
+   singleton object. It cancels (/removes) and existing tours before
+   popping up the tour start confirmation dialog.
+
+.. raw:: html
+
+   <hr>
+
+Version 2.7.19 - 11th September 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Typing error** - Notification email said
+   ``The following file has been download``. This has now been changed
+   to ``The following file has been downloaded``.
+
+-  **Notification email** - Notification email recipient was incorrect.
+   When a SureDrop user A shared a file with an external user B with the
+   notification option turned on, then on downloading the shared file
+   SureDrop was sending notification email to user B instead of A. This
+   was a coding error which has been resolved.
+
+.. raw:: html
+
+   <hr>
+
+Version 2.7.20 - 3rd October 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Audit notifications missing** - Some audit notifications were not
+   being logged from shared files.
+

@@ -1,0 +1,5 @@
+sphinx-hoverxref
+sphinx_markdown_tables
+sphinx-tabs
+sphinxemoji
+git+https://github.com/readthedocs/readthedocs-sphinx-search@master
