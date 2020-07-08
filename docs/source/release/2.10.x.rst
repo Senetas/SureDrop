@@ -429,6 +429,6 @@ Version 2.10.18 SP1 - 8th July 2020
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  **STA login**: There was a bug reported to us in logging into SureDrop using
-   STA. Users were sometimes locked out with an authorised error message especially
+   STA. Users were sometimes locked out with an *unauthorised error* message especially
    when they were geographically far from the application servers. We had to 
    hotfix this issue on 2.10.18 since this was the last minor release for 2.10. 
