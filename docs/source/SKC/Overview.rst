@@ -1,5 +1,5 @@
-Introduction
-============
+Overview
+========
 
 The Senetas Key Orchestrator (SKC) is a stand alone, stateless key orchestration solution designed to support SureDrop in multiple Key Management Solutions (KMS).
 
@@ -17,7 +17,7 @@ Senetas Key Orchestrator (SKC) should be used in the following situations:
 8. When SureDrop needs to connect to a Luna HSM
 
 OS Support
-==========
+----------
 
 SKC is written in dotnetcore version 3.1 and supports the following platforms:
 1. Windows
@@ -37,7 +37,7 @@ The Unix version does not support Luna HSM.
 The MacOS version does not support Luna HSM.
 
 Overview
-========
+--------
 
 The Senetas Key Orchestrator operates as follows:  
 

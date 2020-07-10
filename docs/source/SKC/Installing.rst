@@ -1,5 +1,5 @@
-Download the correct binary for your platform
-=============================================
+Installing
+==========
 
 Windows (x64)
 -------------
@@ -32,7 +32,7 @@ MacOS
 [Version 2.0.0](https://skc-downloads.s3-ap-southeast-2.amazonaws.com/skc.2.0.0.osx-x64.zip)
 
 Unzip
-=====
+-----
 
 Unzip the zip file into any folder.
 
@@ -46,7 +46,7 @@ The structure should look like this:
 
 
 Database Location
-=================
+-----------------
 
 SKC will automatically create an encrypted database required to store any persistent values, the location of this will be:
 
