@@ -147,7 +147,17 @@ the same name)
          "scan_policy": {
            "PolicyName": "Default Policy",
            "Token": "**REPLACE-ME**"
-         }
+         },
+         "opt_kms": "False",
+         "opt_azure": "False",
+         "azure_application_id": "**REPLACE-ME**",
+         "azure_tenant_id": "**REPLACE-ME**",
+         "azure_access_key": "**REPLACE-ME**",
+         "optLdap": "False",
+         "optSta": "False",
+         "staOptions": {},
+         "ldapOptions": {},
+         "azure_options": {}
        }'
        )
 
@@ -160,7 +170,7 @@ the same name)
 
    .. Important::
 
-      ***Make sure the Initial Catalog=Master***
+      ***Make sure the Initial Catalog=Core***
 
 #. That's it. Now continue to do the normal SureDrop install and enter
    the Core database connection string as shown above when prompted.

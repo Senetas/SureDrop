@@ -12,10 +12,10 @@ command. This will download the latest copy of the installer script from
 the cloud and execute it. Now choose :guilabel:`4` to enter into the diagnostics
 mode.
 
-.. code:: sh
+.. code:: bash
 
     ******************************
-        SureDrop Configuration
+    SureDrop Configuration
     ******************************
     1) Upgrade Version
     2) Upgrade PKI
@@ -24,9 +24,10 @@ mode.
     5) Health check
     6) Add a Custom Root CA
     7) Restart Container Stack
-    8) Schedule Automatic Updates
-
-    9) Exit
+    8) Start Container Stack
+    9) Stop Container Stack
+    10) Schedule Automatic Updates
+    11) Exit
 
     Enter number to select an option: 4
 

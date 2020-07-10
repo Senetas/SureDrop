@@ -12,10 +12,10 @@ command. This will download the latest copy of the installer script from
 the cloud and execute it. Now choose :guilabel:`5` to enter into the health
 check mode.
 
-.. code:: sh
+.. code:: bash
 
     ******************************
-        SureDrop Configuration
+    SureDrop Configuration
     ******************************
     1) Upgrade Version
     2) Upgrade PKI
@@ -24,9 +24,10 @@ check mode.
     5) Health check
     6) Add a Custom Root CA
     7) Restart Container Stack
-    8) Schedule Automatic Updates
-
-    9) Exit
+    8) Start Container Stack
+    9) Stop Container Stack
+    10) Schedule Automatic Updates
+    11) Exit
 
     Enter number to select an option: 5
 
@@ -43,10 +44,10 @@ This script will then check
 
 The expected output might look like this
 
-.. code:: sh
+.. code:: bash
 
     ******************************
-        SureDrop Configuration
+    SureDrop Configuration
     ******************************
     1) Upgrade Version
     2) Upgrade PKI
@@ -55,9 +56,10 @@ The expected output might look like this
     5) Health check
     6) Add a Custom Root CA
     7) Restart Container Stack
-    8) Schedule Automatic Updates
-
-    9) Exit
+    8) Start Container Stack
+    9) Stop Container Stack
+    10) Schedule Automatic Updates
+    11) Exit
 
     Enter number to select an option: 5
 
@@ -85,6 +87,11 @@ The expected output might look like this
     Primary Storage Status: OK
 
     Backup storage verification: OK
+
+.. Note::
+
+   If the SureDrop instance uses remote (external) database(s) then the database
+   health check will report ``OFFLINE`` containers. This is normal and can be ignored.
 
 If there are errors in any of these steps then SureDrop will not function correctly. 
 So, please run the :doc:`Diagnostics` and contact the SureDrop support team immediately.

@@ -369,6 +369,10 @@ Version 2.10.16 - 30th April 2020
 -  **Remember me**: There were some minor problems with the way SureDrop
    handles cookies when the ``Remember Me`` option was not selected.
 
+.. raw:: html
+
+   <hr>
+
 Version 2.10.17 - 16th June 2020
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -378,3 +382,53 @@ Version 2.10.17 - 16th June 2020
 -  **Rename context menu**: We were told that the right-click context menu
    ``Download as zip`` was a misnomer and should be renamed to its actual
    functionality ``Zip selected files``. This has now been updated in GUI.
+
+.. raw:: html
+
+   <hr>
+
+Version 2.10.18 - 1st July 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **My Documents group**: All SureDrop users regardless of their role in 
+   the system, now have a ``My Documents`` security group. This 
+   is a new group designed to store the user's personal documents. 
+   Some important features of this group are -
+
+   - It is system generated and cannot be altered or deleted by any user. 
+   - No user regardless of their role in the system, can get access to the 
+     contents in another user's ``My Documents`` group, this includes 
+     administrators and forensic users.
+   - All zip files are automatically directed to this group.
+
+-  **Copying between groups**: Users can now copy or move documents across
+   groups. This feature was add-on for My Documents since most users wanted
+   to copy documents from their ``My Documents`` to other groups.
+
+-  **Deleting unavailable files**: When a file failed to upload due to any
+   system error, it was impossible to delete it from SureDrop. This has 
+   now been fixed.
+
+-  **Folder names with period character**: Users could import folders to 
+   SureDrop with a :guilabel:`.` in the folder name, but couldn't create
+   such a folder in SureDrop using the GUI; though the backend API supported
+   creation of such folders. This has been fixed in the GUI and users can now
+   create folders with ``.`` character in the folder name.
+
+-  **Adhoc sharing optional password**: It was brought to our notice that the 
+   optional password field in the adhoc sharing window in the GUI was displayed
+   in plain text. We have changed this to match other password fields in the GUI
+   so that it is redacted by default but users have the ability to show the 
+   password if they want to.
+
+-  **On-premises Installations**: had a couple of issues around named external 
+   databases and initialising a company name with :guilabel:`-` character(s)
+   in it. These issues have been fixed and tested for on-prem installs.
+
+Version 2.10.18 SP1 - 8th July 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **STA login**: There was a bug reported to us in logging into SureDrop using
+   STA. Users were sometimes locked out with an *unauthorised error* message especially
+   when they were geographically far from the application servers. We had to 
+   hotfix this issue on 2.10.18 since this was the last minor release for 2.10. 

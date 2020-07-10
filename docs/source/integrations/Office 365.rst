@@ -81,6 +81,14 @@ the moment. Enabling Office 365 integration for on-prem installations
 will require **at least 2-3 weeks** because Microsoft needs to whitelist
 the URLs from which users will connect to Office 365 servers.
 
+.. Warning::
+
+   Microsoft does not whitelist xip certificates, so on-prem installations
+   will need to configure PKI in SureDrop with a publicly accessible valid 
+   X509 certificate. Once this is done share your SureDrop URL with your 
+   SureDrop administrator and they can initiate the whitelisting process 
+   with Microsoft.
+
 .. _o365-known-issues:
 
 Known Issues
