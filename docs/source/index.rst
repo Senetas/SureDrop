@@ -54,6 +54,20 @@ FAQs, etc. about SureDrop.
 
 .. toctree::
    :maxdepth: 2
+   :caption: Senetas Key Orchestrator
+   :glob:
+   :hidden:
+
+   /SKC/Overview
+   /SKC/Installing
+   /SKC/Running
+   /SKC/Configuration
+   /SKC/Providers
+   /SKC/Using
+   /SKC/Suredrop Integration
+
+.. toctree::
+   :maxdepth: 2
    :caption: Digging Deeper
    :hidden:
 
