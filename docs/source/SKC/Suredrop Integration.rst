@@ -15,9 +15,8 @@ This is straight forward.
 
 #. Enter the details for SKC. 
 
-.. admonition:: Make sure of the following
+.. warning:: 
 
 	Make sure you use the `admin` account if you would like to automatically `unseal` SKC
 
-	Make sure you use the full https:// URL format when specifying the Key Server Location.
-
+	Make sure you use the full https://XXX-XXX-XXX-XXX.xip.suredrop.com.au  URL format when specifying the Key Server Location.
