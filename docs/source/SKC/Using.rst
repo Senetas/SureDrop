@@ -77,7 +77,7 @@ Encrypt
 Encrypt will take the following formats:
 
 application/json  
-----------------
+~~~~~~~~~~~~~~~~
 
 `Content-Type: application/json`
 `Content-Type: application/json;charset=utf-8`  
@@ -101,7 +101,7 @@ or
 
 
 text/plain  
-----------
+~~~~~~~~~~
 
 `Content-Type: text/plain`
 `Content-Type: text/plain;charset=utf-8`  
@@ -112,7 +112,7 @@ text/plain
 
 
 application/base64  
-------------------
+~~~~~~~~~~~~~~~~~~
 
 `Content-Type: application/base64`
 `Content-Type: application/base64;charset=utf-8`  
@@ -123,7 +123,7 @@ application/base64
  
 
 application/octet-stream  
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 `Content-Type: application/octet-stream`
 
@@ -133,7 +133,7 @@ application/octet-stream
  
 
 Return Data
------------
+~~~~~~~~~~~
 
 Encrypt returns data in the following format:
 
@@ -172,12 +172,10 @@ or
 	[base64 encoded ciphertext]
  
 
-Return Format
--------------
+Decrypt will return the data in the following formats:
 
-
-application/json  
-----------------
+JSON  
+~~~~
 
 `Content-Type: application/json`
 `Content-Type: application/json;charset=utf-8`  
@@ -197,8 +195,8 @@ Where [provider id] is the id of the provider that supplied the KEK.
 
 
 
-text/plain  
-----------
+Text
+~~~~
 
 `Content-Type: text/plain`
 `Content-Type: text/plain;charset=utf-8`  
@@ -208,8 +206,8 @@ text/plain
 	[plaintext data]
 
 
-application/base64  
-------------------
+Base64  
+~~~~~~
 
 `Content-Type: application/base64`
 `Content-Type: application/base64;charset=utf-8`  
@@ -219,18 +217,12 @@ application/base64
 	[base64 plaintext data]
  
 
-application/octet-stream  
-------------------------
+Octet Stream  
+~~~~~~~~~~~~
 
 `Content-Type: application/octet-stream`
 
 .. code:: sh
 
 	[binary data]
- 
-
-
-
-
-
  

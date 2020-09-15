@@ -36,10 +36,6 @@ The Unix version does not support Luna HSM.
 3. MacOS  
 The MacOS version does not support Luna HSM.
 
-Overview
---------
-
-The Senetas Key Orchestrator operates as follows:  
 
 Providers
 ---------  
