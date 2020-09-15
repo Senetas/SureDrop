@@ -1,7 +1,7 @@
 What is the difference between a link and a share?
 ==================================================
 
-.. figure:: ../../images/2.11/coming-soon.png
+.. figure:: ../../images/coming-soon.png
 
 Share
 -----
