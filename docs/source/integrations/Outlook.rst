@@ -1,9 +1,7 @@
-..  |suredrop-icon| image:: https://suredrop-downloads.s3-ap-southeast-2.amazonaws.com/suredrop-16x16-square.png
+|draft-icon| SureDrop for Outlook
+=================================
 
-SureDrop for Outlook
-====================
-
-.. figure:: ../images/2.11/coming-soon.png
+.. figure:: ../images/coming-soon.png
    :alt: Coming soon
 
 We have created an add-in that integrates with Microsoft Outlook. By connecting the SureDrop 
@@ -93,7 +91,7 @@ open the add-in, then sign into your SureDrop account.
       allow the **Internet Low-Mic Utility Tool** to open content. Click :guilabel:`Allow` to use the add-in.
 
 Attach a file from your SureDrop account to an email
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------------------
 
 #. When composing an email in Outlook, click the SureDrop icon to access your SureDrop account.
 #. Select the files or folders you’d like to include in your email, or
@@ -104,7 +102,7 @@ Attach a file from your SureDrop account to an email
    :alt: Attach
 
 Save an attachment to your SureDrop account
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------
 
 #. When you receive an email with attachments, click the SureDrop button in the Outlook ribbon or email header.
 #. Select the attachments you’d like to save to your SureDrop account.
