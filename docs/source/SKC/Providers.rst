@@ -11,7 +11,7 @@ Amazon AWS Key Management Service (KMS)
 
 Amazon KMS provides key management as a SaaS solution.  
 
-[Amazon AWS KMS](https://github.com/Senetas/SKC/wiki/Configuring-an-AWS-KMS-provider)
+Amazon AWS KMS https://github.com/Senetas/SKC/wiki/Configuring-an-AWS-KMS-provider
 
 
 Thales KeySecure (Classic & Nexgen)  
@@ -25,7 +25,7 @@ Thales SafeNet Luna HSM
 The Thales SafeNet HSM is supported via the KSP encryption service provided by Microsoft.
 (Supported only under the Windows version of SKC)  
 
-[Thales SafeNet Luna HSM Provider](https://github.com/Senetas/SKC/wiki/Configuring-a-Thales-SafeNet-Luna-HSM-Provider)
+Thales SafeNet Luna HSM Provider https://github.com/Senetas/SKC/wiki/Configuring-a-Thales-SafeNet-Luna-HSM-Provider
 
 
  

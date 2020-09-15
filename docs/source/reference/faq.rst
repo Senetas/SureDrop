@@ -37,3 +37,4 @@ What is:
    faq/Security group
    faq/Notifications
    faq/Sharing notifications
+   faq/Links vs Shares
