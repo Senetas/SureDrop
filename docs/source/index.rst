@@ -29,6 +29,7 @@ FAQs, etc. about SureDrop.
     <iframe width="100%" height="350" src="https://www.youtube.com/embed/3pwnRjww8Vg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
+
 .. toctree::
    :maxdepth: 2
    :caption: Getting Started
@@ -92,6 +93,7 @@ FAQs, etc. about SureDrop.
    :caption: Changelog
    :hidden:
 
+   /release/2.11.x
    /release/2.10.x
    /release/2.9.x
    /release/2.8.x

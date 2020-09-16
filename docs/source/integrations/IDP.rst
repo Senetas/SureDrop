@@ -236,10 +236,8 @@ Windows Server Active Directory Integration
 SureDrop has the capability to connect and synchronise user and group
 information from windows server AD or other directory services in your
 domain controller using Lightweight Directory Access Protocol (LDAP).
-This functionality is available from `version
-2.6.0 <https://github.com/Senetas/SureDrop/wiki/Release-Notes---2.6.0>`__
-onwards. It is a simple configuration in SureDrop. To enable this
-synchronisation,
+This functionality is available from version 2.6.0 onwards. It is a 
+simple configuration in SureDrop. To enable this synchronisation,
 
 -  navigate to :guilabel:`Admin Settings` > :guilabel:`LDAP Integration` option. This will
    open a pop-up modal dialog where you'll need to **tick on the

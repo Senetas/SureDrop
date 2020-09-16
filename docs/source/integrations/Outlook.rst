@@ -1,11 +1,13 @@
-|draft-icon| SureDrop for Outlook
-=================================
+.. _outlook:
+
+|sparkle| SureDrop for Outlook
+==============================
 
 .. figure:: ../images/coming-soon.png
    :alt: Coming soon
 
-We have created an add-in that integrates with Microsoft Outlook. By connecting the SureDrop 
-add-in to your Outlook account, you can:
+We have created an add-in that integrates with Microsoft Outlook in :ref:`version2-11-x`. 
+By connecting the SureDrop add-in to your Outlook account, you can:
 
 - Replace email attachments with a shared link to any file, big or small
 - Save email attachments that you receive directly to your SureDrop account
@@ -41,6 +43,11 @@ The SureDrop add-in works with the following:
     - Outlook on mobile, and older versions of Outlook on your desktop, are not supported.
     - Senetas' internal Outlook Exchange Server is not supported. This is an informed security decision.
 
+.. |loc| raw:: html
+
+   <a href="https://docs.microsoft.com/en-us/office/dev/add-ins/outlook/sideload-outlook-add-ins-for-testing" target="_blank">
+   Microsoft’s documentation for sideloading</a>
+
 How to install the SureDrop for Outlook add-in
 ----------------------------------------------
 
@@ -49,8 +56,7 @@ How to install the SureDrop for Outlook add-in
    .. tab:: Sideloading
 
         You can use sideloading to install an Outlook add-in for testing without having to first publish it in MS AppSource.
-        Follow the detailed instructions testing the add-in from 
-        `Microsoft’s documentation for sideloading <https://docs.microsoft.com/en-us/office/dev/add-ins/outlook/sideload-outlook-add-ins-for-testing>`__.
+        Follow the detailed instructions testing the add-in from |loc|.
         
         You’ll now see SureDrop in your list of add-ins in your Outlook account.
 

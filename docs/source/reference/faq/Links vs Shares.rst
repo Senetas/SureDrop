@@ -1,5 +1,5 @@
-What is the difference between a link and a share?
-==================================================
+The difference between Links and Shares
+=======================================
 
 .. figure:: ../../images/coming-soon.png
 
@@ -12,6 +12,8 @@ Shares have a lot of options such as expiry dates and passwords and the recipien
 Shares always give the recipient access to the latest version of a file.
 
 Recipients of shares must be entered into SureDrop at the time the share is created and each recipient gets a unique link to access the share so it can be tracked.
+
+.. _shareable-links:
 
 Links
 -----
