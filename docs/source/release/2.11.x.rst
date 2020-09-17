@@ -3,6 +3,9 @@
 Version 2.11.x
 ==============
 
+.. figure:: ../images/coming-soon.png
+   :alt: Coming soon
+
 .. admonition:: Welcome to the September 2020 release of SureDrop version 2.11.0
 
    There are a number of updates in this version that we hope you will like, along with making intangible security changes
@@ -28,7 +31,7 @@ Shareable links
 
 A link is a simple, fast and easy way to share a file or folder with anyone. They do not have any options and recipients of links 
 must create a SureDrop login to access them (for security purposes). These are the differences between 
-:doc:`links and shares <../reference/faq/Links vs Shares>` in SureDrop.
+:ref:`links-vs-shares` in SureDrop.
 
 Getting a link
 ______________
@@ -112,4 +115,3 @@ Restricted users
 
 - The link and shares page looks a bit different for restricted users. They are not authorised to view sent links and
   shares.
-  

@@ -1,3 +1,5 @@
+.. _links-vs-shares:
+
 The difference between Links and Shares
 =======================================
 
