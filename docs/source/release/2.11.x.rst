@@ -30,8 +30,7 @@ Shareable links
 ~~~~~~~~~~~~~~~
 
 A link is a simple, fast and easy way to share a file or folder with anyone. They do not have any options and recipients of links 
-must create a SureDrop login to access them (for security purposes). These are the differences between 
-:ref:`links-vs-shares` in SureDrop.
+must create a SureDrop login to access them (for security purposes). These are :ref:`links-vs-shares` in SureDrop.
 
 Getting a link
 ______________
