@@ -56,9 +56,10 @@ How to install the SureDrop for Outlook add-in
    .. tab:: Sideloading
 
         You can use sideloading to install an Outlook add-in for testing without having to first publish it in MS AppSource.
-        Follow the detailed instructions testing the add-in from |loc|.
+        Follow the detailed instructions testing the add-in from |loc|. You will need an XML file for testing the
+        add-in using this approach. Please reach out to your SureDrop administrator for the same.
         
-        You’ll now see SureDrop in your list of add-ins in your Outlook account.
+        After the installation you’ll see SureDrop |suredrop-icon| in your list of add-ins in your Outlook account.
 
    .. tab:: Microsoft AppSource (Coming Soon)
 
@@ -74,7 +75,7 @@ How to install the SureDrop for Outlook add-in
         - You’ll be brought to your Outlook account. Click :guilabel:`Install`
         - Click :guilabel:`OK`
 
-        You’ll now see SureDrop in your list of add-ins in your Outlook account.
+        You’ll now see SureDrop |suredrop-icon| in your list of add-ins in your Outlook account.
 
 Configure and use the SureDrop add-in for Outlook
 -------------------------------------------------
