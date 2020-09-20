@@ -3,8 +3,6 @@
 The difference between Links and Shares
 =======================================
 
-.. figure:: ../../images/coming-soon.png
-
 Share
 -----
 

@@ -3,9 +3,6 @@
 Version 2.11.x
 ==============
 
-.. figure:: ../images/coming-soon.png
-   :alt: Coming soon
-
 .. admonition:: Welcome to the September 2020 release of SureDrop version 2.11.0
 
    There are a number of updates in this version that we hope you will like, along with making intangible security changes
