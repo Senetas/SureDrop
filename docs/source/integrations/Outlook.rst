@@ -45,7 +45,7 @@ The SureDrop add-in works with the following:
    <a href="https://docs.microsoft.com/en-us/office/dev/add-ins/outlook/sideload-outlook-add-ins-for-testing" target="_blank">
    Microsoft’s documentation for sideloading</a>
 
-How to install the SureDrop for Outlook add-in
+How to install the SureDrop add-in for Outlook
 ----------------------------------------------
 
 .. tabs::
@@ -53,9 +53,13 @@ How to install the SureDrop for Outlook add-in
    .. tab:: Sideloading
 
         You can use sideloading to install an Outlook add-in for testing without having to first publish it in MS AppSource.
-        Follow the detailed instructions testing the add-in from |loc|. You will need an XML file for testing the
-        add-in using this approach. Please reach out to your SureDrop administrator for the same.
-        
+
+        - Sideloading an add-in is done differently for Outlook Web and Desktop vesions. Depending on the Outlook client that
+          you use, please follow the detailed instructions to install the add-in from |loc|. 
+        - At the step which says "Select the Add a custom add-in link, and then select Add from file", **choose to** ``Add from URL``
+          **instead.**
+        - When prompted for the URL, paste ``https://s3-ap-southeast-2.amazonaws.com/outlook.sdrop.com/manifest.xml`` and click ok.
+
         After the installation you’ll see SureDrop |suredrop-icon| in your list of add-ins in your Outlook account.
 
    .. tab:: Microsoft AppSource (Coming Soon)
