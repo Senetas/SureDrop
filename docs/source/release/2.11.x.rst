@@ -118,3 +118,16 @@ Restricted users
 
 - The link and shares page looks a bit different for restricted users. They are not authorised to view sent links and
   shares.
+
+Minor Releases
+--------------
+
+Version 2.11.1 - 21st September 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **Downloading folder (cloud)** - There was a configuration error in the Canberra region of our 
+  `SaaS <https://portal.sdrop.com/#/viewLogin>`_ instance. This leads to failure in downloading 
+  folders. 
+
+- **Outlook addin documentation** - The link in the Connect Outlook dialog in SureDrop, now points at
+  :ref:`install-addin`.

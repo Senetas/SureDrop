@@ -45,6 +45,8 @@ The SureDrop add-in works with the following:
    <a href="https://docs.microsoft.com/en-us/office/dev/add-ins/outlook/sideload-outlook-add-ins-for-testing" target="_blank">
    Microsoft’s documentation for sideloading</a>
 
+.. _install-addin:
+
 How to install the SureDrop add-in for Outlook
 ----------------------------------------------
 
