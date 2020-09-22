@@ -131,3 +131,19 @@ Version 2.11.1 - 21st September 2020
 
 - **Outlook addin documentation** - The link in the Connect Outlook dialog in SureDrop, now points at
   :ref:`install-addin`.
+
+.. raw:: html
+
+   <hr>
+
+Version 2.11.2 - 22nd September 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **Get Link using Safari** - we have had to change some code to support ``Get Link`` operation in Safari. 
+
+- **Icon sizes** - we have slightly modified the icons in file and folder view to standardise it with other pages.
+
+- **Changing language on adhoc sharing page** - was redirecting the user to the login page. 
+
+- **Sharing password** - using the browser's auto-fill functionality for email addresses, was also populating
+  the password field as well.
