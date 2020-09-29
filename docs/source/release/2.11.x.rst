@@ -147,3 +147,17 @@ Version 2.11.2 - 22nd September 2020
 
 - **Sharing password** - using the browser's auto-fill functionality for email addresses, was also populating
   the password field as well.
+
+.. raw:: html
+
+   <hr>
+
+Version 2.11.3 - 29th September 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **Get Link using Safari** - More minor changes to support Safari and the clipboard. 
+
+- **Sharing View** - In some cases files were not shown in the ``Share View`` unless the user selected the ``File View`` then went back to the ``Share View``.
+
+- **File Name Truncated in File View** - Long file names were truncated in the ``File View``. 
+  Filenames now use the full column width and show in the tooltip. 
