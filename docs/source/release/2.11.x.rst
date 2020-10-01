@@ -161,3 +161,14 @@ Version 2.11.3 - 29th September 2020
 
 - **File Name Truncated in File View** - Long file names were truncated in the ``File View``. 
   Filenames now use the full column width and show in the tooltip. 
+
+  .. raw:: html
+
+   <hr>
+
+Version 2.11.4 - 1st October 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **Branding Message** - Added the ability to add a branding message on the login screen
+
+
