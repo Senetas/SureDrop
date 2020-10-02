@@ -167,8 +167,18 @@ Version 2.11.3 - 29th September 2020
    <hr>
 
 Version 2.11.4 - 1st October 2020
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - **Branding Message** - Added the ability to add a branding message on the login screen
 
 
+.. raw:: html
+
+   <hr>
+
+Version 2.11.5 - 2nd October 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **Updated Language Translations** - Updated some missing language Translations
+
+- **Settings Bug** - Resolved issue where all of the settings were not being returned in all cases
