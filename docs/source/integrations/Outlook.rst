@@ -120,6 +120,9 @@ Save an attachment to your SureDrop account
 .. figure:: ../images/2.11/Save.png
    :alt: Save
 
+.. figure:: ../images/2.11/Saving.png
+   :alt: Saving
+
 Feedback
 --------
 
