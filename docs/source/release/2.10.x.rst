@@ -424,3 +424,22 @@ Version 2.10.18 - 1st July 2020
 -  **On-premises Installations**: had a couple of issues around named external 
    databases and initialising a company name with :guilabel:`-` character(s)
    in it. These issues have been fixed and tested for on-prem installs.
+
+Version 2.10.18 SP1 - 8th July 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **STA login**: There was a bug reported to us in logging into SureDrop using
+   STA. Users were sometimes locked out with an *unauthorised error* message especially
+   when they were geographically far from the application servers. We had to 
+   hotfix this issue on 2.10.18 since this was the last minor release for 2.10. 
+
+Version 2.10.18 SP2 - 13th July 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Enabled TLS v1.2**: We enabled TLS v1.2 in SureDrop so that it can connect 
+   to KeySecure correctly.
+
+-  **Notification links**: were not working properly as the users were directed
+   to an empty page without folders. This has been fixed and the users are now
+   first directed to the login page, and then taken to the notification path on
+   successful authentication.

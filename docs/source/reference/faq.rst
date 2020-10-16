@@ -1,6 +1,6 @@
 
-Frequently Asked Questions
-==========================
+|question| Frequently Asked Questions
+=====================================
 
 ..  sidebar:: Note
 
@@ -37,3 +37,4 @@ What is:
    faq/Security group
    faq/Notifications
    faq/Sharing notifications
+   faq/Links vs Shares
