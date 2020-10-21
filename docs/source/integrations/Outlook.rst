@@ -26,10 +26,7 @@ or later. This is available on the following:
 - Exchange Online
 - On-premise installations
 
-.. Note::
-    POP/IMAP email accounts like Gmail are not supported.
-
-The SureDrop add-in works with the following:
+Therefore the add-in works with the following:
 
 - Outlook on web
 - outlook.com
@@ -38,7 +35,7 @@ The SureDrop add-in works with the following:
 
 .. Warning::
     - Outlook on mobile, and older versions of Outlook on your desktop, are not supported.
-    - Senetas' internal Outlook Exchange Server is not supported. This is an informed security decision.
+    - POP/IMAP email accounts like Gmail are not supported.
 
 .. |loc| raw:: html
 
@@ -69,7 +66,7 @@ How to install the SureDrop add-in for Outlook
         We are in the process of publishing the add-in to Microsoft AppSource. Once that is completed, you’ll need 
         to install the SureDrop for Outlook add-in through Microsoft’s AppSource before you can use it.
 
-        - Navigate to Microsoft’s AppSource listing for the Dropbox for Outlook add-in.
+        - Navigate to Microsoft’s AppSource listing for the SureDrop for Outlook add-in.
         - Click :guilabel:`GET IT NOW`
         - Enter your Microsoft account credentials.
         - Click :guilabel:`Continue`
@@ -122,6 +119,9 @@ Save an attachment to your SureDrop account
 
 .. figure:: ../images/2.11/Save.png
    :alt: Save
+
+.. figure:: ../images/2.11/Saving.png
+   :alt: Saving
 
 Feedback
 --------

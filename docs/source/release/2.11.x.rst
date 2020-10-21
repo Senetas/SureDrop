@@ -169,8 +169,10 @@ Version 2.11.3 - 29th September 2020
 Version 2.11.4 - 1st October 2020
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Branding Message** - Added the ability to add a branding message on the login screen
+- **Branding Message** - Added the ability to add a branding message on the login screen. Administrators
+  can customise the message from the :guilabel:`Admin` -> :guilabel:`General Settings` page.
 
+.. image:: ../images/2.11/Branding.png
 
 .. raw:: html
 
@@ -179,6 +181,7 @@ Version 2.11.4 - 1st October 2020
 Version 2.11.5 - 2nd October 2020
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- **Updated Language Translations** - Updated some missing language Translations
+- **Updated Language Translations** - Updated some missing language translations.
 
-- **Settings Bug** - Resolved issue where all of the settings were not being returned in all cases
+- **Settings Bug** - Resolved issue where all of the settings were not being returned in all cases via
+  the ``settings`` API.

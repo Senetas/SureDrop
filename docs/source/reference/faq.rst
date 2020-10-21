@@ -1,6 +1,6 @@
 
-Frequently Asked Questions
-==========================
+|question| Frequently Asked Questions
+=====================================
 
 ..  sidebar:: Note
 
