@@ -101,7 +101,7 @@ will create it automatically. (The client database will have the same name as
 the company name, so please ensure that a database does not already exist of 
 the same name)
 
-#. The first step is to create a :guilabel:`suredrop` user in SQL Server and grant the :guilabel:`dbcreator` Server Role.
+#. The first step is to create a :guilabel:`suredrop` user in SQL Server and grant the :guilabel:`dbcreator` AND :guilabel:`processadmin` Server Role.
 
 #. Create the empty :guilabel:`Core` database.
 
