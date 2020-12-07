@@ -377,67 +377,6 @@ Installation of SureDrop
 For any questions or if you have any issues following this document,
 please email admin@suredrop.com.au.
 
-
-Large File Support
-------------------
-
-This only applies to :guilabel:`Download as Zip`, uploading and downloading of
-individual files of any size is already supported by the default
-configuration of SureDrop
-
-If you intend on downloading a large number of files using the
-:guilabel:`Download as Zip` option the following will need to be taken into
-consideration.
-
-#. The disk space on the docker host must be large enough to cater for
-   3x the size of the zip file. For example, to download a zip file of
-   1GB, there must be at least 3GB of available disk space on the
-   application server.
-
-
-#. If the zip file will be greater than 10GB, then large volume support
-   will need to be enabled within the docker sub-system.
-
-
-#. To enable large volume support create a file called
-   ``update_docker_reg.reg`` and copy and paste the following into it:
-
-   .. code:: sh
-
-      Windows Registry Editor Version 5.00
-
-      [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Docker]
-      "Type"=dword:00000010
-      "Start"=dword:00000002
-      "ErrorControl"=dword:00000001
-      "ImagePath"=hex(2):22,00,43,00,3a,00,5c,00,50,00,72,00,6f,00,67,00,72,00,61,00,\
-      6d,00,20,00,46,00,69,00,6c,00,65,00,73,00,5c,00,44,00,6f,00,63,00,6b,00,65,\
-      00,72,00,5c,00,64,00,6f,00,63,00,6b,00,65,00,72,00,64,00,2e,00,65,00,78,00,\
-      65,00,22,00,20,00,2d,00,2d,00,72,00,75,00,6e,00,2d,00,73,00,65,00,72,00,76,\
-      00,69,00,63,00,65,00,20,00,2d,00,2d,00,73,00,74,00,6f,00,72,00,61,00,67,00,\
-      65,00,2d,00,6f,00,70,00,74,00,20,00,73,00,69,00,7a,00,65,00,3d,00,31,00,36,\
-      00,30,00,30,00,30,00,47,00,00,00
-      "ObjectName"="LocalSystem"
-
-
-#. Then double click on the file to edit the registry on the windows
-   host.
-
-
-#. Click on :guilabel:`Yes` in the following prompt.
-
-   .. figure:: ../images/2.10.0/prompt1.png
-      :alt: First prompt
-
-
-#. Click on :guilabel:`OK` in the following dialog.
-
-   .. figure:: ../images/2.10.0/prompt2.png
-      :alt: Second prompt
-
-
-#. **Restart the docker host**
-
 .. _upgrade:
 
 Upgrading or diagnosing a SureDrop instance
