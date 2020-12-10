@@ -156,8 +156,7 @@ the same name)
          "optLdap": "False",
          "optSta": "False",
          "staOptions": {},
-         "ldapOptions": {},
-         "azure_options": {}
+         "ldapOptions": {}
        }'
        )
 
