@@ -185,3 +185,45 @@ Version 2.11.5 - 2nd October 2020
 
 - **Settings Bug** - Resolved issue where all of the settings were not being returned in all cases via
   the ``settings`` API.
+
+Version 2.11.6 - 10th December 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  *A maintenance release (For non-production use only)*
+
+Version 2.11.7 - 21st December 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **View-only groups** - We have added a new policy in the edit group dialog which allows the group owner
+  (or an administrator) to set a security group as view-only. In a view-only security group files can only 
+  be uploaded by the group owner. Group members can only view files and **not download** them. Thus by definition,
+  view only groups are read-only with sharing disabled.
+
+  .. image:: ../images/2.11/ViewOnly.png
+
+- **Sandbox viewer** - SureDrop users now have the ability to view more than 140 file types natively within the browser.
+  This much awaited capability coupled with view-only groups, tightens the security model for organisations with sensitive
+  documents. To prevent users from taking screenshots or photos of their screen, the documents are rendered in the browser
+  page-by-page as images with a watermark containing company name, time-stamp and user name of the viewer. Users can click
+  on the rendered image to get to advance viewing options such as rotating, zooming, or flipping the image.
+
+- **Client fingerprinting** - SureDrop client sessions have been fingerprinted for authentication and authorisation at the server.
+  This means that the session token for each session is locked to a single client IP address and client agent string and it is not 
+  possible to copy the URL of an authenticated session and paste it in another browser. Users will need to reauthenticate themselves 
+  if the fingerprinting fails at the server side. Albeit some may consider this a hindrance to usability, we believe it is a necessary 
+  enhancement to our security model.
+
+- **Retry failed uploads** - Uploads that have failed will now retry every minute automatically. This means that for those large 
+  uploads where a single slice fails, you will no longer need to manually click on the retry button for that slice.
+
+- **Opera** - is now supported, taking our list of supported browsers to:
+
+  - Safari
+
+  - Firefox
+
+  - Chrome
+
+  - Edge
+
+  - Opera
