@@ -21,7 +21,7 @@ Before reporting any issues to Senetas, ensure that you have done the following:
 #. Check the :ref:`known-issues` to see if what you're encountering is already known. When
    possible, workarounds will be provided in the issues notes.
 
-#. For on-prem installations, please refer to :doc:`these <../../intro/Diagnostics>` instructions.   
+#. For on-prem installations, please refer to the :ref:`diag` instructions.   
 
 Fiddler Traces
 --------------

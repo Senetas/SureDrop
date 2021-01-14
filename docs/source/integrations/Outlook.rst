@@ -1,7 +1,7 @@
 .. _outlook:
 
-|sparkle| SureDrop for Outlook
-==============================
+SureDrop for Outlook
+====================
 
 We have created an add-in that integrates with Microsoft Outlook in :ref:`version2-11-x`. 
 By connecting the SureDrop add-in to your Outlook account, you can:

@@ -1,7 +1,7 @@
 .. _version2-11-x:
 
-Version 2.11.x
-==============
+|sparkle| Version 2.11.x
+========================
 
 .. admonition:: Welcome to the September 2020 release of SureDrop version 2.11.0
 
