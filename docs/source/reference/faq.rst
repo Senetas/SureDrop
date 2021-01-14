@@ -22,6 +22,7 @@ How do we:
    faq/Reset Password
    faq/Search for files
    faq/Update company init settings
+   faq/Troubleshoot
 
 What is:
 --------
