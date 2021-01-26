@@ -1,9 +1,9 @@
 .. _version2-11-x:
 
-|sparkle| Version 2.11.x
-========================
+|sparkle| Version 2.11.0-certified
+==================================
 
-.. admonition:: Welcome to the September 2020 release of SureDrop version 2.11.0
+.. admonition:: Welcome to the September 2020 release of SureDrop version 2.11.0-certified
 
    There are a number of updates in this version that we hope you will like, along with making intangible security changes
    and minor bug fixes, these are the new features implemented in this version:
