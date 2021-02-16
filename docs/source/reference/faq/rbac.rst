@@ -10,5 +10,6 @@ SureDrop has full Role Based Access Control (RBAC).  There are five user roles a
 4. **Admin** – System administrator
 5. **Forensic** – Special role that can reinstate purged files
 
-.. figure:: ../../images/2.10.0/roles.png
-   :alt: Role permissions
+.. Note::
+
+   The permissions associated with SureDrop user roles are described :doc:`here <../../deep/Roles>`.
