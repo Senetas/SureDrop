@@ -149,6 +149,7 @@ the same name)
            "Token": "**REPLACE-ME**"
          },
          "opt_kms": "False",
+         "version": "2.11.0",
          "opt_azure": "False",
          "azure_application_id": "**REPLACE-ME**",
          "azure_tenant_id": "**REPLACE-ME**",
