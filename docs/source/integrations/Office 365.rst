@@ -122,15 +122,13 @@ all the sites in question are in the internet zone.
 Download a Copy triggers browser pop-up blocker
 
 In PowerPoint Online only, the Download a Copy action can trigger the
-browser's pop-up blocker. Microsoft is
-
-    working on a fix for this issue.
+browser's pop-up blocker. Microsoft is working on a fix for this issue.
 
 `Special characters in file name <https://github.com/microsoft/Office-Online-Test-Tools-and-Documentation/issues/158>`__
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Office Online will fail to load files with characters in the name that
-are invalid in Windows
+are invalid in Windows.
 
 If a user's file name contains the following characters, the file will
 not open properly in Office Online:
