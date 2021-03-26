@@ -101,7 +101,7 @@ the same name)
 
 #. Create the empty :guilabel:`Core` database.
 
-#. Grant ``db_owner`` permissions to the :guilabel:`suredrop` user created above to the empty :guilabel:`Core` database.
+#. Grant ``db_owner`` and ``processadmin`` permissions to the :guilabel:`suredrop` user created above to the empty :guilabel:`Core` database.
 
    .. figure:: ../images/2.10.0/db-permissions.png
       :alt: DB permissions
