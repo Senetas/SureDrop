@@ -227,3 +227,12 @@ Version 2.11.7 - 21st December 2020
   - Edge
 
   - Opera
+
+Version 2.11.7 (SP8) - 26th March 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **SP8** - Latest culmative service pack update.
+
+- **Security and Stability fixes** - Minor security and stability fixes.
+
+- **Hyper-v requirement removal** - Removal for the requirement to install hyper-v for 2019 installs
