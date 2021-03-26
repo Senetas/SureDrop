@@ -27,12 +27,8 @@ are reasons as to why you would run the different versions.
 
 #. It (*WILL*) run on Windows Server 2019.
 #. It (*WILL NOT*) run on Windows 2016.
-#. It (*WILL ONLY*) run on Amazon AWS and Microsoft Azure with the
-   :guilabel:`Remote` database option enabled.
+#. It (*WILL*) run on Amazon AWS and Microsoft Azure.
 #. You (*CAN*) turn on automatic windows Updates.
-#. It (*WILL ONLY*) run in :guilabel:`Local` database mode on a Virtual Machine
-   if VT-x/EPT (Enable hypervisor applications in the Virtual Machine)
-   is enabled.
 #. It (*WILL*) run with :guilabel:`Local` or :guilabel:`Remote` databases on a bare
    metal install of Windows 2019.
 
