@@ -58,20 +58,6 @@ Pre Requisites
       Restart-Computer -Force  
 
 
-#. Install Hyper-V using an :guilabel:`admin powershell` with the following
-   commands:
-
-  .. Warning::
-	
-     This step is not required if you are using an external database.
-   	
-	
-  .. code:: sh
-
-     Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
-
-   
-
 #. Install docker using an :guilabel:`admin powershell` with the following
    commands:
 
