@@ -228,7 +228,7 @@ Version 2.11.7 - 21st December 2020
 
   - Opera
 
-Version 2.11.7 (SP8) - 26th March 2020
+Version 2.11.7 (SP8) - 26th March 2021
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - **SP8** - Latest culmative service pack update.
@@ -236,3 +236,14 @@ Version 2.11.7 (SP8) - 26th March 2020
 - **Security and Stability fixes** - Minor security and stability fixes.
 
 - **Hyper-v requirement removal** - Removal for the requirement to install hyper-v for 2019 installs
+
+Version 2.11.7 (SP9) - 20th April 2021
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **SP9** - Latest culmative service pack update.
+
+- **Security and Stability fixes** - Minor security and stability fixes.
+
+- **Performamce improvements** - Allowing static HTML and CSS files to be cached.
+
+- **Login issue** - In some cases entering the company name last after the username and password, failed to allow the instance enough time to detect the correct region, causing a login failure.
