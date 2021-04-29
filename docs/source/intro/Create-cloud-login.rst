@@ -20,6 +20,6 @@ password and login to the system.
    certificate. This can be changed after the first login from the admin page.
 
 
-Once logged in please enter the Activation Token listed above by following the steps below.
+Once logged in please enter the Activation Token by following the steps below.
 
 .. figure:: ../images/setting-the-activation-key.jpg
