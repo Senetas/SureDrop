@@ -247,3 +247,12 @@ Version 2.11.7 (SP9) - 20th April 2021
 - **Performamce improvements** - Allowing static HTML and CSS files to be cached.
 
 - **Login issue** - In some cases entering the company name last after the username and password, failed to allow the instance enough time to detect the correct region, causing a login failure.
+
+Version 2.11.7 (SP12) - 4th June 2021
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **SP12** - Latest culmative service pack update.
+
+- **Security and Stability fixes** - Minor security and stability fixes.
+
+- **Cosmetic changes to the login page** - Cosmetic changes to the login page
