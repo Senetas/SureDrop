@@ -266,3 +266,11 @@ Version 2.11.7 (SP14) - 16th July 2021
 - **Security and Stability fixes** - Minor security and stability fixes.
 
 - **Office365 integration fix** - In some cases attempting to open an office365 document raised an error
+
+
+Version 2.11.7 (SP15) - 19th July 2021
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **SP15** - Latest culmative service pack update.
+
+- **Security and Stability fixes** - Minor security and stability fixes.
