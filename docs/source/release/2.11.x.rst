@@ -274,3 +274,10 @@ Version 2.11.7 (SP15) - 19th July 2021
 - **SP15** - Latest culmative service pack update.
 
 - **Security and Stability fixes** - Minor security and stability fixes.
+
+Version 2.11.7 (SP18) - 30th Aug 2021
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **SP18** - Latest culmative service pack update.
+
+- **Security and Stability fixes** - Minor security and stability fixes.
