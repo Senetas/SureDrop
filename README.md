@@ -6,4 +6,6 @@ The most secure file sharing tool, with 100% control over file location and data
 
 ## Documentation [![Documentation Status](https://readthedocs.org/projects/suredrop/badge/?version=latest)](https://suredrop.readthedocs.io/en/latest/?badge=latest)
 
-Latest documentation can be found at <https://suredrop.readthedocs.io/>
+Latest user documentation can be found at <https://suredrop.readthedocs.io/>
+
+API documentation can be found here
