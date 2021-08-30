@@ -8,4 +8,4 @@ The most secure file sharing tool, with 100% control over file location and data
 
 Latest user documentation can be found at <https://suredrop.readthedocs.io/>
 
-API documentation can be found here
+API documentation can be found here 
