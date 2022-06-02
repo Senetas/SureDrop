@@ -1,0 +1,199 @@
+.. _version2-9-x:
+
+Version 2.9.x
+=============
+
+Table of Contents
+-----------------
+
+-  `Introduction <#introduction>`__
+-  `Version Information <#version-information>`__
+-  `Deliverables <#deliverables>`__
+-  Feature requests / enhancements implemented
+-  `Versioning <#versioning>`__
+-  `Collaboration <#collaboration>`__
+-  `Maintenance Mode <#maintenance-mode>`__
+-  `Secure Ad-hoc Sharing <#secure-ad-hoc-sharing>`__
+-  `Notifications <#notifications>`__
+-  `UX Updates <#ux-updates>`__
+-  `Defects resolved <#defects-resolved>`__
+-  User Preferences
+-  IE 11
+-  Background operations
+-  Modals
+-  `Upgrades <#upgrades>`__
+-  `Minor Releases <#minor-releases>`__
+
+Introduction
+------------
+
+Welcome to the February 2020 release of SureDrop version 2.9.0. There
+are a whole bunch of updates in this version that we hope you will like,
+some of the key highlights include:
+
+-  Document versioning
+-  Document collaboration
+-  Secure ad-hoc sharing, UX updates, etc.
+
+You can watch the SureDrop `overview <https://youtu.be/i6vp6LtNVDc>`__
+video in case you're not familiar with the system. Other technical
+know-hows about the product can be found here in
+`SureDrop Documentation <https://suredrop.readthedocs.io>`__.
+
+Version Information
+-------------------
+
++------------------+-------------------+
+| Component        | Version           |
++==================+===================+
+| Docker images    | ``2.9.0-final``   |
++------------------+-------------------+
+| User Interface   | ``2.9.0-final``   |
++------------------+-------------------+
+| API              | ``2.9.0``         |
++------------------+-------------------+
+| Database         | ``2.9.0``         |
++------------------+-------------------+
+
+Deliverables
+------------
+
+-  **Docker images** - which can either be downloaded from `Docker
+   Hub <https://hub.docker.com/>`__ with the credentials provided during
+   installation; or through the ``create-suredrop.bat`` installation and
+   upgrade script.
+
+-  **Docker volumes** - which are installed automagically as part of the
+   installation process. We now have a volume associated with each of
+   our containers.
+
+-  **Release notes** - which is this document itself.
+
+Feature requests / enhancements implemented
+-------------------------------------------
+
+.. _version:
+
+Versioning
+~~~~~~~~~~
+
+.. image:: ../images/2.10.0/version.gif
+   :alt: Version
+
+Document versioning refers to the use and management of multiple
+versions of a document. This is more generally known as file versioning
+or file version management, for general file types. The idea behind
+document versioning is that SureDrop should be able to handle multiple
+versions of a single file and provide access to users. It is now
+possible to recover previous versions of a file and see the version
+history. This feature is accessible by clicking on the “Info” button on
+a document.
+
+Collaboration
+~~~~~~~~~~~~~
+
+It is now possible to add comments to document versions and to add a
+description to a document. This allows multiple users to collaborate and
+understand the purpose of document updates. To access this feature use
+the same "Info" button on a document shown in document :ref:`version`. 
+For real time collaborations however, consider using your Office 365 account 
+in SureDrop.
+
+Maintenance Mode
+~~~~~~~~~~~~~~~~
+
+.. figure:: ../images/2.10.0/maintenance-mode.png
+   :alt: Maintenance Mode
+
+There is now a maintenance mode which allows the system to alert users
+when maintenance is about to take place. Non admin users are warned and
+then logged out.
+
+Secure Ad-hoc Sharing
+~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: ../images/2.10.0/sharing.png
+   :alt: Adhoc Sharing
+
+It is now possible to add a password to an ad-hoc share. Document
+notifications are now available on both download and upload. The sharing
+page now times out due to inactivity.
+
+Notifications
+~~~~~~~~~~~~~
+
+.. figure:: ../images/2.10.0/notify-selected.png
+   :alt: Notify Selected
+
+Document notifications are now clearer and now highlight the relevant
+files. The username is also pre-populated for your convenience when you
+click on the link in the notification email.
+
+UX updates
+~~~~~~~~~~
+
+The user interface has been updated (standardised) to make it more
+intuitive for selecting and downloading files.
+
+.. figure:: ../images/2.10.0/ux-updates.png
+   :alt: UX Updates
+
+Defects resolved
+----------------
+
+-  **User Preferences** - User preferences are now stored in the
+   backend, which means the the tour dialog will no longer keep popping
+   up every time the browser cache is cleared.
+
+-  **IE11** - While we do not support IE11, a large effort was made to
+   attempt to make as many of SureDrops features work as possible.
+
+-  **Background operations** - Background operations were introduced for
+   some long running processes. Renaming, deleting and copying a folder
+   are all now background operations.
+
+-  **Modals** - Feedback and sharing were both moved to modal dialogs to
+   improve consistency.
+
+Upgrades
+--------
+
+SureDrop upgrade process is seamless and easy via the
+``create-suredrop.bat`` script as described in :ref:`upgrade`.
+
+Minor Releases
+--------------
+
+Version 2.9.1 - 14th Feb 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Cannot see pending users**: Some legacy systems have users without
+   any default roles associated with them. SureDrop 2.9.0 failed to load
+   those users and any subsequent users due to a JS exception in code.
+
+.. raw:: html
+
+   <hr>
+
+Version 2.9.2 - 18th Feb 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Multiple files drag and drop**: As part of making the cut and paste
+   operation asynchronous (in the background) we inadvertently
+   introduced a timing issue where sometimes dragging and dropping
+   multiple files moved only some of the selected files. The selected
+   files were deleted from the source location but didn't end up in the
+   destination, which made non-administrators lose the file completely.
+
+.. raw:: html
+
+   <hr>
+
+Version 2.9.3 - 19th Feb 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Special characters in password**: SureDrop sanitises every bit of
+   data that flows in to the APIs. As part of security changes we got a
+   little carried away and sanitised the passwords too; which meant that
+   users couldn't use some special characters in their passwords.
+

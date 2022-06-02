@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Version 2.10.x &mdash; SureDrop  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/sphinx_prompt_css.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css\rtd_sphinx_search.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/hoverxref.js"></script>
+        <script src="../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../_static/js/micromodal.min.js"></script>
+        <script src="../_static/tabs.js"></script>
+        <script src="../_static/js\rtd_sphinx_search.min.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../_static/js/expand_tabs.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Version 2.9.x" href="2.9.x.html" />
+    <link rel="prev" title="Version 2.11.0-certified" href="2.11.x.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html">
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">SureDrop Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SDOver/SD-overview.html">SureDrop Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SureDrop Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install/On%20Premise.html">On Premise Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Version.html">Select the SureDrop version to Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Common%20configuration%20tasks.html">Common configuration tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Windows%202016.html">New Install - Windows 2016</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Windows%202019.html">New Install - Windows 2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/SureDropVm.html">New Install - Virtual Machine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Create-cloud-login.html">Create SaaS login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Uninstall.html">Uninstall</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Diagnostics.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Health%20check.html">Health check</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Using SureDrop</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Open%20Application.html">Open Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Create%20Users.html">Create Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Send%20Files.html">Send Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Archiving.html">Archiving</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integrations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/IDP.html">Identity Providers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Senetas Key Orchestrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Installing.html">Installing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Running.html">Running</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Providers.html">Providers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Using.html">Using</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Suredrop%20Integration.html">SureDrop Integration</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Detailed Functionality</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../deep/SureDrop-Architectures.html">Architectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Azure%20Architecture.html">A Standard Azure SureDrop SaaS Implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Rest%20API.html">Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Roles.html">Roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Manually%20Import%20Users.html">Manually Import Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Backup.html">Backup a single stack deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/X.509.html">X.509 Certificates</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference Material</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/faq.html">❓ Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/known_issues.html">Known Issues</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Enhancements &amp; Amendments</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="2.12.html">✨ Version 2.12.0-certified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2.11.x.html">Version 2.11.0-certified</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Version 2.10.x</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#version-information">Version Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#feature-requests-enhancements-implemented">Feature requests / enhancements implemented</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#file-upload-speed">File upload speed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#upload-chunk-size">Upload chunk size</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#minor-releases">Minor Releases</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-1-27th-feb-2020">Version 2.10.1 - 27th Feb 2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-2-4th-mar-2020">Version 2.10.2 - 4th Mar 2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-3-4th-mar-2020">Version 2.10.3 - 4th Mar 2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-4-5th-mar-2020">Version 2.10.4 - 5th Mar 2020</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#maintenance-release-for-non-production-use-only"><em>Maintenance release (For non-production use only)</em></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-5-5th-mar-2020">Version 2.10.5 - 5th Mar 2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-6-12th-mar-2020">Version 2.10.6 - 12th Mar 2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-7-24th-mar-2020">Version 2.10.7 - 24th Mar 2020</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#enhancements-implemented">Enhancements implemented</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-8-24th-mar-2020">Version 2.10.8 - 24th Mar 2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-9-9th-april-2020">Version 2.10.9 - 9th April 2020</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#a-maintenance-release-for-non-production-use-only"><em>A maintenance release (For non-production use only)</em></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-10-9th-april-2020">Version 2.10.10 - 9th April 2020</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#another-maintenance-release-for-non-production-use-only"><em>Another maintenance release (For non-production use only)</em></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-11-10th-april-2020">Version 2.10.11 - 10th April 2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-12-14th-april-2020">Version 2.10.12 - 14th April 2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-13-16th-april-2020">Version 2.10.13 - 16th April 2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-14-17th-april-2020">Version 2.10.14 - 17th April 2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-15-18th-april-2020">Version 2.10.15 - 18th April 2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-16-30th-april-2020">Version 2.10.16 - 30th April 2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-17-16th-june-2020">Version 2.10.17 - 16th June 2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-18-1st-july-2020">Version 2.10.18 - 1st July 2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-18-sp1-8th-july-2020">Version 2.10.18 SP1 - 8th July 2020</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-10-18-sp2-13th-july-2020">Version 2.10.18 SP2 - 13th July 2020</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2.9.x.html">Version 2.9.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2.8.x.html">Version 2.8.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2.7.x.html">Version 2.7.x</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SureDrop</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Version 2.10.x</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/release/2.10.x.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="version-2-10-x">
+<h1>Version 2.10.x<a class="headerlink" href="#version-2-10-x" title="Permalink to this headline"></a></h1>
+<div class="section" id="version-information">
+<h2>Version Information<a class="headerlink" href="#version-information" title="Permalink to this headline"></a></h2>
+<p>This is a minor version upgrade which was published as a dot-zero only
+because it involves a database schema change. All version information
+and release deliverables are same as the previous <a class="hoverxref tooltip reference internal" href="2.9.x.html#version2-9-x"><span class="std std-ref">Version 2.9.x</span></a>.</p>
+</div>
+<div class="section" id="feature-requests-enhancements-implemented">
+<h2>Feature requests / enhancements implemented<a class="headerlink" href="#feature-requests-enhancements-implemented" title="Permalink to this headline"></a></h2>
+<div class="section" id="file-upload-speed">
+<h3>File upload speed<a class="headerlink" href="#file-upload-speed" title="Permalink to this headline"></a></h3>
+<p>We have improved the file upload speed by a factor of two! This was done
+by re-engineering the way uploads were processed in the backend.</p>
+</div>
+<div class="section" id="upload-chunk-size">
+<h3>Upload chunk size<a class="headerlink" href="#upload-chunk-size" title="Permalink to this headline"></a></h3>
+<p>We have also re-optimised the file upload chunk size based on our
+performance tests.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 79%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>File size</p></th>
+<th class="head"><p>Chunk size</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Greater than 10 MB but less than or equal to 1 GB</p></td>
+<td><p>10 MB</p></td>
+</tr>
+<tr class="row-odd"><td><p>Greater than 1 GB but less than or equal to 10 GB</p></td>
+<td><p>100 MB</p></td>
+</tr>
+<tr class="row-even"><td><p>Greater than 10 GB</p></td>
+<td><p>500 MB</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="minor-releases">
+<h2>Minor Releases<a class="headerlink" href="#minor-releases" title="Permalink to this headline"></a></h2>
+<div class="section" id="version-2-10-1-27th-feb-2020">
+<h3>Version 2.10.1 - 27th Feb 2020<a class="headerlink" href="#version-2-10-1-27th-feb-2020" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Explicit file version</strong>: We’ve made the file version information a
+first class citizen of the folder and file data table. This was a
+better UX design.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-10-2-4th-mar-2020">
+<h3>Version 2.10.2 - 4th Mar 2020<a class="headerlink" href="#version-2-10-2-4th-mar-2020" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Separate Azure AD and LDAP configuration</strong>: We separated the Azure
+AD Integration and LDAP integration in the Admin page and made them
+mutually exclusive. We also added a third identity provider
+configuration page for SafeNet Trusted Access.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-10-3-4th-mar-2020">
+<h3>Version 2.10.3 - 4th Mar 2020<a class="headerlink" href="#version-2-10-3-4th-mar-2020" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Standardised UI for Identity Providers</strong>: In the admin page we
+brought the identity provider settings together in the GUI making it
+more intuitive and meaningful for the user.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-10-4-5th-mar-2020">
+<h3>Version 2.10.4 - 5th Mar 2020<a class="headerlink" href="#version-2-10-4-5th-mar-2020" title="Permalink to this headline"></a></h3>
+<div class="section" id="maintenance-release-for-non-production-use-only">
+<h4><em>Maintenance release (For non-production use only)</em><a class="headerlink" href="#maintenance-release-for-non-production-use-only" title="Permalink to this headline"></a></h4>
+<hr></div>
+</div>
+<div class="section" id="version-2-10-5-5th-mar-2020">
+<h3>Version 2.10.5 - 5th Mar 2020<a class="headerlink" href="#version-2-10-5-5th-mar-2020" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>File refresh issue</strong>: This was a minor timing issue in refreshing
+the GUI. Uploaded files were not appearing in the documents grid
+without a manual refresh. This issue was introduced by the changes
+done for making the file uploads faster.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-10-6-12th-mar-2020">
+<h3>Version 2.10.6 - 12th Mar 2020<a class="headerlink" href="#version-2-10-6-12th-mar-2020" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Identity Provider Settings</strong>: The IDP settings in the Admin page
+has been redesigned and brought under a common parent. Thales’ STA
+has been added to the GUI, and the backend supports a hand-shake
+only. The next release will fully integrate STA with SureDrop.</p></li>
+<li><p><strong>Feature toggles</strong>: Feature Toggles (often also referred to as
+Feature Flags) are a powerful technique, allowing teams to modify
+system behaviour without changing code. It facilitates continuous
+delivery and other important Agile software development practices.
+Read <a class="reference external" href="https://martinfowler.com/articles/feature-toggles.html">this
+page</a> if
+you’re feeling pedantic.</p></li>
+<li><p><strong>Multi-lingual SureDrop</strong>: This enhancement laid the foundation of
+extending SureDrop’s UI to support localisation (multiple languages).
+The feature is presently hidden behind a toggle for production
+instances.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-10-7-24th-mar-2020">
+<h3>Version 2.10.7 - 24th Mar 2020<a class="headerlink" href="#version-2-10-7-24th-mar-2020" title="Permalink to this headline"></a></h3>
+<div class="section" id="enhancements-implemented">
+<h4>Enhancements implemented<a class="headerlink" href="#enhancements-implemented" title="Permalink to this headline"></a></h4>
+<ul class="simple">
+<li><p><strong>STA Integration</strong>: SureDrop now supports Thales’ SafeNet Trusted
+Advisor as an identity provider. Please refer to our <a class="hoverxref tooltip reference internal" href="../integrations/IDP.html#sta"><span class="std std-ref">Safenet Trusted Access Integration</span></a> document
+to configure and enable this.</p></li>
+<li><p><strong>Manually import users in bulk</strong>: Users can now be manually imported
+to SureDrop via a delimited comma-separated text (CSV) file. Manually
+importing user records enables you to add numerous users in a single
+operation. Please refer to our <a class="reference internal" href="../deep/Manually%20Import%20Users.html"><span class="doc">documentation</span></a>
+to understand the necessity for implementing this feature.</p></li>
+<li><p><strong>Importing users from Azure AD</strong>: We discovered that SureDrop could
+only import 100 users from Azure AD. This issue was due to the way
+SureDrop was interacting with Azure AD. It didn’t support pagination.</p></li>
+<li><p><strong>Folder sharing</strong>: This was yet another example of how imperative
+user feedback is for our progress. One of our users reported that
+<code class="docutils literal notranslate"><span class="pre">clicking</span> <span class="pre">share</span> <span class="pre">from</span> <span class="pre">ellipsis</span> <span class="pre">menu</span> <span class="pre">(</span> <span class="pre">&quot;...&quot;</span> <span class="pre">in</span> <span class="pre">Actions</span> <span class="pre">column)</span> <span class="pre">failed</span> <span class="pre">when</span> <span class="pre">doing</span> <span class="pre">it</span> <span class="pre">on</span> <span class="pre">a</span> <span class="pre">folder</span></code>
+and we resolved it as quickly as we possibly could.</p></li>
+</ul>
+<hr></div>
+</div>
+<div class="section" id="version-2-10-8-24th-mar-2020">
+<h3>Version 2.10.8 - 24th Mar 2020<a class="headerlink" href="#version-2-10-8-24th-mar-2020" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Login using Azure AD</strong>: We discovered a pesky issue during logging
+in using Azure AD in our internal testing and resolved it.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-10-9-9th-april-2020">
+<h3>Version 2.10.9 - 9th April 2020<a class="headerlink" href="#version-2-10-9-9th-april-2020" title="Permalink to this headline"></a></h3>
+<div class="section" id="a-maintenance-release-for-non-production-use-only">
+<h4><em>A maintenance release (For non-production use only)</em><a class="headerlink" href="#a-maintenance-release-for-non-production-use-only" title="Permalink to this headline"></a></h4>
+<hr></div>
+</div>
+<div class="section" id="version-2-10-10-9th-april-2020">
+<h3>Version 2.10.10 - 9th April 2020<a class="headerlink" href="#version-2-10-10-9th-april-2020" title="Permalink to this headline"></a></h3>
+<div class="section" id="another-maintenance-release-for-non-production-use-only">
+<h4><em>Another maintenance release (For non-production use only)</em><a class="headerlink" href="#another-maintenance-release-for-non-production-use-only" title="Permalink to this headline"></a></h4>
+<hr></div>
+</div>
+<div class="section" id="version-2-10-11-10th-april-2020">
+<h3>Version 2.10.11 - 10th April 2020<a class="headerlink" href="#version-2-10-11-10th-april-2020" title="Permalink to this headline"></a></h3>
+<ul>
+<li><p><strong>Reset Password</strong>: We now have the much sought after
+<code class="docutils literal notranslate"><span class="pre">Forgot</span> <span class="pre">Password</span></code> functionality in SureDrop. The way it works is
+based on your username SureDrop now sends a secure password reset
+token via email to local SureDrop users. This token can be used only
+once, expires in 24 hours if unused, and also expires in 30 minutes
+if you click on it and don’t reset the password. SureDrop
+administrators with <a class="reference internal" href="../integrations/IDP.html"><span class="doc">single-sign-on</span></a>
+accounts have to now setup their SupportDetails for this reset
+password functionality.</p></li>
+<li><p><strong>Bookmark prompt</strong>: SureDrop has added a
+<code class="docutils literal notranslate"><span class="pre">Please</span> <span class="pre">remember</span> <span class="pre">to</span> <span class="pre">bookmark</span> <span class="pre">this</span> <span class="pre">page</span></code> prompt to the login page.
+Users can choose not to display this message and this choice is
+remembered in the backend. Once hidden there is no way to get this
+prompt back again, so please ensure you’ve bookmarked your SureDrop
+URL.</p></li>
+<li><p><strong>Use OIDC for Azure AD</strong>: This is a technical feature and has no
+impact (or even noticeable enhancement) for end users. For many
+months now Microsoft has been <strong>``strongly recommending``</strong> to
+migrate applications from Azure AD Graph API to Microsoft Graph API.
+If you’re feeling pedantic, please checkout
+<a class="reference external" href="https://developer.microsoft.com/office/blogs/microsoft-graph-or-azure-ad-graph/">this</a>
+blog for a more detailed explanation on why this migration is
+essential. OpenID Connect (OIDC) is an authentication protocol built
+on OAuth 2.0 that you can use to securely sign in a user to a web
+application. The protocol specs are given
+<a class="reference external" href="https://openid.net/specs/openid-connect-core-1_0.html">here</a> and
+the sequence diagram for the sign-in is shown below:</p>
+<img alt="License details" src="https://docs.microsoft.com/en-us/azure/active-directory/develop/media/v2-protocols-oidc/convergence-scenarios-webapp.svg" /></li>
+<li><p><strong>Large file uploads</strong>: We have now implemented an intelligent
+ratcheting throttling system for large file uploads. Files now appear
+as <code class="docutils literal notranslate"><span class="pre">processing</span></code> as soon as they’re uploaded until all the backend
+jobs like compressing and encrypting are completed. This solves many
+errors we found with uploading large files.</p></li>
+<li><p><strong>Download notification</strong>: When a user clicked on a link from a
+download notification email, it took them to the wrong folder. This
+was solved by URL encoding the file location.</p></li>
+<li><p><strong>Sharing passwords</strong>: Complex sharing passwords with special
+characters were not being accepted in the sharing page once the users
+uploaded files to it, or the page timed out. This happened due to
+incorrectly sanitising JSON snippet (including the password) in the
+backend.</p></li>
+<li><p><strong>Searching files in deactivated groups</strong>: Standard and restricted
+users were able to search and get to files within deactivated groups.
+We’ve closed this security issue by displaying documents from
+deactivated groups only when the Show Deactivated Groups option is
+checked. Standard and restricted users don’t have the necessary
+permissions to show deactivated groups and therefore cannot get to
+the files in them.</p></li>
+<li><p><strong>CSS caching</strong>: We got rid of some pesky aggressive browser caching
+issues across version upgrades.</p></li>
+<li><p><strong>File sharing</strong>: There was a synchronisation hole in file sharing
+across browser sessions. Once sharing is disabled by the admin, users
+with valid session tokens could still share files using their
+browser. After this bugfix the users with valid session tokens will
+get an error notification informing them about the change in the
+system state.</p></li>
+<li><p><strong>Undelete documents</strong>: are no longer allowed on deactivated groups.</p></li>
+<li><p><strong>Renaming files</strong>: didn’t work as expected and defaulted to
+previously renamed file. Sometimes a rename was stuck in the
+processing state and couldn’t be recovered until the file was
+re-uploaded.</p></li>
+<li><p><strong>Update username</strong>: External users had to be deleted and
+resynchronised to SureDrop if an administrator changed their username
+in the IDP system. This was because username is a unique entity in
+SureDrop and cannot be modified. The background IDP sync agent has
+been modified to accommodate this external change and usernames are
+now synchronised every couple of minutes.</p></li>
+<li><p><strong>Azure AD users</strong>: SureDrop could only import 100 users from Azure
+AD. This is the default page size for Azure AD Graph API responses
+from Microsoft. As part of implementing OIDC for Azure AD we fixed
+this defect by correctly implementing paging using Microsoft Graph
+APIs.</p></li>
+<li><p><strong>Notify All</strong>: also notified the currently logged in user if he/she
+was a member of the currently selected security group. This unwanted
+email has now been skipped and all members of the group except the
+current user are notified.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-10-12-14th-april-2020">
+<h3>Version 2.10.12 - 14th April 2020<a class="headerlink" href="#version-2-10-12-14th-april-2020" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Large File Upload enhancement</strong>: Large files now show a progress bar showing
+the status of the background processing applied to each upload.</p></li>
+<li><p><strong>Large File Upload defect</strong>: Resolved an issue where each upload chunk
+displayed as a new version of the file.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-10-13-16th-april-2020">
+<h3>Version 2.10.13 - 16th April 2020<a class="headerlink" href="#version-2-10-13-16th-april-2020" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Synchronise STA Users</strong>: SureDrop sync agent was considering some
+mandatory user attributes for STA and didn’t have aggressive logging.
+We have changed this to make the user download more fault tolerant
+(defensive) and verbose (logging)</p></li>
+<li><p><strong>Cancel file upload</strong>: Users can now cancel individual (or all) file
+uploads. SureDrop deletes all cancelled files in the background.</p></li>
+<li><p><strong>Browser performance</strong>: We noticed that multiple large file uploads
+were consuming too much memory in the browser and making it slower.
+We have reduced this memory consumption impact significantly.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-10-14-17th-april-2020">
+<h3>Version 2.10.14 - 17th April 2020<a class="headerlink" href="#version-2-10-14-17th-april-2020" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Office 365</strong>: Due to the upload performance changes done in
+previous point releases, some of the Office 365 functionalities such
+as creating new files were not working.</p></li>
+<li><p><strong>Manual username</strong>: Administrators were unable to enter manual
+usernames during adding new users. This has been fixed in the GUI.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-10-15-18th-april-2020">
+<h3>Version 2.10.15 - 18th April 2020<a class="headerlink" href="#version-2-10-15-18th-april-2020" title="Permalink to this headline"></a></h3>
+<ul>
+<li><p><strong>STA Auto login</strong>: Added support for STA users to login
+automatically to SureDrop by appending
+<code class="docutils literal notranslate"><span class="pre">username=&lt;sta-user-name&gt;&amp;login=auto</span></code> to the service login URL of
+the STA OIDC application. So, the complete URL should now look
+something similar to this -</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>https://&lt;your-suredrop-home-url&gt;/#viewLogin?company<span class="o">=</span>&lt;your-suredrop-company-name&gt;<span class="p">&amp;</span><span class="nv">username</span><span class="o">=</span>&lt;you-sta-username&gt;<span class="p">&amp;</span><span class="nv">login</span><span class="o">=</span>auto
+</pre></div>
+</div>
+</li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-10-16-30th-april-2020">
+<h3>Version 2.10.16 - 30th April 2020<a class="headerlink" href="#version-2-10-16-30th-april-2020" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Internationalisation</strong>: SureDrop is now available in thirteen new
+languages using UTF-8 for international characters. The languages
+supported are <em>Arabic, Chinese (simplified and traditional), French,
+German, Indonesian, Hebrew, Japanese, Korean, Malay, Polish, Spanish
+and Thai</em>.
+This localisation feature has been enabled for our SaaS environments
+and needs a minor DB configuration for on-prem customers. Please
+reach out to your SureDrop administrator if you have SureDrop
+installed on your own premises and would like to enable this
+functionality.</p></li>
+<li><p><strong>Version during multi-select</strong>: When multiple files are selected
+SureDrop disables the <code class="docutils literal notranslate"><span class="pre">V</span></code> button to restrict users from trying to
+get to the version information.</p></li>
+<li><p><strong>Compressing files and folders</strong>: Due to the asynchronous nature of
+file uploads SureDrop was sending out emails about zip files too
+soon, when the file wasn’t ready yet.</p></li>
+<li><p><strong>Progress bars</strong>: For large file uploads the progress bars in the
+file table and the upload queue were not in sync.</p></li>
+<li><p><strong>Session token</strong>: SureDrop session token wasn’t counting down /
+timing out during bulk file uploads.</p></li>
+<li><p><strong>Remember me</strong>: There were some minor problems with the way SureDrop
+handles cookies when the <code class="docutils literal notranslate"><span class="pre">Remember</span> <span class="pre">Me</span></code> option was not selected.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-10-17-16th-june-2020">
+<h3>Version 2.10.17 - 16th June 2020<a class="headerlink" href="#version-2-10-17-16th-june-2020" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Expand STA</strong>: Thales had requested for expanding <span class="guilabel">STA</span> to
+<span class="guilabel">Safenet Trusted Access</span>. This has now been updated in GUI.</p></li>
+<li><p><strong>Rename context menu</strong>: We were told that the right-click context menu
+<code class="docutils literal notranslate"><span class="pre">Download</span> <span class="pre">as</span> <span class="pre">zip</span></code> was a misnomer and should be renamed to its actual
+functionality <code class="docutils literal notranslate"><span class="pre">Zip</span> <span class="pre">selected</span> <span class="pre">files</span></code>. This has now been updated in GUI.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-10-18-1st-july-2020">
+<h3>Version 2.10.18 - 1st July 2020<a class="headerlink" href="#version-2-10-18-1st-july-2020" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>My Documents group</strong>: All SureDrop users regardless of their role in
+the system, now have a <code class="docutils literal notranslate"><span class="pre">My</span> <span class="pre">Documents</span></code> security group. This
+is a new group designed to store the user’s personal documents.
+Some important features of this group are -</p>
+<ul>
+<li><p>It is system generated and cannot be altered or deleted by any user.</p></li>
+<li><p>No user regardless of their role in the system, can get access to the
+contents in another user’s <code class="docutils literal notranslate"><span class="pre">My</span> <span class="pre">Documents</span></code> group, this includes
+administrators and forensic users.</p></li>
+<li><p>All zip files are automatically directed to this group.</p></li>
+</ul>
+</li>
+<li><p><strong>Copying between groups</strong>: Users can now copy or move documents across
+groups. This feature was add-on for My Documents since most users wanted
+to copy documents from their <code class="docutils literal notranslate"><span class="pre">My</span> <span class="pre">Documents</span></code> to other groups.</p></li>
+<li><p><strong>Deleting unavailable files</strong>: When a file failed to upload due to any
+system error, it was impossible to delete it from SureDrop. This has
+now been fixed.</p></li>
+<li><p><strong>Folder names with period character</strong>: Users could import folders to
+SureDrop with a <span class="guilabel">.</span> in the folder name, but couldn’t create
+such a folder in SureDrop using the GUI; though the backend API supported
+creation of such folders. This has been fixed in the GUI and users can now
+create folders with <code class="docutils literal notranslate"><span class="pre">.</span></code> character in the folder name.</p></li>
+<li><p><strong>Adhoc sharing optional password</strong>: It was brought to our notice that the
+optional password field in the adhoc sharing window in the GUI was displayed
+in plain text. We have changed this to match other password fields in the GUI
+so that it is redacted by default but users have the ability to show the
+password if they want to.</p></li>
+<li><p><strong>On-premises Installations</strong>: had a couple of issues around named external
+databases and initialising a company name with <span class="guilabel">-</span> character(s)
+in it. These issues have been fixed and tested for on-prem installs.</p></li>
+</ul>
+</div>
+<div class="section" id="version-2-10-18-sp1-8th-july-2020">
+<h3>Version 2.10.18 SP1 - 8th July 2020<a class="headerlink" href="#version-2-10-18-sp1-8th-july-2020" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>STA login</strong>: There was a bug reported to us in logging into SureDrop using
+STA. Users were sometimes locked out with an <em>unauthorised error</em> message especially
+when they were geographically far from the application servers. We had to
+hotfix this issue on 2.10.18 since this was the last minor release for 2.10.</p></li>
+</ul>
+</div>
+<div class="section" id="version-2-10-18-sp2-13th-july-2020">
+<h3>Version 2.10.18 SP2 - 13th July 2020<a class="headerlink" href="#version-2-10-18-sp2-13th-july-2020" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Enabled TLS v1.2</strong>: We enabled TLS v1.2 in SureDrop so that it can connect
+to KeySecure correctly.</p></li>
+<li><p><strong>Notification links</strong>: were not working properly as the users were directed
+to an empty page without folders. This has been fixed and the users are now
+first directed to the login page, and then taken to the notification path on
+successful authentication.</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="2.11.x.html" class="btn btn-neutral float-left" title="Version 2.11.0-certified" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="2.9.x.html" class="btn btn-neutral float-right" title="Version 2.9.x" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Senetas Corporation Limited.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

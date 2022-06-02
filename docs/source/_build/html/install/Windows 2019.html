@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Install - Windows 2019 &mdash; SureDrop  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/sphinx_prompt_css.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css\rtd_sphinx_search.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/hoverxref.js"></script>
+        <script src="../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../_static/js/micromodal.min.js"></script>
+        <script src="../_static/tabs.js"></script>
+        <script src="../_static/js\rtd_sphinx_search.min.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../_static/js/expand_tabs.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="New Install - Virtual Machine" href="SureDropVm.html" />
+    <link rel="prev" title="New Install - Windows 2016" href="Windows%202016.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html">
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">SureDrop Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SDOver/SD-overview.html">SureDrop Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SureDrop Installation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="On%20Premise.html">On Premise Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Version.html">Select the SureDrop version to Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Common%20configuration%20tasks.html">Common configuration tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Windows%202016.html">New Install - Windows 2016</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">New Install - Windows 2019</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pre-requisites">Pre Requisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-of-suredrop">Installation of SureDrop</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#large-file-support">Large File Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#upgrading-or-diagnosing-a-suredrop-instance">Upgrading or diagnosing a SureDrop instance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#migrating-the-database">Migrating the Database</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="SureDropVm.html">New Install - Virtual Machine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-cloud-login.html">Create SaaS login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Uninstall.html">Uninstall</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Diagnostics.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Health%20check.html">Health check</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Using SureDrop</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Open%20Application.html">Open Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Create%20Users.html">Create Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Send%20Files.html">Send Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Archiving.html">Archiving</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integrations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/IDP.html">Identity Providers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Senetas Key Orchestrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Installing.html">Installing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Running.html">Running</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Providers.html">Providers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Using.html">Using</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Suredrop%20Integration.html">SureDrop Integration</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Detailed Functionality</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../deep/SureDrop-Architectures.html">Architectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Azure%20Architecture.html">A Standard Azure SureDrop SaaS Implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Rest%20API.html">Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Roles.html">Roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Manually%20Import%20Users.html">Manually Import Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Backup.html">Backup a single stack deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/X.509.html">X.509 Certificates</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference Material</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/faq.html">❓ Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/known_issues.html">Known Issues</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Enhancements &amp; Amendments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.12.html">✨ Version 2.12.0-certified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.11.x.html">Version 2.11.0-certified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.10.x.html">Version 2.10.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.9.x.html">Version 2.9.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.8.x.html">Version 2.8.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.7.x.html">Version 2.7.x</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SureDrop</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>New Install - Windows 2019</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/install/Windows 2019.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="new-install-windows-2019">
+<h1>New Install - Windows 2019<a class="headerlink" href="#new-install-windows-2019" title="Permalink to this headline"></a></h1>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Please refer to the <a class="reference internal" href="Version.html"><span class="doc">What version to install</span></a> guide prior to
+following the instructions below</p>
+</div>
+<p>Before starting this install you will need to contact support and obtain
+the following:</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>Username</p></li>
+<li><p>Password</p></li>
+<li><p>Activation Key</p></li>
+<li><p>The Version of SureDrop to Install</p></li>
+</ol>
+</div></blockquote>
+<div class="admonition-prefer-watching-over-reading admonition">
+<p class="admonition-title">Prefer watching over reading?</p>
+<p>Check out <a class="reference external" href="https://youtu.be/GTRl6cFH9jQ">this</a> screencast video.</p>
+<div style="text-align: center; margin-bottom: 2em;">
+<iframe width="100%" height="350" src="https://www.youtube.com/embed/GTRl6cFH9jQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div></div>
+<div class="section" id="pre-requisites">
+<h2>Pre Requisites<a class="headerlink" href="#pre-requisites" title="Permalink to this headline"></a></h2>
+<ol class="arabic">
+<li><p>Install <span class="guilabel">Windows Server 2019</span> with at <strong>least</strong> 12GB RAM and 100GB
+hard disk space.</p></li>
+<li><p>Set a static IP address</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sconfig
+option <span class="m">8</span>
+</pre></div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">Run MS update and install all recommended updates.</div>
+<div class="line-block">
+<div class="line"><strong>(It’s important that this step is done *before* step 4)</strong></div>
+</div>
+</div>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>sconfig
+option <span class="m">6</span>
+</pre></div>
+</div>
+</li>
+<li><p>Install windows containers using an <span class="guilabel">admin powershell</span> with the
+following commands:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Install-WindowsFeature -Name Containers
+
+Restart-Computer -Force
+</pre></div>
+</div>
+</li>
+<li><p>Install docker using an <span class="guilabel">admin powershell</span> with the following
+commands:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Install-Module -Name DockerMsftProvider -Repository PSGallery -Force
+
+Install-Package -Name docker -ProviderName DockerMsftProvider -Force
+
+Restart-Computer -Force
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You may be asked <code class="docutils literal notranslate"><span class="pre">NuGet</span> <span class="pre">provider</span> <span class="pre">is</span> <span class="pre">required</span> <span class="pre">to</span> <span class="pre">continue</span></code>, if
+this is the case select <code class="docutils literal notranslate"><span class="pre">[Y]</span> <span class="pre">Yes</span></code></p>
+</div>
+</li>
+<li><p>Enable FIPS 140-2 Compliance</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>System.Environment<span class="o">]</span>::SetEnvironmentVariable<span class="o">(</span><span class="s2">&quot;DOCKER_FIPS&quot;</span>, <span class="s2">&quot;1&quot;</span>, <span class="s2">&quot;Machine&quot;</span><span class="o">)</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="installation-of-suredrop">
+<h2>Installation of SureDrop<a class="headerlink" href="#installation-of-suredrop" title="Permalink to this headline"></a></h2>
+<ol class="arabic">
+<li><p>Run the following command:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>wget <span class="s2">&quot;https://s3-ap-southeast-2.amazonaws.com/suredrop-downloads/compose/create-suredrop.bat&quot;</span> -outfile <span class="s2">&quot;create-suredrop.bat&quot;</span><span class="p">;</span>./create-suredrop.bat
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This bat file will ask a series of questions and create the
+SureDrop instance. As part of this install an <span class="guilabel">answers.bat</span>
+file will be created in the same directory. Do not delete this
+file as it will be required to run an update if required, however
+please ensure the security on this file is locked down as this
+file contains secret information such as passwords in plain text.
+Ensure that there is one and only one <code class="docutils literal notranslate"><span class="pre">admin</span> <span class="pre">powershell</span></code>
+window attempting the installation, multiple windows pointing to
+the install directory or storage locations will fail the
+installation. The install script is designed with defaults. Every
+feature is not relevant / required by all clients, so when not
+sure about any step it is wise to choose the default values.</p>
+</div>
+</li>
+<li><p>You will be prompted with the following introduction</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../_images/Screen-Shot-2020-06-16-at-1.03.50-pm.png" src="../_images/Screen-Shot-2020-06-16-at-1.03.50-pm.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>Enter the version given to you in your license document.</p>
+<blockquote>
+<div><div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="m">1</span><span class="o">)</span> SureDrop Version
+Enter the version of SureDrop you would like to create:
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Make sure you enter <span class="guilabel">2019</span> when asked for the Compose Version to use.</p>
+<blockquote>
+<div><div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>If Senetas Support has given you a Compose Version please enter it here
+<span class="o">(</span>Default <span class="o">[</span><span class="m">2016</span><span class="o">])</span>:2019
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>For the database configuration choose whether to connect to the supplied internal database or to an existing external database.</p>
+<blockquote>
+<div><p>SureDrop can connect to an external database or use the internally supplied SQL Server Express
+instance which is configured to run inside a container.</p>
+<p>The internally supplied version is suitable for Proof of Concepts (POC)’s and trials.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For all production installs of SureDrop we strongly recommend that an externally configured version
+of SQL Server is used that has been configured with the appropriate backups and the appropriate level
+of clustering and failover protection.</p>
+</div>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="m">2</span><span class="o">)</span> Database configuration
+Connect to an existing database <span class="o">[</span>y/N<span class="o">]</span>:n
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Create a database password.</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There are restrictions on the database password which <em>must</em> be met which are shown here.</p>
+</div>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Database passwords MUST meet the following guidelines -
+<span class="m">1</span>. Must contain at least <span class="m">8</span> characters.
+<span class="m">2</span>. Must contain at least <span class="m">1</span> character from each of the following four categories:
+        a. Latin uppercase letters <span class="o">(</span>A through Z<span class="o">)</span>
+        b. Latin lowercase letters <span class="o">(</span>a through z<span class="o">)</span>
+        c. Base <span class="m">10</span> digits <span class="o">(</span><span class="m">0</span> through <span class="m">9</span><span class="o">)</span>
+        d. Non-alphanumeric characters such as: exclamation point <span class="o">(</span>!<span class="o">)</span>,
+           dollar sign <span class="o">(</span>$<span class="o">)</span>, number sign <span class="o">(</span><span class="c1">#), or percent (%).</span>
+<span class="m">3</span>. MUST NOT contain the following Characters:
+Semi-colon <span class="o">(</span><span class="p">;</span><span class="o">)</span>, at <span class="o">(</span>@<span class="o">)</span>, ampersand or brackets
+
+Enter a database password <span class="o">(</span>Default <span class="o">[</span>SureDrop123!@<span class="o">])</span>:
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Choose the storage configuration. This is where the blocks that make up the content of the files are stored.</p>
+<blockquote>
+<div><p>Currently SureDrop supports 3 options.</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt>Windows Shares or SMB shares.</dt><dd><p>These are standard windows shares and may be on the same server or on a different server.
+You will need to supply the share <em>URI</em> and the <em>username</em> &amp; <em>password</em> of the share if you select this option.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Amazon Buckets.</dt><dd><p>You can choose to store the blocks inside an Amazon S3 bucket.
+You will need to supply the <em>bucket uri</em>, the <em>AWS access key</em> and the <em>AWS Secret Access key</em>.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Local Containers.</dt><dd><p>You can choose to store the blocks locally in the supplied docker containers.
+You should only choose this option for POC’s and trials, however it is the default
+option because it requires no further information and is easiest to configure.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="m">3</span><span class="o">)</span> Storage Server configuration
+Use <span class="o">(</span>W<span class="o">)</span>indows Shares, <span class="o">(</span>A<span class="o">)</span>mazon S3 Buckets or <span class="o">(</span>L<span class="o">)</span>ocal Containers <span class="k">for</span> storage <span class="o">[</span>w/a/L<span class="o">]</span>:l
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Enter the admin email address.</p>
+<blockquote>
+<div><p>This is the email address of the <em>admin</em> user.
+Typically this would be the email address of the person responsible for administering SureDrop.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="m">4</span><span class="o">)</span> Mail Server Configuration
+Admin Email Address: rob.linton@senetas.com
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Do you wish to use the default AWS mail server.</p>
+<blockquote>
+<div><p>By default SureDrop is configured to use Amazon AWS to relay mail. This is for convenience so you
+don’t have to configure a SMTP mail server.</p>
+<p>The default mail server does not keep copies of any mail sent and is not readable by Senetas staff.</p>
+<p>If you select <em>no</em> to this question you will be required to enter the SMTP settings and credentials
+for your SMTP server before proceeding.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>If you want to use a different <em>FROM</em> email address other than:</p>
+<p><a class="reference external" href="mailto:noreply&#37;&#52;&#48;suredrop&#46;com&#46;au">noreply<span>&#64;</span>suredrop<span>&#46;</span>com<span>&#46;</span>au</a></p>
+<p>for emails sent to users you will need to select the SMTP option.</p>
+</div>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Do you wish to use the default Amazon AWS Mail Server? <span class="o">[</span>Y/n<span class="o">]</span>:y
+</pre></div>
+</div>
+<p>This will respond with the following:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Using default email from address <span class="o">[</span>noreply@suredrop.com.au<span class="o">]</span>
+Using admin email address <span class="o">[</span>rob.linton@senetas.com<span class="o">]</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Enter the docker credentials that were provided on the SureDrop license certificate.</p>
+<blockquote>
+<div><blockquote>
+<div><p>These will be persisted and used for future upgrades and updates.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="m">5</span><span class="o">)</span> Docker Credentials
+Enter Docker username that was provided by support:sentraining
+Enter Docker password that was provided by support:
+
+Testing credentials...
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+WARNING! Your password will be stored unencrypted <span class="k">in</span>
+  C:<span class="se">\U</span>sers<span class="se">\A</span>dministrator<span class="se">\.</span>docker<span class="se">\c</span>onfig.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+</pre></div>
+</div>
+</div></blockquote>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>If you wish to use a credential store for Docker, please refer to the following documentation:</p>
+<p><a class="reference external" href="https://docs.docker.com/engine/reference/commandline/login/#credentials-store">https://docs.docker.com/engine/reference/commandline/login/#credentials-store</a></p>
+</div>
+</div></blockquote>
+</li>
+<li><p>If you want to configure a custom server certificate for HTTPS then you can do it here.</p>
+<blockquote>
+<div><p>By default an *.xip.suredrop.com.au certificate is installed. For POC’s and trials this is fine.
+You may wish to use your own certificate for production installs.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="m">6</span><span class="o">)</span> Customer PKI
+Do you want to use a custom HTTPS server certificate <span class="k">for</span> TLS <span class="o">[</span>N/y<span class="o">]</span>:n
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>You may want to configure a Syslog or Splunk server for logs.</p>
+<blockquote>
+<div><p>By default SureDrop writes logs to an internal location within the container stack.
+You can retrieve these logs by running <span class="guilabel">create-suredrop.bat</span> again and selecting the <span class="guilabel">diagnostics</span> option.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="m">7</span><span class="o">)</span> Customer Logging and Audit
+Do you want to configure a Syslog server <span class="k">for</span> error and Audit logs <span class="o">[</span>N/y<span class="o">]</span>:n
+Do you want to configure a Splunk server <span class="k">for</span> error and Audit logs <span class="o">[</span>N/y<span class="o">]</span>:n
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>You will be presented with a summary of your answers at this point and asked if you would like to continue.</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>answers.bat file, contents are:
+------------------------------------------------------------------
+set tag=2.10.0-latest
+set compose_version=2019
+set external_database=N
+set sa_password=SureDrop123!@
+set ConnectionString=Data Source=database-core;Initial Catalog=Core;User Id=sa;Password=SureDrop123!@
+set storage_primary_base=c:\shared
+set storage_primary_username=null
+set storage_primary_password=&quot;null&quot;
+set storage_backup_base=c:\shared
+set storage_backup_username=null
+set storage_backup_password=&quot;null&quot;
+set storage_primary_type=storage-server
+set storage_backup_type=storage-server
+set admin_email=rob.linton@senetas.com
+set emailFrom=noreply@suredrop.com.au
+set admin_email=rob.linton@senetas.com
+set docker_username=sentraining
+set docker_password=
+------------------------------------------------------------------
+
+The initial creation of the SureDrop Docker Stack can be time consuming
+and is broken into 4 stages...
+1] Download of the compose scripts
+2] Docker pull [this is the longest stage and can take up to an hour on slower connections]
+3] Docker stack deploy [takes about 6 minutes]
+4] Application of custom PKI [if applicable]
+
+If you don&#39;t proceed at the next step you will have the option to save your answers
+and run these steps at a later time.
+
+Proceed and create the SureDrop instance on this machine  [Y/n]:
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>At this point, if you answered Y, the installation will proceed.</p>
+<p>Depending on your network bandwidth, this may take up to an hour.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Browse to the following url to complete the installation after the
+countdown has completed:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>https://XXX-XXX-XXX-XXX.xip.suredrop.com.au
+</pre></div>
+</div>
+<p>For example if the IP address of this host is <code class="docutils literal notranslate"><span class="pre">192.168.250.3</span></code>, then
+use the following:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>https://192-168-250-3.xip.suredrop.com.au
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please wait until the CPU and disk usage drops to normalcy.</p>
+</div>
+</li>
+<li><p>If everything is successful then the previous step should have opened
+the login page in your browser with 3 empty fields, company name,
+user name, and password.</p>
+<div class="figure align-default">
+<img alt="../_images/Screen-Shot-2020-06-16-at-4.15.39-pm.png" src="../_images/Screen-Shot-2020-06-16-at-4.15.39-pm.png" />
+</div>
+</li>
+<li><p>Enter <strong>SureDrop</strong> in the first input box
+(for Company Name) and press tab or click on the next input box.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The initial company name is SureDrop</p>
+</div>
+<p>This will take you to the create company page which allows the user to
+configure certain critical parameters of the system. The Create
+Company button is intentionally disabled at this stage.</p>
+<blockquote>
+<div><div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>You may need to wait a few seconds for the create company page to appear</p>
+</div>
+<div class="figure align-default">
+<img alt="../_images/Screen-Shot-2020-06-16-at-5.02.50-pm.png" src="../_images/Screen-Shot-2020-06-16-at-5.02.50-pm.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>Once you’ve filled the Activation Token from your SureDrop license
+certificate in the last input box of this page, then the Create
+Company button will be enabled and you should click on it. Once the
+company is created, SureDrop will automatically redirect you to the
+login page to create your administrator account password and then
+login to the system.</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="../_images/Screen-Shot-2020-06-16-at-5.05.41-pm.png" src="../_images/Screen-Shot-2020-06-16-at-5.05.41-pm.png" />
+</div>
+</div></blockquote>
+</li>
+<li><p>SureDrop should now be operational on your own compute
+infrastructure.</p></li>
+</ol>
+<p>For any questions or if you have any issues following this document,
+please email <a class="reference external" href="mailto:admin&#37;&#52;&#48;suredrop&#46;com&#46;au">admin<span>&#64;</span>suredrop<span>&#46;</span>com<span>&#46;</span>au</a>.</p>
+</div>
+<div class="section" id="large-file-support">
+<h2>Large File Support<a class="headerlink" href="#large-file-support" title="Permalink to this headline"></a></h2>
+<p>This only applies to <span class="guilabel">Download as Zip</span>, uploading and downloading of
+individual files of any size is already supported by the default
+configuration of SureDrop</p>
+<p>If you intend on downloading a large number of files using the
+<span class="guilabel">Download as Zip</span> option the following will need to be taken into
+consideration.</p>
+<ol class="arabic">
+<li><p>The disk space on the docker host must be large enough to cater for
+3x the size of the zip file. For example, to download a zip file of
+1GB, there must be at least 3GB of available disk space on the
+application server.</p></li>
+<li><p>If the zip file will be greater than 10GB, then large volume support
+will need to be enabled within the docker sub-system.</p></li>
+<li><p>To enable large volume support create a file called
+<code class="docutils literal notranslate"><span class="pre">update_docker_reg.reg</span></code> and copy and paste the following into it:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Windows Registry Editor Version <span class="m">5</span>.00
+
+<span class="o">[</span>HKEY_LOCAL_MACHINE<span class="se">\S</span>YSTEM<span class="se">\C</span>ontrolSet001<span class="se">\S</span>ervices<span class="se">\D</span>ocker<span class="o">]</span>
+<span class="s2">&quot;Type&quot;</span><span class="o">=</span>dword:00000010
+<span class="s2">&quot;Start&quot;</span><span class="o">=</span>dword:00000002
+<span class="s2">&quot;ErrorControl&quot;</span><span class="o">=</span>dword:00000001
+<span class="s2">&quot;ImagePath&quot;</span><span class="o">=</span>hex<span class="o">(</span><span class="m">2</span><span class="o">)</span>:22,00,43,00,3a,00,5c,00,50,00,72,00,6f,00,67,00,72,00,61,00,<span class="se">\</span>
+6d,00,20,00,46,00,69,00,6c,00,65,00,73,00,5c,00,44,00,6f,00,63,00,6b,00,65,<span class="se">\</span>
+<span class="m">00</span>,72,00,5c,00,64,00,6f,00,63,00,6b,00,65,00,72,00,64,00,2e,00,65,00,78,00,<span class="se">\</span>
+<span class="m">65</span>,00,22,00,20,00,2d,00,2d,00,72,00,75,00,6e,00,2d,00,73,00,65,00,72,00,76,<span class="se">\</span>
+<span class="m">00</span>,69,00,63,00,65,00,20,00,2d,00,2d,00,73,00,74,00,6f,00,72,00,61,00,67,00,<span class="se">\</span>
+<span class="m">65</span>,00,2d,00,6f,00,70,00,74,00,20,00,73,00,69,00,7a,00,65,00,3d,00,31,00,36,<span class="se">\</span>
+<span class="m">00</span>,30,00,30,00,30,00,47,00,00,00
+<span class="s2">&quot;ObjectName&quot;</span><span class="o">=</span><span class="s2">&quot;LocalSystem&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>Then double click on the file to edit the registry on the windows
+host.</p></li>
+<li><p>Click on <span class="guilabel">Yes</span> in the following prompt.</p>
+<div class="figure align-default">
+<img alt="First prompt" src="images/2.10.0/prompt1.png" />
+</div>
+</li>
+<li><p>Click on <span class="guilabel">OK</span> in the following dialog.</p>
+<div class="figure align-default">
+<img alt="Second prompt" src="images/2.10.0/prompt2.png" />
+</div>
+</li>
+<li><p><strong>Restart the docker host</strong></p></li>
+</ol>
+</div>
+<div class="section" id="upgrading-or-diagnosing-a-suredrop-instance">
+<h2>Upgrading or diagnosing a SureDrop instance<a class="headerlink" href="#upgrading-or-diagnosing-a-suredrop-instance" title="Permalink to this headline"></a></h2>
+<ol class="arabic">
+<li><p>Log onto the Windows Server running the SureDrop Docker
+Containers</p></li>
+<li><p>Run an <span class="guilabel">admin powershell</span> and CD to the location where you placed
+the compose files and re-run the <code class="docutils literal notranslate"><span class="pre">create-suredrop.bat</span></code> file</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>./create-suredrop.bat
+</pre></div>
+</div>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>******************************
+SureDrop Configuration
+******************************
+<span class="m">1</span><span class="o">)</span> Upgrade Version
+<span class="m">2</span><span class="o">)</span> Upgrade PKI
+<span class="m">3</span><span class="o">)</span> Upgrade Logging and Audit
+<span class="m">4</span><span class="o">)</span> Diagnose
+<span class="m">5</span><span class="o">)</span> Health check
+<span class="m">6</span><span class="o">)</span> Add a Custom Root CA
+<span class="m">7</span><span class="o">)</span> Restart Container Stack
+<span class="m">8</span><span class="o">)</span> Start Container Stack
+<span class="m">9</span><span class="o">)</span> Stop Container Stack
+<span class="m">10</span><span class="o">)</span> Schedule Automatic Updates
+
+<span class="m">11</span><span class="o">)</span> Exit
+
+Enter number to <span class="k">select</span> an option:
+</pre></div>
+</div>
+</li>
+<li><p>Choose option 1 for upgrading SureDrop to a version of your choice.</p></li>
+<li><p>Choose option 4 for running diagnostics on SureDrop. See <a class="reference internal" href="Diagnostics.html"><span class="doc">Diagnostics</span></a>
+for details.</p></li>
+<li><p>Choose option 5 for running a health check on SureDrop. See <a class="reference internal" href="Health%20check.html"><span class="doc">Health check</span></a>
+for details.</p></li>
+</ol>
+</div>
+<div class="section" id="migrating-the-database">
+<h2>Migrating the Database<a class="headerlink" href="#migrating-the-database" title="Permalink to this headline"></a></h2>
+<p>Most larger installs will want to migrate the client database from the
+SQL Server Express version running in the <code class="docutils literal notranslate"><span class="pre">database-client</span></code> docker
+container on the host.</p>
+<p>The port <code class="docutils literal notranslate"><span class="pre">14331</span></code> has been left open for this purpose. Use SQL Server
+Manager Studio to connect to the client instance and migrate the
+SureDrop client database to your own instance.</p>
+<p>Once this has been done, use SQL Server Management Studio to
+connect to the core database on port <code class="docutils literal notranslate"><span class="pre">14330</span></code> and update the table
+<code class="docutils literal notranslate"><span class="pre">CoreConfigV2</span></code> by setting the column <code class="docutils literal notranslate"><span class="pre">sql_connection_string</span></code> to the
+new connection string for the relocated client database.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Windows%202016.html" class="btn btn-neutral float-left" title="New Install - Windows 2016" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="SureDropVm.html" class="btn btn-neutral float-right" title="New Install - Virtual Machine" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Senetas Corporation Limited.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>X.509 Certificates &mdash; SureDrop  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/sphinx_prompt_css.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css\rtd_sphinx_search.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/hoverxref.js"></script>
+        <script src="../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../_static/js/micromodal.min.js"></script>
+        <script src="../_static/tabs.js"></script>
+        <script src="../_static/js\rtd_sphinx_search.min.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../_static/js/expand_tabs.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="❓ Frequently Asked Questions" href="../reference/faq.html" />
+    <link rel="prev" title="Backup a single stack deployment" href="Backup.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html">
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">SureDrop Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SDOver/SD-overview.html">SureDrop Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SureDrop Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install/On%20Premise.html">On Premise Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Version.html">Select the SureDrop version to Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Common%20configuration%20tasks.html">Common configuration tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Windows%202016.html">New Install - Windows 2016</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Windows%202019.html">New Install - Windows 2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/SureDropVm.html">New Install - Virtual Machine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Create-cloud-login.html">Create SaaS login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Uninstall.html">Uninstall</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Diagnostics.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Health%20check.html">Health check</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Using SureDrop</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Open%20Application.html">Open Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Create%20Users.html">Create Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Send%20Files.html">Send Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Archiving.html">Archiving</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integrations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/IDP.html">Identity Providers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Senetas Key Orchestrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Installing.html">Installing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Running.html">Running</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Providers.html">Providers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Using.html">Using</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Suredrop%20Integration.html">SureDrop Integration</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Detailed Functionality</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="SureDrop-Architectures.html">Architectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Azure%20Architecture.html">A Standard Azure SureDrop SaaS Implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Rest%20API.html">Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Roles.html">Roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Manually%20Import%20Users.html">Manually Import Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Backup.html">Backup a single stack deployment</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">X.509 Certificates</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#certificate-chains">Certificate Chains</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tls-encryption">TLS Encryption</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#weaknesses">Weaknesses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-problem">The Problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-solution">The solution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#keysecure">KeySecure</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference Material</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/faq.html">❓ Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/known_issues.html">Known Issues</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Enhancements &amp; Amendments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.12.html">✨ Version 2.12.0-certified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.11.x.html">Version 2.11.0-certified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.10.x.html">Version 2.10.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.9.x.html">Version 2.9.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.8.x.html">Version 2.8.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.7.x.html">Version 2.7.x</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SureDrop</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>X.509 Certificates</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/deep/X.509.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="x-509-certificates">
+<h1>X.509 Certificates<a class="headerlink" href="#x-509-certificates" title="Permalink to this headline"></a></h1>
+<p>X.509 certificates are used to provide encryption and identification of
+communication between two end points.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An X.509 certificate contains a public key and an identity
+(a hostname, or an organization, or an individual), and is either
+signed by a certificate authority or self-signed.</p>
+<ul class="simple">
+<li><p>Wikipedia</p></li>
+</ul>
+</div>
+<p>When the X.509 certificate is signed by a certificate authority which is
+known and trusted, it is said that the Certificate Chain has been
+validated.</p>
+<div class="section" id="certificate-chains">
+<h2>Certificate Chains<a class="headerlink" href="#certificate-chains" title="Permalink to this headline"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A certificate chain (see the equivalent concept of “certification path” defined by
+RFC 5280)[10] is a list of certificates (usually starting with an end-entity certificate)
+followed by one or more CA certificates (usually the last one being a self-signed certificate),
+with the following properties:</p>
+<ol class="arabic simple">
+<li><p>The Issuer of each certificate (except the last one) matches the
+Subject of the next certificate in the list.</p></li>
+<li><p>Each certificate (except the last one) is supposed to be signed by
+the secret key corresponding to the next certificate in the chain
+(i.e. the signature of one certificate can be verified using the
+public key contained in the following certificate).</p></li>
+</ol>
+<p>3. The last certificate in the list is a trust anchor: a certificate that
+you trust because it was delivered to you by some trustworthy procedure.</p>
+<ul class="simple">
+<li><p>Wikipedia</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="tls-encryption">
+<h2>TLS Encryption<a class="headerlink" href="#tls-encryption" title="Permalink to this headline"></a></h2>
+<p>TLS encryption relies on valid X.509 certificates to not only provide
+encryption, but to also guarantee the identity of the party at the other
+end.</p>
+<p>Within SureDrop TLS is used to secure the connection to the main
+SureDrop application server as well as to secure any connections to
+external services such as KeySecure.</p>
+</div>
+<div class="section" id="weaknesses">
+<h2>Weaknesses<a class="headerlink" href="#weaknesses" title="Permalink to this headline"></a></h2>
+<p>There are a number of weaknesses in this architecture, however a
+fundamental weakness is that it is not possible to currently issue an
+X.509 certificate where the Common Name refers to an internal, non
+routable IP address.</p>
+<p>In fact any such request should be denied by all certificate
+authorities.</p>
+<p>An X.509 certificate may be issued to a DNS in which it’s A record
+points to an internal non-routable IP address however.</p>
+<p>This effectively means that when securing internal connections using TLS
+between internal IP addresses, only self signed certificates or
+certificates issued from an internal Certificate Authority can be used
+unless a DNS resolves a valid DNS name to an internal IP.</p>
+<p>A self signed certificate may be used, however, this requires that the
+Root Certificate of the internal Certificate Authority must be added to
+the list of trusted root certificates in the stack of the client.</p>
+<p>In the case of SureDrop, this would require the root certificate to be
+somehow added to the trusted certificate store of the main rest-api
+windows container, a difficult task.</p>
+</div>
+<div class="section" id="the-problem">
+<h2>The Problem<a class="headerlink" href="#the-problem" title="Permalink to this headline"></a></h2>
+<p>So in summary, the problem is that it is currently difficult to secure
+connections between SureDrop and clients and between SureDrop and
+KeySecure using TLS when using internal non-routable IP addresses.</p>
+<p>The two suggested solutions are:</p>
+<ol class="arabic simple">
+<li><p>Use valid DNS names to point to internal IP addresses and purchase
+public X.509 certificates from a trusted Certificate Authority.</p></li>
+<li><p>Use an internal CA</p></li>
+</ol>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Neither of these two solutions are appropriate for proof of concept,
+trial or initial installs of SureDrop
+</pre></div>
+</div>
+</div>
+<div class="section" id="the-solution">
+<h2>The solution<a class="headerlink" href="#the-solution" title="Permalink to this headline"></a></h2>
+<p>The solution is to use a loose standard called <code class="docutils literal notranslate"><span class="pre">xip.io</span></code></p>
+<p>(Please take a moment to look at this website)</p>
+<p>&lt;<a class="reference external" href="https://sslip.io">https://sslip.io</a>&gt;</p>
+<p>Using this standard and a custom DNS server, it is possible to create
+custom DNS names which resolve dynamically.</p>
+<p>For example:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>10-0-0-1.xip.suredrop.com.au      resolves to   10.0.0.1
+192-168-0-1.xip.suredrop.com.au   resolves to   192.168.0.1
+</pre></div>
+</div>
+<p><em>Senetas manage and maintain this custom DNS server at
+``.xip.suredrop.com.au``</em></p>
+<p>In conjunction to this, Senetas have requested an X.509 certificate from
+a trusted Certificate Authority for the following Common Name:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>*.xip.suredrop.com.au
+
+Issued by: COMODO RSA Domain Validation Secure Server CA
+Expires: Saturday, 29 August 2020 at 9:59:59 am Australian Eastern Standard Time
+PositiveSSL Wildcard
+</pre></div>
+</div>
+<p>By default we ship this certificate in the SureDrop application server.
+This is the certificate which is used to encrypt TLS traffic by default
+in the containerized version of SureDrop.</p>
+<p>After spinning up SureDrop on a Windows instance you will be asked to
+connect using the following format URL:</p>
+<p><code class="docutils literal notranslate"><span class="pre">https://0-0-0-0.xip.suredrop.com.au</span></code></p>
+<p>Where <code class="docutils literal notranslate"><span class="pre">0-0-0-0</span></code> is the IP address of the windows server instance with
+the <code class="docutils literal notranslate"><span class="pre">.</span></code> replaced by <code class="docutils literal notranslate"><span class="pre">-</span></code></p>
+<p><em>Because the DNS matches the Common Name in the X.509 certificate, the
+certificate is valid.</em></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>What we are doing here is removing the Identity component
+to facilitate TLS as we are connecting to an internal IP address on our own
+network. For production instances which are accessed externally it is
+recommended that a reverse proxy be put in place with a valid public certificate
+which is restricted to one common name.</p>
+</div>
+</div>
+<div class="section" id="keysecure">
+<h2>KeySecure<a class="headerlink" href="#keysecure" title="Permalink to this headline"></a></h2>
+<p>For connecting to KeySecure we are able to provide the
+*.xip.suredrop.com.au certificate and private key on request for
+loading into KeySecure.</p>
+<p>This allows encrypted TLS traffic between SureDrop and KeySecure, even
+on internal networks.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Backup.html" class="btn btn-neutral float-left" title="Backup a single stack deployment" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../reference/faq.html" class="btn btn-neutral float-right" title="❓ Frequently Asked Questions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Senetas Corporation Limited.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Standard Azure SureDrop SaaS Implementation &mdash; SureDrop  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/sphinx_prompt_css.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css\rtd_sphinx_search.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/hoverxref.js"></script>
+        <script src="../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../_static/js/micromodal.min.js"></script>
+        <script src="../_static/tabs.js"></script>
+        <script src="../_static/js\rtd_sphinx_search.min.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../_static/js/expand_tabs.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Rest API" href="Rest%20API.html" />
+    <link rel="prev" title="Architectures" href="SureDrop-Architectures.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html">
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">SureDrop Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SDOver/SD-overview.html">SureDrop Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SureDrop Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install/On%20Premise.html">On Premise Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Version.html">Select the SureDrop version to Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Common%20configuration%20tasks.html">Common configuration tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Windows%202016.html">New Install - Windows 2016</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Windows%202019.html">New Install - Windows 2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/SureDropVm.html">New Install - Virtual Machine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Create-cloud-login.html">Create SaaS login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Uninstall.html">Uninstall</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Diagnostics.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Health%20check.html">Health check</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Using SureDrop</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Open%20Application.html">Open Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Create%20Users.html">Create Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Send%20Files.html">Send Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Archiving.html">Archiving</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integrations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/IDP.html">Identity Providers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Senetas Key Orchestrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Installing.html">Installing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Running.html">Running</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Providers.html">Providers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Using.html">Using</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Suredrop%20Integration.html">SureDrop Integration</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Detailed Functionality</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="SureDrop-Architectures.html">Architectures</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">A Standard Azure SureDrop SaaS Implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Rest%20API.html">Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Roles.html">Roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Manually%20Import%20Users.html">Manually Import Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Backup.html">Backup a single stack deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="X.509.html">X.509 Certificates</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference Material</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/faq.html">❓ Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/known_issues.html">Known Issues</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Enhancements &amp; Amendments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.12.html">✨ Version 2.12.0-certified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.11.x.html">Version 2.11.0-certified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.10.x.html">Version 2.10.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.9.x.html">Version 2.9.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.8.x.html">Version 2.8.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.7.x.html">Version 2.7.x</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SureDrop</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>A Standard Azure SureDrop SaaS Implementation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/deep/Azure Architecture.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="a-standard-azure-suredrop-saas-implementation">
+<h1>A Standard Azure SureDrop SaaS Implementation<a class="headerlink" href="#a-standard-azure-suredrop-saas-implementation" title="Permalink to this headline"></a></h1>
+<div class="figure align-default">
+<img alt="Azure SaaS Implementation" src="../_images/azure-saas.png" />
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="SureDrop-Architectures.html" class="btn btn-neutral float-left" title="Architectures" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Rest%20API.html" class="btn btn-neutral float-right" title="Rest API" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Senetas Corporation Limited.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

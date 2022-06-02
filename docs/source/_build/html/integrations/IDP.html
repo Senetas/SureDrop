@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Identity Providers &mdash; SureDrop  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/sphinx_prompt_css.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css\rtd_sphinx_search.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/hoverxref.js"></script>
+        <script src="../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../_static/js/micromodal.min.js"></script>
+        <script src="../_static/tabs.js"></script>
+        <script src="../_static/js\rtd_sphinx_search.min.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../_static/js/expand_tabs.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Overview" href="../SKC/Overview.html" />
+    <link rel="prev" title="Archiving" href="../Using/Archiving.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html">
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">SureDrop Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SDOver/SD-overview.html">SureDrop Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SureDrop Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install/On%20Premise.html">On Premise Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Version.html">Select the SureDrop version to Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Common%20configuration%20tasks.html">Common configuration tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Windows%202016.html">New Install - Windows 2016</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Windows%202019.html">New Install - Windows 2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/SureDropVm.html">New Install - Virtual Machine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Create-cloud-login.html">Create SaaS login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Uninstall.html">Uninstall</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Diagnostics.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Health%20check.html">Health check</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Using SureDrop</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Open%20Application.html">Open Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Create%20Users.html">Create Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Send%20Files.html">Send Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Archiving.html">Archiving</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integrations</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Identity Providers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#contents">Contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#azure-active-directory-ad-integration">Azure Active Directory (AD) Integration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setup-azure-ad">Setup Azure AD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setup-suredrop-for-azure-ad">Setup SureDrop for Azure AD</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#windows-server-active-directory-integration">Windows Server Active Directory Integration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#safenet-trusted-access-integration">Safenet Trusted Access Integration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#setup-safenet-trusted-access">Setup Safenet Trusted Access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setup-suredrop-for-safenet-trusted-access">Setup SureDrop for Safenet Trusted Access</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#known-issues">Known issues</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Senetas Key Orchestrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Installing.html">Installing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Running.html">Running</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Providers.html">Providers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Using.html">Using</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Suredrop%20Integration.html">SureDrop Integration</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Detailed Functionality</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../deep/SureDrop-Architectures.html">Architectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Azure%20Architecture.html">A Standard Azure SureDrop SaaS Implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Rest%20API.html">Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Roles.html">Roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Manually%20Import%20Users.html">Manually Import Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Backup.html">Backup a single stack deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/X.509.html">X.509 Certificates</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference Material</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/faq.html">❓ Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/known_issues.html">Known Issues</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Enhancements &amp; Amendments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.12.html">✨ Version 2.12.0-certified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.11.x.html">Version 2.11.0-certified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.10.x.html">Version 2.10.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.9.x.html">Version 2.9.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.8.x.html">Version 2.8.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.7.x.html">Version 2.7.x</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SureDrop</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Identity Providers</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/integrations/IDP.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="identity-providers">
+<h1>Identity Providers<a class="headerlink" href="#identity-providers" title="Permalink to this headline"></a></h1>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="#introduction">Introduction</a></p></li>
+<li><dl class="simple">
+<dt><a class="reference external" href="#azure-ad-integration">Azure AD Integration</a></dt><dd><ul>
+<li><p><a class="reference external" href="#setup-azure-ad">Setup Azure AD</a></p></li>
+<li><p><a class="reference external" href="#setup-suredrop-for-azure-ad">Setup SureDrop for Azure AD</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><a class="reference external" href="#windows-server-active-directory-integration">Windows Server Active Directory
+Integration</a></p></li>
+<li><dl class="simple">
+<dt><a class="reference external" href="#safenet-trusted-access-integration">Safenet Trusted Access Integration</a></dt><dd><ul>
+<li><p><a class="reference external" href="#setup-safenet-trusted-access">Setup Safenet Trusted Access</a></p></li>
+<li><p><a class="reference external" href="#setup-suredrop-for-safenet-trusted-access">Setup SureDrop for Safenet Trusted Access</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><a class="reference external" href="#known-issues">Known issues</a></p></li>
+</ul>
+</div>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
+<p>SureDrop can now be integrated with three identity providers for
+single-sign-on, namely</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://azure.microsoft.com/en-us/services/active-directory/">Microsoft Azure Active
+Directory</a>,</p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Active_Directory">Windows Server Active
+Directory</a> (using
+LDAP) and</p></li>
+<li><p><a class="reference external" href="https://safenet.gemalto.com/access-management/idaas-safenet-trusted-access/">SafeNet Trusted
+Access</a>
+from Thales.</p></li>
+</ul>
+<p>This feature can be turned on by the administrator (or a forensic user).
+Once turned on, SureDrop will constantly poll the configured IDP every 2
+minutes.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>IDPs are mutually exclusive. SureDrop does not
+support configuring multiple IDPs and the UI will prevent the users
+from this misconfiguration.</p>
+</div>
+</div>
+<div class="section" id="azure-active-directory-ad-integration">
+<span id="aad"></span><h2>Azure Active Directory (AD) Integration<a class="headerlink" href="#azure-active-directory-ad-integration" title="Permalink to this headline"></a></h2>
+<p>Integration with Azure AD is a two step process.
+Firstly, the administrator needs to setup Azure AD (creating users, groups, and an application) and
+then, secondly, setup SureDrop to synchronise with Azure AD.</p>
+<div class="section" id="setup-azure-ad">
+<h3>Setup Azure AD<a class="headerlink" href="#setup-azure-ad" title="Permalink to this headline"></a></h3>
+<p>If you already know how to setup Azure AD then you can skip this section.</p>
+<p>Otherwise login to your Azure portal and follow the steps below:</p>
+<blockquote>
+<div><div class="figure align-default">
+<img alt="Open Azure AD Application" src="../_images/SureDrop-Install-AzureAD-01.png" />
+</div>
+</div></blockquote>
+<ol class="arabic">
+<li><p>After clicking on <strong>Azure Active Directory</strong> click on <em>App registrations</em>.
+Then click on <em>+ New registration</em>.
+For example, if your AD name was SureDrop, then this step would be:</p>
+<div class="figure align-default">
+<img alt="Create New Azure Application" src="../_images/SureDrop-Install-AzureAD-02a.png" />
+</div>
+</li>
+<li><p>Give it a name. Under <strong>Supported Account types</strong> select the default <em>Accounts in this organizational directory only</em>.
+Then select application type of <em>Web</em> and paste your SureDrop URL into the <strong>Redirect URI (optional)</strong> field.
+(for example, <a class="reference external" href="https://suredrop.dev">https://suredrop.dev</a>).
+Microsoft will return the authentication response to this URI after successfully authenticating the user
+using oAuth 2.0.
+Finally, click the <span class="guilabel">Register</span> button at the bottom of the page.</p>
+<div class="figure align-default">
+<img alt="Register new application" src="../_images/SureDrop-Install-AzureAD-03a.png" />
+</div>
+</li>
+<li><p>Once the application is created successfully, copy and save the
+<strong>Application (client) ID</strong> and <strong>Directory (tenant) ID</strong> for use later.
+This information is required during SureDrop configuration.</p>
+<div class="figure align-default">
+<img alt="App and Tenant IDs" src="../_images/SureDrop-Install-AzureAD-04.png" />
+</div>
+</li>
+<li><p>Click on <strong>Authentication</strong> and then enter the same SureDrop URL (from step 1)
+in the <em>Redirect URI</em>’s input box under the Web panel.
+After this, tick the checkboxes for <strong>both</strong> <em>Access tokens</em> and <em>ID tokens</em> under the <strong>Implicit Grant</strong> section.</p>
+<div class="figure align-default">
+<img alt="Authentication" src="../_images/Authentication.png" />
+</div>
+</li>
+<li><p>Click on <strong>Certificates &amp; secrets</strong> then click on <strong>New client secret</strong> button.
+In the popup window fill in a description, for example <em>Key</em> and choose <em>24 months</em> in the <strong>Expires</strong> category.
+Then click on the <strong>Add</strong> button.
+A client secret is a string that the application uses to prove its identity when requesting a token in the background.</p>
+<div class="figure align-default">
+<img alt="Client secret" src="../_images/Client+secret.png" />
+</div>
+</li>
+<li><p>After successful generation of the key, please copy the key value and store it in a safe location.
+You will need this in the following section while configuring SureDrop (API Key).</p>
+<div class="figure align-default">
+<img alt="API Key" src="../_images/API+Key.png" />
+</div>
+</li>
+<li><p>The next step is configure <strong>API permissions</strong>.
+Applications are authorised to use APIs by requesting permissions.
+These permissions are invoked during the consent process, wherby users are given the opportunity to grant/deny access.
+To do this, click on <em>API permissions</em> and then the <em>Add a permission</em> button.
+From the slider on the right choose <em>Microsoft Graph</em></p>
+<div class="figure align-default">
+<img alt="API permissions" src="../_images/API+permissions.png" />
+</div>
+</li>
+<li><p>From the sliding right panel click on <strong>Application permissions</strong>, expand <em>Directory</em>
+and tick the checkbox for <em>Directory.Read.All</em> permission and click on Add Permissions.</p>
+<div class="figure align-default">
+<img alt="Directory read" src="../_images/Directory+read.png" />
+</div>
+</li>
+<li><p>Then click on <strong>Delegated permissions</strong> button on the left, expand <em>User</em> and tick the
+checkbox for <em>User.Read</em> permission.
+Finally, click on the <strong>Add permissions</strong> button to save the changes.</p>
+<div class="figure align-default">
+<img alt="User read permissions" src="../_images/User+read.png" />
+</div>
+</li>
+<li><p>The API permission to access and read Directory data (as setup in an instruction outlined above)
+needs Azure AD administrator consent.
+In the <strong>API permissions</strong> window, click on the <em>Grant admin consent</em> and select <strong>Yes</strong> in the
+popup confirmation dialog.</p>
+<div class="figure align-default">
+<img alt="Grant consent" src="../_images/Grant+consent.png" />
+</div>
+</li>
+<li><p>Once all the required API permissions are set correctly, the final screen should look
+similar to the one shown below.</p>
+<div class="figure align-default">
+<img alt="Final screen" src="../_images/Final+screen.png" />
+</div>
+</li>
+<li><p>Click on <strong>Manifest</strong> and confirm that the parameter <em>oauth2AllowImplicitFlow</em> is shown as set to <strong>true</strong>.</p>
+<div class="figure align-default">
+<img alt="Manifest" src="../_images/Manifest.png" />
+</div>
+</li>
+<li><p>Edit the following URL by replacing TENANT_ID, APPLICATION_ID and SUREDROP_URL_FROM_STEP_2 with the
+values recorded earlier.
+Cut and paste the revised URL into a browser:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>https://login.microsoftonline.com/[TENANT_ID]/adminconsent?client_id=[APPLICATION_ID]&amp;state=12345&amp;redirect_uri=[SUREDROP_URL_FROM_STEP_2]
+</pre></div>
+</div>
+<p>You will be asked to Log In to your Azure account as an <em>Administrator</em> and accept the permissions.</p>
+<div class="figure align-default">
+<img alt="Azure Groups" src="../_images/SureDrop-Install-AzureAD-12.png" />
+</div>
+</li>
+<li><p>To enable SureDrop synchronisation, you need to create a root group for the application.
+To do this, click on <strong>Home</strong> then <strong>Azure Active Directory</strong> and finally <strong>Groups</strong></p>
+<div class="figure align-default">
+<img alt="Azure Groups" src="../_images/Azure+Groups.png" />
+</div>
+</li>
+<li><p>In the groups page, choose any <em>existing</em> group or <em>create a new</em> GroupId to act as the
+root location for SureDrop.</p>
+<div class="figure align-default">
+<img alt="Root Group" src="../_images/Root+group.png" />
+</div>
+</li>
+<li><p>If all the configuration has been entered correctly, you should now be in the
+specific page for your group, which shows its Object ID.
+This is an important identifier, so it is strongly recommended to copy it and
+record it in safe location.
+The ID will be required while configuring SureDrop in the next section (Options blob).</p>
+<div class="figure align-default">
+<img alt="Object ID" src="../_images/OID.png" />
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="setup-suredrop-for-azure-ad">
+<h3>Setup SureDrop for Azure AD<a class="headerlink" href="#setup-suredrop-for-azure-ad" title="Permalink to this headline"></a></h3>
+<p>Once you’ve setup the Azure AD application, login to your SureDrop
+instance as an administrator or forensic user. Click on the <span class="guilabel">Admin</span>
+page and expand <code class="docutils literal notranslate"><span class="pre">Identity</span> <span class="pre">Provider</span> <span class="pre">Settings</span></code>.</p>
+<div class="figure align-default">
+<img alt="Setup SureDrop" src="../_images/Setup+SureDrop.png" />
+</div>
+<p>Then click on the Azure AD Integration sub-menu as shown in the picture
+below -</p>
+<div class="figure align-default">
+<img alt="Azure Active Directory" src="../_images/Azure+AD.png" />
+</div>
+<p>This will open a pop-up modal dialog where you’ll need to enter the
+<code class="docutils literal notranslate"><span class="pre">application</span> <span class="pre">ID</span></code>, <code class="docutils literal notranslate"><span class="pre">tenant</span> <span class="pre">ID</span></code> and <code class="docutils literal notranslate"><span class="pre">API</span> <span class="pre">key</span></code> from the previous
+section; and a set of SureDrop JSON options for your Azure AD instance.
+<strong>Don’t forget to tick the :guilabel:`Turn on Azure AD Integration` checkbox</strong>
+or none of it will work. The options should have
+<code class="docutils literal notranslate"><span class="pre">{&quot;GroupId&quot;:&quot;**REPLACE-ME**&quot;,</span> <span class="pre">&quot;SupportDetails&quot;:&quot;**REPLACE-ME**&quot;}</span></code>
+filled in the input box. This is the root group which will be
+synchronised to SureDrop. The GroupId is the <code class="docutils literal notranslate"><span class="pre">object</span> <span class="pre">Id</span></code> of the root
+group in Azure AD.</p>
+<div class="figure align-default">
+<img alt="Azure AD Settings" src="../_images/Azure+settings.png" />
+</div>
+<p>So,</p>
+<ul>
+<li><p>all users and groups which are members to this root group will be
+brought into SureDrop</p></li>
+<li><p>the users will be added automagically to the relevant groups by
+default</p></li>
+<li><p>if any changes are done to this root group in Azure AD, they will
+reflect in SureDrop within a preconfigured interval (currently set to
+2 minutes).</p>
+<blockquote>
+<div><p>Note: This feature is a one-way synchronisation. SureDrop pulls down
+information from Azure AD and updates itself, but <strong>NEVER</strong> alters
+the state of your Azure AD.</p>
+</div></blockquote>
+</li>
+</ul>
+<hr></div>
+</div>
+<div class="section" id="windows-server-active-directory-integration">
+<h2>Windows Server Active Directory Integration<a class="headerlink" href="#windows-server-active-directory-integration" title="Permalink to this headline"></a></h2>
+<p>SureDrop has the capability to connect and synchronise user and group
+information from windows server AD or other directory services in your
+domain controller using Lightweight Directory Access Protocol (LDAP).
+This functionality is available from version 2.6.0 onwards. It is a
+simple configuration in SureDrop. To enable this synchronisation,</p>
+<ul>
+<li><p>navigate to <span class="guilabel">Admin Settings</span> &gt; <span class="guilabel">LDAP Integration</span> option. This will
+open a pop-up modal dialog where you’ll need to <strong>tick on the
+:guilabel:`Turn on LDAP Integration` checkbox</strong>.</p>
+<div class="figure align-default">
+<img alt="LDAP" src="../_images/LDAP.png" />
+</div>
+</li>
+<li><p>Fill in the LDAP options in the form of a JSON structure. In theory,
+the block should look like this -</p></li>
+</ul>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>{
+  &quot;GroupId&quot;: &quot;**REPLACE-ME**&quot;,
+  &quot;ActiveDirectory&quot;: true,
+  &quot;ServerIpV4&quot;: &quot;x.x.x.x&quot;,
+  &quot;UserName&quot;: &quot;example-user&quot;,
+  &quot;Password&quot;: &quot;example-pwd&quot;,
+  &quot;SupportDetails&quot;: &quot;**REPLACE-ME**&quot;
+}
+</pre></div>
+</div>
+<div class="figure align-default">
+<img alt="LDAP Settings" src="../_images/LDAP+Settings.png" />
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Don’t forget to tick on the Turn on LDAP Integration checkbox.</strong></p>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">GroupId</span></code> for active directory must be the <code class="docutils literal notranslate"><span class="pre">ObjectGUID</span></code> for
+the root group. Use the
+<a class="reference external" href="https://docs.microsoft.com/en-us/powershell/module/addsadministration/get-adgroup?view=win10-ps">Get-ADGroup</a>
+powershell command to find the correct value. For example,
+<code class="docutils literal notranslate"><span class="pre">Get-ADGroup</span> <span class="pre">-Identity</span> <span class="pre">SureDrop</span></code></p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>DistinguishedName : <span class="nv">CN</span><span class="o">=</span>SureDrop,DC<span class="o">=</span>Example,DC<span class="o">=</span>com
+GroupCategory     : Security
+GroupScope        : DomainLocal
+Name              : SureDrop
+ObjectClass       : group
+ObjectGUID        : 02ce3874-dd86-41ba-bddc-013f34019978
+SamAccountName    : SureDrop
+SID               : S-1-5-32-544
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Active Directory module for Windows PowerShell is a PowerShell
+module that consolidates a group of cmdlets. You can use these
+cmdlets to manage your Active Directory domains, Active Directory
+Lightweight Directory Services (AD LDS) configuration sets, and
+Active Directory Database Mounting Tool instances in a single,
+self-contained package. If you don’t have the Active Directory
+module installed on your machine, you need to download the correct
+Remote Server Administration Tools (RSAT) package for your OS.
+If you’re running windows 7, you will also need to run the
+<code class="docutils literal notranslate"><span class="pre">import-module</span> <span class="pre">ActiveDirectory</span></code> command from an elevated
+PowerShell prompt.</p>
+</div>
+<hr></div>
+<div class="section" id="safenet-trusted-access-integration">
+<span id="sta"></span><h2>Safenet Trusted Access Integration<a class="headerlink" href="#safenet-trusted-access-integration" title="Permalink to this headline"></a></h2>
+<p>SafeNet Trusted Access (STA) has been integrated with SureDrop using
+<a class="reference external" href="https://openid.net/connect/">OIDC</a> protocol. The configuration
+(similar to Azure) is a two step process. First the administrator needs
+to configure STA (create groups, users, an OIDC application) and then
+configure SureDrop to connect to the IDP. SureDrop then downloads the
+user information and allows SSO (single-sign-on) using STA.</p>
+<div class="section" id="setup-safenet-trusted-access">
+<h3>Setup Safenet Trusted Access<a class="headerlink" href="#setup-safenet-trusted-access" title="Permalink to this headline"></a></h3>
+<p>If you know how to setup STA then please skip to the next section,
+otherwise
+<a class="reference external" href="https://www.thalesdocs.com/sta/Content/STA/Ovrvw/Overview.htm">this</a>
+is a good place to start reading about configuring STA.</p>
+<ol class="arabic">
+<li><p><a class="reference external" href="https://www.thalesdocs.com/sta/Content/STA/Users/AddUsrs.htm">Add
+users</a>
+in STA.</p></li>
+<li><p>Add an internal group called SureDrop in STA and add the required
+users to this group. The documentation is given
+<a class="reference external" href="https://www.thalesdocs.com/sta/Content/STA/Users/Groups.htm">here</a>.</p></li>
+<li><p>Create an OIDC application in STA called SureDrop. You can customise
+this application according to your branding requirements, the only
+constraints are:</p>
+<ul class="simple">
+<li><p>the <code class="docutils literal notranslate"><span class="pre">Allowed</span> <span class="pre">Flow</span> <span class="pre">Type</span></code> must be set to <span class="guilabel">Implicit flow</span>.</p></li>
+<li><p>the <code class="docutils literal notranslate"><span class="pre">User</span> <span class="pre">Info</span> <span class="pre">Signature</span> <span class="pre">Algorithm</span></code> must be set to <span class="guilabel">unsigned</span>.</p></li>
+<li><p>the <code class="docutils literal notranslate"><span class="pre">Request</span> <span class="pre">Signature</span> <span class="pre">Algorithm</span></code> must be set to <span class="guilabel">any</span>.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Append the SureDrop company name to the service login URL as shown in the snapshot below</p>
+</div>
+<p>The documentation explaining all the parameters involved in this
+setup is given
+<a class="reference external" href="https://www.thalesdocs.com/sta/Content/STA/Apps/AppsOIDC.htm">here</a>.</p>
+</li>
+<li><p>Finally, the STA administrator needs to create an API Key for
+SureDrop to communicate to STA. The process is described in <a class="reference external" href="https://www.thalesdocs.com/sta/Content/STA/API/APIs.htm">this
+page</a>. It
+is <strong>imperative</strong> to save the API key and the <code class="docutils literal notranslate"><span class="pre">Endpoint</span> <span class="pre">URL</span></code> as
+you’ll need them in the next step during configuring SureDrop.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>API keys are not stored on the STA Access Management
+console, and cannot be viewed or downloaded later. Make sure that
+you copy or download the API key, so that you can use it later.</strong></p>
+</div>
+</li>
+</ol>
+<p>A typical setup would look similar to this:</p>
+<div class="figure align-default">
+<img alt="STA Setup" src="../_images/STA+Setup.png" />
+</div>
+</div>
+<div class="section" id="setup-suredrop-for-safenet-trusted-access">
+<h3>Setup SureDrop for Safenet Trusted Access<a class="headerlink" href="#setup-suredrop-for-safenet-trusted-access" title="Permalink to this headline"></a></h3>
+<p>To open the STA Integration dialog go to the admin page. If the side-bar
+menu is in normal state (not collapsed) then expand the Identity
+Provider Settings menu and click on STA Integration menu. If the
+side-bar menu is collapsed, then find the STA Integration menu shown by
+a user collection icon (7th menu item from the top). This dialog will
+appear with the following defaults</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>{
+    &quot;ClientId&quot;: &quot;**REPLACE-ME**&quot;,
+    &quot;ClientSecret&quot;: &quot;**REPLACE-ME**&quot;,
+    &quot;AuthEndpoint&quot;: &quot;**REPLACE-ME**&quot;,
+    &quot;TokenEndpoint&quot;: &quot;**REPLACE-ME**&quot;,
+    &quot;UserInfoEndpoint&quot;: &quot;**REPLACE-ME**&quot;,
+    &quot;ConfigEndpoint&quot;: &quot;**REPLACE-ME**&quot;,
+    &quot;RestApiDetails&quot;: {
+        &quot;Endpoint&quot;: &quot;**REPLACE-ME**&quot;,
+        &quot;Key&quot;: &quot;**REPLACE-ME**&quot;,
+        &quot;PageSize&quot;: 10
+    },
+    &quot;SupportDetails&quot;: &quot;**REPLACE-ME**&quot;
+}
+</pre></div>
+</div>
+<div class="figure align-default">
+<img alt="STA Settings" src="../_images/STA+Settings.png" />
+</div>
+<p>Replace the <code class="docutils literal notranslate"><span class="pre">**REPLACE-ME**</span></code> bits with the information displayed in
+STA admin console, <strong>tick on the Turn on STA Integration checkbox</strong>
+and click on the green tick icon. And that’s it! Next time when a STA
+user tries to login, SureDrop will federate the login via STA using
+OIDC.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Please wait for a few minutes for the STA users to be imported to
+SureDrop. The synchronisation is done every couple of minutes but
+for the very first time it might take a little longer, depending on
+the number of users being imported and activated in SureDrop.</p>
+</div>
+</div>
+<div class="section" id="known-issues">
+<span id="sta-known-issues"></span><h3>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Avoid usernames with special characters (especially the at <code class="docutils literal notranslate"><span class="pre">&#64;</span></code>
+symbol) while adding users in STA. At this time users with such
+usernames cannot login to SureDrop due to a <code class="docutils literal notranslate"><span class="pre">403</span> <span class="pre">Forbidden</span> <span class="pre">Access</span></code>
+error.</p></li>
+<li><p>If you update the username for a user in STA, it usually takes a
+couple of minutes to synchronise that information in SureDrop. When
+the updated user is available in SureDrop, it has been observed that
+the login fails in STA unless the end user uses a Private Browsing
+window (also known as Incognito mode).</p></li>
+<li><p>When the end user initiates the login process from STA user portal,
+then he must enter his username in the SureDrop login page too.</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../Using/Archiving.html" class="btn btn-neutral float-left" title="Archiving" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../SKC/Overview.html" class="btn btn-neutral float-right" title="Overview" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Senetas Corporation Limited.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

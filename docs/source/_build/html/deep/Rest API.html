@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rest API &mdash; SureDrop  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/sphinx_prompt_css.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css\rtd_sphinx_search.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/hoverxref.js"></script>
+        <script src="../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../_static/js/micromodal.min.js"></script>
+        <script src="../_static/tabs.js"></script>
+        <script src="../_static/js\rtd_sphinx_search.min.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../_static/js/expand_tabs.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Roles" href="Roles.html" />
+    <link rel="prev" title="A Standard Azure SureDrop SaaS Implementation" href="Azure%20Architecture.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html">
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">SureDrop Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SDOver/SD-overview.html">SureDrop Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SureDrop Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install/On%20Premise.html">On Premise Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Version.html">Select the SureDrop version to Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Common%20configuration%20tasks.html">Common configuration tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Windows%202016.html">New Install - Windows 2016</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Windows%202019.html">New Install - Windows 2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/SureDropVm.html">New Install - Virtual Machine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Create-cloud-login.html">Create SaaS login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Uninstall.html">Uninstall</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Diagnostics.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Health%20check.html">Health check</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Using SureDrop</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Open%20Application.html">Open Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Create%20Users.html">Create Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Send%20Files.html">Send Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Archiving.html">Archiving</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integrations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/IDP.html">Identity Providers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Senetas Key Orchestrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Installing.html">Installing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Running.html">Running</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Providers.html">Providers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Using.html">Using</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Suredrop%20Integration.html">SureDrop Integration</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Detailed Functionality</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="SureDrop-Architectures.html">Architectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Azure%20Architecture.html">A Standard Azure SureDrop SaaS Implementation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Rest API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#confirming-a-successful-install">Confirming a Successful Install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#init-the-suredrop-instance">Init the SureDrop Instance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#authorizing">Authorizing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#refreshing-the-token-optional">Refreshing The Token (Optional)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#basic-administrator-commands">Basic Administrator Commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-a-new-user">Creating a New User</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#activating-a-user">Activating a User</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-a-role-to-a-user">Adding a Role to a User</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#creating-a-group">Creating a Group</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-a-user-to-an-existing-group">Adding a User to an Existing Group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#basic-user-commands">Basic User Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-a-user-auth-token">Get a User Auth Token</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-a-folder">Create a Folder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#upload-a-single-file">Upload a single file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-a-list-of-groups">Get a List of Groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-a-list-of-folders-in-a-group">Get a List of Folders in a Group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get-a-list-of-files-in-a-folder">Get a List of Files in a folder</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Roles.html">Roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Manually%20Import%20Users.html">Manually Import Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Backup.html">Backup a single stack deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="X.509.html">X.509 Certificates</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference Material</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/faq.html">❓ Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/known_issues.html">Known Issues</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Enhancements &amp; Amendments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.12.html">✨ Version 2.12.0-certified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.11.x.html">Version 2.11.0-certified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.10.x.html">Version 2.10.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.9.x.html">Version 2.9.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.8.x.html">Version 2.8.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.7.x.html">Version 2.7.x</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SureDrop</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Rest API</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/deep/Rest API.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="rest-api">
+<h1>Rest API<a class="headerlink" href="#rest-api" title="Permalink to this headline"></a></h1>
+<p>This guide gives a quick start tutorial to using the REST API for
+SureDrop.</p>
+<p>Typically a development environment will be provided to the developer
+that will either run on premises on a Windows Server 2016 host, or will
+run in the cloud on a similar host. Please refer to the install
+documentation to install a development version of SureDrop if you don’t
+already have a development environment set up.</p>
+<p>The Development version of SureDrop uses Swagger to provide a self
+documenting API for your use. To access the swagger documentation use
+the following link:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>https://[HOSTNAME]:[PORT]/api-docs
+</pre></div>
+</div>
+<p>Where <code class="docutils literal notranslate"><span class="pre">HOSTNAME</span></code> is the name of the host where the development
+SureDrop instance was installed, and <code class="docutils literal notranslate"><span class="pre">[PORT]</span></code> is the configured port,
+by default the port is <code class="docutils literal notranslate"><span class="pre">443</span></code>.</p>
+<p>This document covers the following process:</p>
+<p>As <code class="docutils literal notranslate"><span class="pre">administrator</span></code></p>
+<ol class="arabic simple">
+<li><p>Initiate a new instance of SureDrop</p></li>
+<li><p>Get an ‘auth token’ for the default administrator account</p></li>
+<li><p>Create a new user</p></li>
+<li><p>Activate the new user and set a password</p></li>
+<li><p>Grant a read/write role to the new user</p></li>
+<li><p>Create a group</p></li>
+<li><p>Add the new user to the group</p></li>
+</ol>
+<p>As <code class="docutils literal notranslate"><span class="pre">new</span> <span class="pre">user</span></code> (These steps can also be done as <code class="docutils literal notranslate"><span class="pre">administrator</span></code>)</p>
+<ol class="arabic simple">
+<li><p>Get a auth token for the new user</p></li>
+<li><p>Create a new folder in the group</p></li>
+<li><p>Upload a new file to that folder</p></li>
+<li><p>Get a list of groups of which the user is a member</p></li>
+<li><p>Get a list of folders in a group</p></li>
+<li><p>Get a list of files in a folder</p></li>
+</ol>
+<hr><div class="section" id="confirming-a-successful-install">
+<h2>Confirming a Successful Install<a class="headerlink" href="#confirming-a-successful-install" title="Permalink to this headline"></a></h2>
+<p>To confirm that the development environment was installed successfully,
+browse to the following location:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>https://[HOSTNAME]:[PORT]/rest/ping
+</pre></div>
+</div>
+<p>The return value should be:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+{
+  &quot;ping&quot;:&quot;pong&quot;
+}
+</pre></div>
+</div>
+<p>If you have followed the instructions for installing SureDrop, you will
+have already initialized the master key and set an <code class="docutils literal notranslate"><span class="pre">administrator</span></code>
+password.</p>
+<p>If this has not already been done, then this may be done
+programatically. Please refer to the init section for details.</p>
+<hr></div>
+<div class="section" id="init-the-suredrop-instance">
+<h2>Init the SureDrop Instance<a class="headerlink" href="#init-the-suredrop-instance" title="Permalink to this headline"></a></h2>
+<p>To init a fresh install development of SureDrop use the following REST
+API calls:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>POST https://[HOSTNAME]:[PORT]/rest/init?prefix=[COMPANY]
+</pre></div>
+</div>
+<p>Where <code class="docutils literal notranslate"><span class="pre">[COMPANY]</span></code> is the name of the company that was used when
+installing SureDrop</p>
+<p>To set the <code class="docutils literal notranslate"><span class="pre">administrator</span></code> password use the following API call:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>POST https://[HOSTNAME]/rest/password?prefix=[COMPANY]&amp;username=administrator&amp;two_factor=none
+{
+ &quot;password&quot;: &quot;[PASSWORD]&quot;
+}
+</pre></div>
+</div>
+<p>Where <code class="docutils literal notranslate"><span class="pre">[PASSWORD]</span></code> is your new administrator password</p>
+<hr></div>
+<div class="section" id="authorizing">
+<h2>Authorizing<a class="headerlink" href="#authorizing" title="Permalink to this headline"></a></h2>
+<p>To get an authorization token use the following REST API call:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>GET:https://[HOSTNAME]:[PORT]/rest/session?prefix=[COMPANY]&amp;username=administrator&amp;password=[PASSWORD]&amp;timeout=[TIMEOUT]
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[HOSTNAME]</span></code> = Host name of the REST API</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[PORT]</span></code> = Port of the REST API (Generally 443)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[COMPANY]</span></code> = The company name that was configured on install</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[PASSWORD]</span></code> = The password that was configured when the instance
+<code class="docutils literal notranslate"><span class="pre">init</span></code> was done</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[TIMEOUT]</span></code> = The number of <code class="docutils literal notranslate"><span class="pre">minutes</span></code> that the token will be
+valid for</p></li>
+</ul>
+<p>This will return:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+{
+  &quot;token&quot;:&quot;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&quot;
+}
+</pre></div>
+</div>
+<p>OR</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+{
+  &quot;error&quot;:&quot;[SOME ERROR]&quot;
+}
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</span></code> = the returned session
+token</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[SOME</span> <span class="pre">ERROR]</span></code> = the error returned from validating the username
+and password</p></li>
+</ul>
+<hr></div>
+<div class="section" id="refreshing-the-token-optional">
+<h2>Refreshing The Token (Optional)<a class="headerlink" href="#refreshing-the-token-optional" title="Permalink to this headline"></a></h2>
+<p>You reset the timeout on the token and at the same time test that the
+token is valid by using the following REST API call:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>GET https://[HOSTNAME]:[PORT]/rest/pinga/interval?prefix=[COMPANY]&amp;username=administrator&amp;token=[TOKEN]
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[HOSTNAME]</span></code> = Host name of the REST API</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[PORT]</span></code> = Port of the REST API (Generally 443)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[COMPANY]</span></code> = The company name that was configured on install</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[TOKEN]</span></code> = The token returned from an authorization call</p></li>
+</ul>
+<p>This will return:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+{
+  &quot;pinga&quot;:&quot;ponga&quot;
+}
+</pre></div>
+</div>
+<p>OR</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+{
+  &quot;error&quot;:&quot;[SOME ERROR]&quot;
+}
+</pre></div>
+</div>
+<hr></div>
+<div class="section" id="basic-administrator-commands">
+<h2>Basic Administrator Commands<a class="headerlink" href="#basic-administrator-commands" title="Permalink to this headline"></a></h2>
+<div class="section" id="creating-a-new-user">
+<h3>Creating a New User<a class="headerlink" href="#creating-a-new-user" title="Permalink to this headline"></a></h3>
+<p>To create a new user use the following REST API call:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>POST https://[HOSTNAME]:[PORT]/rest/user?prefix=[COMPANY]&amp;username=administrator&amp;token=[TOKEN]
+{
+ &quot;first_name&quot;: &quot;[FIRST]&quot;,
+ &quot;last_name&quot;: &quot;[LAST]&quot;,
+ &quot;email&quot;: &quot;[EMAIL]&quot;,
+ &quot;username&quot;: &quot;[USERNAME]&quot;,
+ &quot;mobile&quot;: &quot;[MOBILE]&quot;,
+ &quot;default_group&quot;: &quot;_users&quot;
+}
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[HOSTNAME]</span></code> = Host name of the REST API</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[PORT]</span></code> = Port of the REST API (Generally 443)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[COMPANY]</span></code> = The company name that was configured on install</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[TOKEN]</span></code> = The token returned from an authorization call</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[FIRST]</span></code> = The first name of the new user</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[LAST]</span></code> = The last name of the new user</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[EMAIL]</span></code> = The email address of the new user</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[USERNAME]</span></code> = By convention the <code class="docutils literal notranslate"><span class="pre">[EMAIL]</span></code> of the new user</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[MOBILE]</span></code> = Mobile number, if a mobile number is not supplied a
+<code class="docutils literal notranslate"><span class="pre">+</span></code> is required to be supplied in the field</p></li>
+</ul>
+<p>This will return:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+{
+  &quot;error&quot;:&quot;noerror&quot;
+}
+</pre></div>
+</div>
+<p>OR</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+{
+  &quot;error&quot;:&quot;[SOME ERROR]&quot;
+}
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[SOME</span> <span class="pre">ERROR]</span></code> = the error returned</p></li>
+</ul>
+<hr></div>
+<div class="section" id="activating-a-user">
+<h3>Activating a User<a class="headerlink" href="#activating-a-user" title="Permalink to this headline"></a></h3>
+<p>A user cannot be used until it has been activated. To activate a user
+use the following REST API call:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>POST https://[HOSTNAME]:[PORT]/rest/user/[USERNAME]/invite?prefix=[COMPANY]&amp;username=administrator&amp;token=[TOKEN]
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[HOSTNAME]</span></code> = Host name of the REST API</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[PORT]</span></code> = Port of the REST API (Generally 443)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[COMPANY]</span></code> = The company name that was configured on install</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[TOKEN]</span></code> = The token returned from an authorization call</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[USERNAME]</span></code> = The username of the newly created user that requires
+activation</p></li>
+</ul>
+<p>This will return:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+{
+  &quot;error&quot;:&quot;noerror&quot;
+}
+</pre></div>
+</div>
+<p>OR</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+{
+  &quot;error&quot;:&quot;[SOME ERROR]&quot;
+}
+</pre></div>
+</div>
+<p>This will result in an email being sent to the user with instructions on
+how to activate their account.</p>
+<p>Within this email will be the following link:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>https://[HOSTNAME]:[PORT]/rest/certificate?username=[USERNAME]&amp;token=[INVITETOKEN]&amp;device=www&amp;secure=no&amp;format=html
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[HOSTNAME]</span></code> = Host name of the REST API</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[PORT]</span></code> = Port of the REST API (Generally 443)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[INVITETOKEN]</span></code> = A unique one time use token</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[USERNAME]</span></code> = The username of the newly created user that requires
+activation</p></li>
+</ul>
+<p>To complete the activation the new user must click on this link. This
+link will then redirect them to the login page of the SureDrop instance
+where they will be able to set their password.</p>
+<hr></div>
+<div class="section" id="adding-a-role-to-a-user">
+<h3>Adding a Role to a User<a class="headerlink" href="#adding-a-role-to-a-user" title="Permalink to this headline"></a></h3>
+<p>By default all new users are added with the <code class="docutils literal notranslate"><span class="pre">Restricted</span></code> role only,
+which is the lowest permissions granted. The available roles that may be
+granted are as follows. All Roles are calmative, in that each higher
+role has all of the permissions granted to the lower roles plus the any
+new permissions.</p>
+<ol class="arabic">
+<li><div class="line-block">
+<div class="line">Restricted</div>
+<div class="line">Read only within groups they have been added to.</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">Standard</div>
+<div class="line">Read/Write within groups that they have been added to.</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">Power</div>
+<div class="line">Ability to create groups and add existing users to a group that they either own or are a member of.</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">Admin</div>
+<div class="line">Full access to all groups, not just those groups to which they are a member. Ability to invite new users to SureDrop.</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">Forensic</div>
+<div class="line">Full forensic access to purged files.</div>
+</div>
+</li>
+</ol>
+<p>To add a role to a user use the following REST API call:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>POST https://[HOSTNAME]:[PORT]/rest/user/[USERNAME]/policy?prefix=[COMPANY]&amp;username=administrator&amp;token=[TOKEN]
+{
+ &quot;add&quot;: [
+  &quot;Standard User&quot;,
+  &quot;Power User&quot;,
+  &quot;Admin User&quot;,
+  &quot;Forensic User&quot;
+ ],
+ &quot;remove&quot;: []
+}
+</pre></div>
+</div>
+<p>For example, to add just the <code class="docutils literal notranslate"><span class="pre">Standard</span> <span class="pre">User</span></code> role use the following
+POST body:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>{
+ &quot;add&quot;: [
+  &quot;Standard User&quot;
+ ],
+ &quot;remove&quot;: []
+}
+</pre></div>
+</div>
+<p>For example, to remove the <code class="docutils literal notranslate"><span class="pre">Standard</span> <span class="pre">User</span></code> role use the following POST
+body:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>{
+ &quot;add&quot;: [
+ ],
+ &quot;remove&quot;: [
+    &quot;Standard User&quot;
+ ]
+}
+</pre></div>
+</div>
+<p><em>nb. You will need to add at least ``Standard User`` if you wish to
+upload documents to a group that the user is a member of</em></p>
+<hr></div>
+<div class="section" id="creating-a-group">
+<h3>Creating a Group<a class="headerlink" href="#creating-a-group" title="Permalink to this headline"></a></h3>
+<p>Within SureDrop, users do not own files, groups own files and groups
+have an assigned owner which may be changed at any time.</p>
+<p>Before documents can be uploaded, a group must be created for storing
+the documents.</p>
+<p>To create a group use the following REST API call:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>POST https://[HOSTNAME]:[PORT]/rest/group?prefix=[COMPANY]&amp;username=administrator&amp;token=[TOKEN]
+{
+ &quot;name&quot;: &quot;[NEWGROUPNAME]&quot;,
+ &quot;storage&quot;: [
+  &quot;Backup&quot;,
+  &quot;Primary&quot;
+ ],
+ &quot;description&quot;: &quot;[DESCRIPTION]&quot;
+}
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[HOSTNAME]</span></code> = Host name of the REST API</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[PORT]</span></code> = Port of the REST API (Generally 443)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[COMPANY]</span></code> = The company name that was configured on install</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[TOKEN]</span></code> = The token returned from an authorization call</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[NEWGROUPNAME]</span></code> = The name of the new group</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[DESCRIPTION]</span></code> = The description of the group</p></li>
+</ul>
+<p>This will return:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+{
+  &quot;error&quot;:&quot;noerror&quot;
+}
+</pre></div>
+</div>
+<p>OR</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+{
+  &quot;error&quot;:&quot;[SOME ERROR]&quot;
+}
+</pre></div>
+</div>
+<hr></div>
+</div>
+<div class="section" id="adding-a-user-to-an-existing-group">
+<h2>Adding a User to an Existing Group<a class="headerlink" href="#adding-a-user-to-an-existing-group" title="Permalink to this headline"></a></h2>
+<p>Before the user can store files in a group they need to be added to the
+group. This can be done using the folling REST API call:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>POST https://[HOSTNAME]:[PORT]/rest/group/[GROUPNAME]/users?prefix=[COMPANY]&amp;username=administrator&amp;token=[TOKEN]
+{
+ &quot;add&quot;: [
+  &quot;[USERNAME]&quot;
+ ],
+ &quot;remove&quot;: []
+}
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[HOSTNAME]</span></code> = Host name of the REST API</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[PORT]</span></code> = Port of the REST API (Generally 443)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[COMPANY]</span></code> = The company name that was configured on install</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[TOKEN]</span></code> = The token returned from an authorization call</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[GROUPNAME]</span></code> = The name of the existing group that the user needs
+to be added to</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[USERNAME]</span></code> = The username of the user that needs to be added to
+the group</p></li>
+</ul>
+<p>This will return:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+{
+  &quot;error&quot;:&quot;noerror&quot;
+}
+</pre></div>
+</div>
+<p>OR</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+{
+  &quot;error&quot;:&quot;[SOME ERROR]&quot;
+}
+</pre></div>
+</div>
+<hr></div>
+<div class="section" id="basic-user-commands">
+<h2>Basic User Commands<a class="headerlink" href="#basic-user-commands" title="Permalink to this headline"></a></h2>
+</div>
+<div class="section" id="get-a-user-auth-token">
+<h2>Get a User Auth Token<a class="headerlink" href="#get-a-user-auth-token" title="Permalink to this headline"></a></h2>
+<p>To get an authorization token use the following REST API call:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>GET:https://[HOSTNAME]:[PORT]/rest/session?prefix=[COMPANY]&amp;username=[USERNAME]&amp;password=[PASSWORD]&amp;timeout=[TIMEOUT]
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[HOSTNAME]</span></code> = HOst name of the REST API</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[PORT]</span></code> = Port of the REST API (Generally 443)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[COMPANY]</span></code> = The company name that was configured on install</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[USERNAME]</span></code> = The username of the user that needs the token</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[PASSWORD]</span></code> = The password of the user</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[TIMEOUT]</span></code> = The number of <code class="docutils literal notranslate"><span class="pre">minutes</span></code> that the token will be
+valid for</p></li>
+</ul>
+<p>This will return:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+{
+  &quot;token&quot;:&quot;XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&quot;
+}
+</pre></div>
+</div>
+<p>OR</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+{
+  &quot;error&quot;:&quot;[SOME ERROR]&quot;
+}
+</pre></div>
+</div>
+<hr></div>
+<div class="section" id="create-a-folder">
+<h2>Create a Folder<a class="headerlink" href="#create-a-folder" title="Permalink to this headline"></a></h2>
+<p>To create a folder use the following REST API call:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>POST https://[HOSTNAME]:[PORT]/rest/folder/[GROUPNAME]/[NEWFOLDER]?prefix=[COMPANY]&amp;username=[USERNAME]&amp;token=[TOKEN]
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[HOSTNAME]</span></code> = Host name of the REST API</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[PORT]</span></code> = Port of the REST API (Generally 443)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[COMPANY]</span></code> = The company name that was configured on install</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[USERNAME]</span></code> = The username of the user that needs the token</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[GROUPNAME]</span></code> = The existing group</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[TOKEN]</span></code> = The token returned from an authorization call</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[NEWFOLDER]</span></code> = The name of the new folder, (sub folders are ok)</p></li>
+</ul>
+<p>This will return:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+{
+  &quot;error&quot;:&quot;noerror&quot;
+}
+</pre></div>
+</div>
+<p>OR</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+{
+  &quot;error&quot;:&quot;[SOME ERROR]&quot;
+}
+</pre></div>
+</div>
+<hr></div>
+<div class="section" id="upload-a-single-file">
+<h2>Upload a single file<a class="headerlink" href="#upload-a-single-file" title="Permalink to this headline"></a></h2>
+<p>To upload a file use the following REST API call:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>POST https://[HOSTNAME]:[PORT]/rest/document/[GROUPNAME]/[FOLDERNAME]/[FILENAME]?prefix=[COMPANY]&amp;username=[USERNAME]&amp;token=[TOKEN]&amp;raw=raw
+
+[POST BODY]
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[HOSTNAME]</span></code> = Host name of the REST API</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[PORT]</span></code> = Port of the REST API (Generally 443)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[COMPANY]</span></code> = The company name that was configured on install</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[USERNAME]</span></code> = The username of the user that needs the token</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[GROUPNAME]</span></code> = The existing group</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[FOLDERNAME]</span></code> = The name of an existing folder, (sub folders are
+ok)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[FILENAME]</span></code> = The name of the new file</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[TOKEN]</span></code> = The token returned from an authorization call</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[POST</span> <span class="pre">BODY]</span></code> = The binary file contents. If <code class="docutils literal notranslate"><span class="pre">RAW</span></code> is not set
+then the POST BODY is expected to be in multipart format.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="get-a-list-of-groups">
+<h2>Get a List of Groups<a class="headerlink" href="#get-a-list-of-groups" title="Permalink to this headline"></a></h2>
+<p>To get a list of groups the user is a member of use the following REST
+API call:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>GET https://[HOSTNAME]:[PORT]/rest/groups?prefix=[COMPANY]&amp;username=[USERNAME]&amp;token=[TOKEN]&amp;Role=[ROLE]
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[HOSTNAME]</span></code> = Host name of the REST API</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[PORT]</span></code> = Port of the REST API (Generally 443)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[COMPANY]</span></code> = The company name that was configured on install</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[USERNAME]</span></code> = The username of the user</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[TOKEN]</span></code> = The token returned from an authorization call</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[ROLE]</span></code> = <code class="docutils literal notranslate"><span class="pre">Admin</span></code> or <code class="docutils literal notranslate"><span class="pre">Forensic</span></code> or empty. Empty assumes that
+you only want the list of groups the user is a member of, even if the
+user is an administrator.</p></li>
+</ul>
+<p>Returns (example data):</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+[
+  {
+    &quot;group&quot;: &quot;A New Group&quot;,
+    &quot;status&quot;: &quot;ACTIVATED&quot;,
+    &quot;admin&quot;: &quot;administrator&quot;,
+    &quot;description&quot;: &quot;This is the description&quot;
+  },
+  {
+    &quot;group&quot;: &quot;administrators&quot;,
+    &quot;status&quot;: &quot;ACTIVATED&quot;,
+    &quot;admin&quot;: &quot;administrator&quot;,
+    &quot;description&quot;: &quot;&quot;
+  }
+]
+</pre></div>
+</div>
+<p>Only <code class="docutils literal notranslate"><span class="pre">ACTIVATED</span></code> groups should be used, other statuses should be
+ignored.</p>
+<hr></div>
+<div class="section" id="get-a-list-of-folders-in-a-group">
+<h2>Get a List of Folders in a Group<a class="headerlink" href="#get-a-list-of-folders-in-a-group" title="Permalink to this headline"></a></h2>
+<p>To get a list of folders in a group uses the following REST API call,
+this call returns all of the folders and sub-folders in a group together
+to allow for fast navigation within an app when navigating around
+folders.</p>
+<p>This is a <em>fast</em> and <em>lightweight</em> REST API call.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>GET https://[HOSTNAME]:[PORT]/rest/folders/[GROUPNAME]?prefix=[COMPANY]&amp;username=[USERNAME]&amp;token=[TOKEN]
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[HOSTNAME]</span></code> = Host name of the REST API</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[PORT]</span></code> = Port of the REST API (Generally 443)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[GROUPNAME]</span></code> = The name of the group to get all of the folders and
+sub-folders in</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[COMPANY]</span></code> = The company name that was configured on install</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[USERNAME]</span></code> = The username of the user</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[TOKEN]</span></code> = The token returned from an authorization call</p></li>
+</ul>
+<p>Returns (example data):</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+[
+  {
+    &quot;folder&quot;: &quot;/A New Group&quot;,
+    &quot;deleted&quot;: &quot;no&quot;
+  },
+  {
+    &quot;folder&quot;: &quot;/A New Group/A New Folder&quot;,
+    &quot;deleted&quot;: &quot;no&quot;
+  },
+  {
+    &quot;folder&quot;: &quot;/A New Group/A New Folder/ONE&quot;,
+    &quot;deleted&quot;: &quot;no&quot;
+  }
+]
+</pre></div>
+</div>
+<hr></div>
+<div class="section" id="get-a-list-of-files-in-a-folder">
+<h2>Get a List of Files in a folder<a class="headerlink" href="#get-a-list-of-files-in-a-folder" title="Permalink to this headline"></a></h2>
+<p>Gets the list of files in a folder or sub-folder using the REST API:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>GET https://[HOSTNAME]:[PORT]/rest/files/[GROUPNAME]/[FOLDERNAME]?prefix=[COMPANY]&amp;username=[USERNAME]&amp;token=[TOKEN]
+</pre></div>
+</div>
+<p>Where:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">[HOSTNAME]</span></code> = Host name of the REST API</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[PORT]</span></code> = Port of the REST API (Generally 443)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[GROUPNAME]</span></code> = The name of the group</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[FOLDERNAME]</span></code> = The name of the folder or sub-folder to get the
+files in</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[COMPANY]</span></code> = The company name that was configured on install</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[USERNAME]</span></code> = The username of the user</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">[TOKEN]</span></code> = The token returned from an authorization call</p></li>
+</ul>
+<p>Returns Example Data:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>STATUS 200
+[
+  {
+    &quot;url&quot;: &quot;/A New Group/A New Folder/readme.md&quot;,
+    &quot;deleted&quot;: &quot;no&quot;,
+    &quot;hash&quot;: &quot;63D3D6C6925BE5B4DF6FFC82B4C934F55EA4BD07955B86CB7CEB100B3A55E598E5204DFF6E14981AB629FCA5BB5A7EEE&quot;,
+    &quot;size&quot;: &quot;7845&quot;
+  },
+  {
+    &quot;url&quot;: &quot;/A New Group/A New Folder/readme.pdf&quot;,
+    &quot;deleted&quot;: &quot;no&quot;,
+    &quot;hash&quot;: &quot;975803EBD1BF94C3D443A957778CA30806D1FFC37BB9723C4EAEBB4036FEB348CC3B1CEEF3AD5B2B241E7BE74C53BCDB&quot;,
+    &quot;size&quot;: &quot;107851&quot;
+  }
+]
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Azure%20Architecture.html" class="btn btn-neutral float-left" title="A Standard Azure SureDrop SaaS Implementation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Roles.html" class="btn btn-neutral float-right" title="Roles" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Senetas Corporation Limited.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

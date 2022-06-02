@@ -1,0 +1,294 @@
+Version 2.8.x
+=============
+
+Table of Contents
+-----------------
+
+-  `Introduction <#introduction>`__
+-  `Version Information <#version-information>`__
+-  `Deliverables <#deliverables>`__
+-  Feature requests / enhancements implemented
+-  `Dashboard <#dashboard>`__
+
+   -  `Shares <#shares>`__
+   -  `Storage <#storage>`__
+   -  `Document activity <#document-activity>`__
+   -  `Audit Information <#audit-information>`__
+
+-  `Office 365 Integration <#office-365-integration>`__
+-  `Downloading as Zip <#downloading-as-zip>`__
+-  `File Actions <#file-actions>`__
+-  `File search <#file-search>`__
+-  `DRM <#digital-rights-management>`__
+-  `ICAP <#ICAP>`__
+-  `Upgrade <#upgrade>`__
+-  `Minor Releases <#minor-releases>`__
+
+Introduction
+------------
+
+Welcome to the November 2019 release of SureDrop version 2.8.0. There
+are a few significant updates in this version that we hope you will
+like, some of the key highlights include:
+
+-  Dashboard
+-  Office 365 Integration
+-  File actions, file search, etc.
+
+You can watch the SureDrop
+`overview <https://www.youtube.com/watch?v=MQYQ9lCl608>`__ and
+`walk-through <https://www.youtube.com/watch?v=hq71-FLh-eg>`__ videos in
+case you're not familiar with the system. Other technical know-hows
+about the product can be found here in
+`SureDrop Documentation <https://suredrop.readthedocs.io>`__.
+
+Version Information
+-------------------
+
++------------------+-------------------+
+| Component        | Version           |
++==================+===================+
+| Docker images    | ``2.8.0-final``   |
++------------------+-------------------+
+| User Interface   | ``2.8.0-final``   |
++------------------+-------------------+
+| API              | ``2.8.0``         |
++------------------+-------------------+
+| Database         | ``2.8.0``         |
++------------------+-------------------+
+
+Deliverables
+------------
+
+-  **Docker images** - which can either be downloaded from `Docker
+   Hub <https://hub.docker.com/>`__ with the credentials provided during
+   installation; or through the ``create-suredrop.bat`` installation and
+   upgrade script.
+
+-  **Docker volumes** - which are installed automagically as part of the
+   installation process. We now have a volume associated with each of
+   our containers.
+
+-  **Release notes** - which is this document itself.
+
+Feature requests / enhancements implemented
+-------------------------------------------
+
+Dashboard
+~~~~~~~~~
+
+.. figure:: ../images/2.10.0/dashboard.png
+   :alt: Dashboard
+
+SureDrop now has a user Dashboard to view personal or system wide
+statistics (depending on the user role) in a glance. As shown in the
+picture above, the dashboard shows login history, storage graph, license
+details, group memberships etc. It also has the ability to search for
+document notifications, file shares and audit logs. Some of the key
+features are -
+
+Shares
+^^^^^^
+
+.. figure:: ../images/2.10.0/shares.png
+   :alt: Shared Documents
+
+Users can now **view and cancel** shared file(s) links. They can not
+only search shares based on date and time, but also filter the rows
+displayed based on text from any column. To cancel shares they need to
+click on the red cross at the end of each row in the table. Mouse hover
+on the folder column shows the file(s) shared in the tooltip text.
+Clicking on the file will take the users to the file location.
+
+Storage
+^^^^^^^
+
+As shown in the dashboard snapshot above, storage information can be
+seen either weekly, monthly or yearly in the graph. A consolidated
+storage usage information card is also present in the dashboard, along
+with group memberships, documents uploaded and number of groups owned.
+
+Document activity
+^^^^^^^^^^^^^^^^^
+
+.. figure:: ../images/2.10.0/doc-activity.png
+   :alt: Document activity
+
+All document notifications can be viewed in the dashboard as shown
+above. Users can search and filter notifications in the same dialog.
+Clicking on a document name takes you to the location, selects and
+highlights the file and sorts the file table based on the selection.
+
+Audit information
+^^^^^^^^^^^^^^^^^
+
+.. figure:: ../images/2.10.0/audit.png
+   :alt: Audit Information
+
+Personal or system-wide (depending on logged-in user's role) audit logs
+can be viewed from the dialog shown above. Similar to all other dialogs
+in the dashboard, users can search and filter audit logs too.
+
+Office 365 Integration
+~~~~~~~~~~~~~~~~~~~~~~
+
+Click the link to read about the details of :doc:`../integrations/Office 365`.
+
+Downloading as Zip
+~~~~~~~~~~~~~~~~~~
+.. figure:: ../images/2.10.0/zip-menu.png
+   :alt: Download As Zip
+
+.. figure:: ../images/2.10.0/zip-ctx-menu.png
+   :alt: Download As Zip Context Menu
+
+As shown above, SureDrop files and folders now have the ability to be
+downloaded as a Zip file. Since the archive can take a long time to be
+created (depending on the file size, etc.) the users are notified
+asynchronously via email when the zip is ready to be downloaded. Users
+can choose to password protect or use strong encryption for the zip
+files too.
+
+.. figure:: ../images/2.10.0/zip-modal.png
+   :alt: Zip Modal Dialog
+
+File Actions
+~~~~~~~~~~~~
+.. figure:: ../images/2.10.0/select-all.png
+   :alt: Select All Checkbox
+
+.. figure:: ../images/2.10.0/file-actions-dropdown.png
+   :alt: File Actions Dropdown Menu
+
+We've revamped the GUI a little to make it more intuitive and
+user-friendly.
+
+There's a separate select all and deselect all menu as shown above and
+the file action commands have been moved to a dropdown menu beside it.
+This GUI is changing quite rapidly according to UX design guidelines and
+principles. The next major version release will change the file
+selection mechanism and other parts of this view.
+
+File Search
+~~~~~~~~~~~
+
+SureDrop now has file search-ability!
+
+.. figure:: ../images/2.10.0/search.png
+   :alt: File Search
+
+Based on the keyword entered in the search box, the system lists **all**
+files the user has access to. The tooltips show the complete file path.
+This is especially useful because now SureDrop supports multiple groups
+with the same name. But simplification is never enough, we've also added
+the ability to select the file when the user clicks on a row in the
+search result. The file is not only selected and highlighted, but also
+sorted based on selection as shown below.
+
+.. figure:: ../images/2.10.0/selected.png
+   :alt: Selected
+
+Digital Rights Management
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: ../images/2.10.0/drm.png
+   :alt: Digital Rights Management
+
+We have implemented license activation as the first step towards its DRM
+capabilities. Users now need to install a valid license key for using
+SureDrop. The dashboard not only displays license information but also
+allows the administrators to edit license information for renewing
+licenses.
+
+ICAP
+~~~~
+
+Click the link to read about the details of :doc:`../integrations/ICAP`.
+
+Upgrade
+-------
+
+SureDrop upgrade process is seamless and easy via the
+``create-suredrop.bat`` script as described in :ref:`upgrade`.
+
+Minor Releases
+--------------
+
+Version 2.8.1 - 4th Dec 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Default Email Region**: The default email region has now been set
+   to Virginia to ensure that SPF and DKIM settings are generated
+   correctly.
+
+.. raw:: html
+
+   <hr>
+
+Version 2.8.2 - 5th Dec 2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+-  **Missing Sharing Buttons**: The sharing buttons were hidden for
+   Power and Standard users when they should have been visible.
+
+.. raw:: html
+
+   <hr>
+
+Version 2.8.3 - 19th Dec 2019
+-----------------------------
+
+Feature implemented
+~~~~~~~~~~~~~~~~~~~
+
+-  **Binary file conversion in Office 365**: SureDrop with Office 365
+   does not support editing files in binary formats such as ``doc``,
+   ``ppt``, and ``xls``, directly. However, Office 365 can convert
+   documents in those formats to modern formats like ``docx``, ``pptx``,
+   and ``xlsx``, so that users can then edit them in Office for the web.
+
+   Conversion is almost always a lossless process, and there are
+   typically very few, if any, user-visible changes to the layout and
+   formatting of the document during conversion. However, this is not
+   ***always*** the case, and hosts should be aware that users may wish
+   to revert back to the previous binary version of the document after
+   it has been converted.
+
+   .. Note::
+
+      This functionality is implemented as seamlessly as editing files in
+      Office 365. The SureDrop user with appropriate rights should click on
+      the Office 365 button beside the filename and he will be prompted with a
+      confirmation dialog stating similar disclaimer as above. Upon clicking
+      the submit button in the dialog (one with the green tick) a new tab will
+      be opened which will convert and allow the user to edit the file. If
+      such a file is converted more than once then each newly converted files
+      will be named according to Windows standard of naming duplicate files
+      (with a ``(NUMBER)`` at the end of the filename).
+
+-  **Create File button** - now considers the permissions of the
+   currently logged-in user. Previously the button was shown and when
+   the user didn't have proper rights, then file creation would fail
+   silently. Now the button has been hidden for the users who are not
+   allowed to edit files in a secure group.
+
+-  **SureDrop Read-Only groups** - now allow Word, Excel and Powerpoint
+   files to be *viewed* in Office 365. If the user has appropriate
+   rights for altering the file (such as group owners, administrators
+   etc.) then they can also edit the file within Office 365 by choosing
+   the ``Edit in browser`` button.
+
+-  **Office 365 and PDF files** - PDF viewing in Office for the web is
+   not included as part of SureDrop. There was an Office 365 button
+   beside the filename in SureDrop which was a no-op, this button has
+   been removed. This functionality has been deprecated by Microsoft for
+   their own products too such as OneDrive. OneDrive no longer uses
+   Office for the web for PDF viewing. Much has changed since Office for
+   the web originally added PDF viewing support. In particular, most
+   modern browsers have excellent built-in PDF support within the
+   browser, and most mobile devices have excellent native PDF support as
+   well. These industry advances have made the reasons support was
+   originally added obsolete. Albeit SureDrop doesn't have sandbox PDF
+   file viewing ability, it is only a matter of time ...
+
+

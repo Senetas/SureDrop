@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health check &mdash; SureDrop  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/sphinx_prompt_css.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css\rtd_sphinx_search.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/hoverxref.js"></script>
+        <script src="../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../_static/js/micromodal.min.js"></script>
+        <script src="../_static/tabs.js"></script>
+        <script src="../_static/js\rtd_sphinx_search.min.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../_static/js/expand_tabs.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Open Application" href="../Using/Open%20Application.html" />
+    <link rel="prev" title="Diagnostics" href="Diagnostics.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html">
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">SureDrop Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SDOver/SD-overview.html">SureDrop Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SureDrop Installation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="On%20Premise.html">On Premise Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Version.html">Select the SureDrop version to Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Common%20configuration%20tasks.html">Common configuration tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Windows%202016.html">New Install - Windows 2016</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Windows%202019.html">New Install - Windows 2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SureDropVm.html">New Install - Virtual Machine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Create-cloud-login.html">Create SaaS login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Uninstall.html">Uninstall</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Diagnostics.html">Diagnostics</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Health check</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Using SureDrop</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Open%20Application.html">Open Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Create%20Users.html">Create Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Send%20Files.html">Send Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Archiving.html">Archiving</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integrations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/IDP.html">Identity Providers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Senetas Key Orchestrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Installing.html">Installing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Running.html">Running</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Providers.html">Providers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Using.html">Using</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Suredrop%20Integration.html">SureDrop Integration</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Detailed Functionality</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../deep/SureDrop-Architectures.html">Architectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Azure%20Architecture.html">A Standard Azure SureDrop SaaS Implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Rest%20API.html">Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Roles.html">Roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Manually%20Import%20Users.html">Manually Import Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Backup.html">Backup a single stack deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/X.509.html">X.509 Certificates</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference Material</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/faq.html">❓ Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/known_issues.html">Known Issues</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Enhancements &amp; Amendments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.12.html">✨ Version 2.12.0-certified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.11.x.html">Version 2.11.0-certified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.10.x.html">Version 2.10.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.9.x.html">Version 2.9.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.8.x.html">Version 2.8.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../release/2.7.x.html">Version 2.7.x</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SureDrop</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Health check</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/install/Health check.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="health-check">
+<h1>Health check<a class="headerlink" href="#health-check" title="Permalink to this headline"></a></h1>
+<p>In the SureDrop application server open an <span class="guilabel">admin powershell</span> console and browse to
+the SureDrop install directory, then execute the</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>wget <span class="s2">&quot;https://s3-ap-southeast-2.amazonaws.com/suredrop-downloads/compose/create-suredrop.bat&quot;</span> -outfile <span class="s2">&quot;create-suredrop.bat&quot;</span><span class="p">;</span>./create-suredrop.bat
+</pre></div>
+</div>
+<p>command. This will download the latest copy of the installer script from
+the cloud and execute it. Now choose <span class="guilabel">5</span> to enter into the health
+check mode.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>******************************
+SureDrop Configuration
+******************************
+<span class="m">1</span><span class="o">)</span> Upgrade Version
+<span class="m">2</span><span class="o">)</span> Upgrade PKI
+<span class="m">3</span><span class="o">)</span> Upgrade Logging and Audit
+<span class="m">4</span><span class="o">)</span> Diagnose
+<span class="m">5</span><span class="o">)</span> Health check
+<span class="m">6</span><span class="o">)</span> Add a Custom Root CA
+<span class="m">7</span><span class="o">)</span> Restart Container Stack
+<span class="m">8</span><span class="o">)</span> Start Container Stack
+<span class="m">9</span><span class="o">)</span> Stop Container Stack
+<span class="m">10</span><span class="o">)</span> Schedule Automatic Updates
+<span class="m">11</span><span class="o">)</span> Exit
+
+Enter number to <span class="k">select</span> an option: <span class="m">5</span>
+</pre></div>
+</div>
+<p>This script will then check</p>
+<ul class="simple">
+<li><p>Docker service status</p></li>
+<li><p>SureDrop docker container statuses</p></li>
+<li><p>SureDrop core database docker container status</p></li>
+<li><p>SureDrop client database docker container status</p></li>
+<li><p>SureDrop core database status</p></li>
+<li><p>SureDrop client database status</p></li>
+<li><p>Primary storage status</p></li>
+<li><p>Backup storage status</p></li>
+</ul>
+<p>The expected output might look like this</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>******************************
+SureDrop Configuration
+******************************
+<span class="m">1</span><span class="o">)</span> Upgrade Version
+<span class="m">2</span><span class="o">)</span> Upgrade PKI
+<span class="m">3</span><span class="o">)</span> Upgrade Logging and Audit
+<span class="m">4</span><span class="o">)</span> Diagnose
+<span class="m">5</span><span class="o">)</span> Health check
+<span class="m">6</span><span class="o">)</span> Add a Custom Root CA
+<span class="m">7</span><span class="o">)</span> Restart Container Stack
+<span class="m">8</span><span class="o">)</span> Start Container Stack
+<span class="m">9</span><span class="o">)</span> Stop Container Stack
+<span class="m">10</span><span class="o">)</span> Schedule Automatic Updates
+<span class="m">11</span><span class="o">)</span> Exit
+
+Enter number to <span class="k">select</span> an option: <span class="m">5</span>
+
+Docker service status : RUNNING
+
+SureDrop containers:
+NAME                                CURRENT STATE           ERROR
+suredrop_storage-server.1           Running <span class="m">5</span> minutes ago
+suredrop_storage-server-backup.1    Running <span class="m">5</span> minutes ago
+suredrop_core.1                     Running <span class="m">5</span> minutes ago
+suredrop_resources.1                Running <span class="m">5</span> minutes ago
+suredrop_rest-api.1                 Running <span class="m">5</span> minutes ago
+suredrop_ngix-reverse-proxy.1       Running <span class="m">5</span> minutes ago
+suredrop_database-core.1            Running <span class="m">5</span> minutes ago
+suredrop_database-client.1          Running <span class="m">5</span> minutes ago
+
+SureDrop Core Database container status : Up <span class="m">5</span> minutes
+
+SureDrop Client Database container status : Up <span class="m">5</span> minutes
+
+SureDrop Core Database status : ONLINE
+
+SureDrop Client Database status : ONLINE
+
+Primary Storage Status: OK
+
+Backup storage verification: OK
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the SureDrop instance uses remote (external) database(s) then the database
+health check will report <code class="docutils literal notranslate"><span class="pre">OFFLINE</span></code> containers. This is normal and can be ignored.</p>
+</div>
+<p>If there are errors in any of these steps then SureDrop will not function correctly.
+So, please run the <a class="reference internal" href="Diagnostics.html"><span class="doc">Diagnostics</span></a> and contact the SureDrop support team immediately.</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Diagnostics.html" class="btn btn-neutral float-left" title="Diagnostics" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Using/Open%20Application.html" class="btn btn-neutral float-right" title="Open Application" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Senetas Corporation Limited.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Version 2.8.x &mdash; SureDrop  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/sphinx_prompt_css.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css\rtd_sphinx_search.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/hoverxref.js"></script>
+        <script src="../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../_static/js/micromodal.min.js"></script>
+        <script src="../_static/tabs.js"></script>
+        <script src="../_static/js\rtd_sphinx_search.min.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../_static/js/expand_tabs.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Version 2.7.x" href="2.7.x.html" />
+    <link rel="prev" title="Version 2.9.x" href="2.9.x.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html">
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">SureDrop Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SDOver/SD-overview.html">SureDrop Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SureDrop Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install/On%20Premise.html">On Premise Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Version.html">Select the SureDrop version to Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Common%20configuration%20tasks.html">Common configuration tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Windows%202016.html">New Install - Windows 2016</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Windows%202019.html">New Install - Windows 2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/SureDropVm.html">New Install - Virtual Machine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Create-cloud-login.html">Create SaaS login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Uninstall.html">Uninstall</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Diagnostics.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Health%20check.html">Health check</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Using SureDrop</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Open%20Application.html">Open Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Create%20Users.html">Create Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Send%20Files.html">Send Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Archiving.html">Archiving</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integrations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/IDP.html">Identity Providers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Senetas Key Orchestrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Installing.html">Installing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Running.html">Running</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Providers.html">Providers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Using.html">Using</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Suredrop%20Integration.html">SureDrop Integration</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Detailed Functionality</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../deep/SureDrop-Architectures.html">Architectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Azure%20Architecture.html">A Standard Azure SureDrop SaaS Implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Rest%20API.html">Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Roles.html">Roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Manually%20Import%20Users.html">Manually Import Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Backup.html">Backup a single stack deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/X.509.html">X.509 Certificates</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference Material</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/faq.html">❓ Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/known_issues.html">Known Issues</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Enhancements &amp; Amendments</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="2.12.html">✨ Version 2.12.0-certified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2.11.x.html">Version 2.11.0-certified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2.10.x.html">Version 2.10.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2.9.x.html">Version 2.9.x</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Version 2.8.x</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#table-of-contents">Table of Contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#version-information">Version Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deliverables">Deliverables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#feature-requests-enhancements-implemented">Feature requests / enhancements implemented</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dashboard">Dashboard</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#shares">Shares</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#storage">Storage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#document-activity">Document activity</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#audit-information">Audit information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#office-365-integration">Office 365 Integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#downloading-as-zip">Downloading as Zip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-actions">File Actions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#file-search">File Search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#digital-rights-management">Digital Rights Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#icap">ICAP</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#upgrade">Upgrade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#minor-releases">Minor Releases</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-8-1-4th-dec-2019">Version 2.8.1 - 4th Dec 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-8-2-5th-dec-2019">Version 2.8.2 - 5th Dec 2019</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#version-2-8-3-19th-dec-2019">Version 2.8.3 - 19th Dec 2019</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#feature-implemented">Feature implemented</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2.7.x.html">Version 2.7.x</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SureDrop</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Version 2.8.x</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/release/2.8.x.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="version-2-8-x">
+<h1>Version 2.8.x<a class="headerlink" href="#version-2-8-x" title="Permalink to this headline"></a></h1>
+<div class="section" id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="#introduction">Introduction</a></p></li>
+<li><p><a class="reference external" href="#version-information">Version Information</a></p></li>
+<li><p><a class="reference external" href="#deliverables">Deliverables</a></p></li>
+<li><p>Feature requests / enhancements implemented</p></li>
+<li><p><a class="reference external" href="#dashboard">Dashboard</a></p>
+<ul>
+<li><p><a class="reference external" href="#shares">Shares</a></p></li>
+<li><p><a class="reference external" href="#storage">Storage</a></p></li>
+<li><p><a class="reference external" href="#document-activity">Document activity</a></p></li>
+<li><p><a class="reference external" href="#audit-information">Audit Information</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="#office-365-integration">Office 365 Integration</a></p></li>
+<li><p><a class="reference external" href="#downloading-as-zip">Downloading as Zip</a></p></li>
+<li><p><a class="reference external" href="#file-actions">File Actions</a></p></li>
+<li><p><a class="reference external" href="#file-search">File search</a></p></li>
+<li><p><a class="reference external" href="#digital-rights-management">DRM</a></p></li>
+<li><p><a class="reference external" href="#ICAP">ICAP</a></p></li>
+<li><p><a class="reference external" href="#upgrade">Upgrade</a></p></li>
+<li><p><a class="reference external" href="#minor-releases">Minor Releases</a></p></li>
+</ul>
+</div>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
+<p>Welcome to the November 2019 release of SureDrop version 2.8.0. There
+are a few significant updates in this version that we hope you will
+like, some of the key highlights include:</p>
+<ul class="simple">
+<li><p>Dashboard</p></li>
+<li><p>Office 365 Integration</p></li>
+<li><p>File actions, file search, etc.</p></li>
+</ul>
+<p>You can watch the SureDrop
+<a class="reference external" href="https://www.youtube.com/watch?v=MQYQ9lCl608">overview</a> and
+<a class="reference external" href="https://www.youtube.com/watch?v=hq71-FLh-eg">walk-through</a> videos in
+case you’re not familiar with the system. Other technical know-hows
+about the product can be found here in
+<a class="reference external" href="https://suredrop.readthedocs.io">SureDrop Documentation</a>.</p>
+</div>
+<div class="section" id="version-information">
+<h2>Version Information<a class="headerlink" href="#version-information" title="Permalink to this headline"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 51%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Component</p></th>
+<th class="head"><p>Version</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Docker images</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2.8.0-final</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>User Interface</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2.8.0-final</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>API</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2.8.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Database</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2.8.0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="deliverables">
+<h2>Deliverables<a class="headerlink" href="#deliverables" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><strong>Docker images</strong> - which can either be downloaded from <a class="reference external" href="https://hub.docker.com/">Docker
+Hub</a> with the credentials provided during
+installation; or through the <code class="docutils literal notranslate"><span class="pre">create-suredrop.bat</span></code> installation and
+upgrade script.</p></li>
+<li><p><strong>Docker volumes</strong> - which are installed automagically as part of the
+installation process. We now have a volume associated with each of
+our containers.</p></li>
+<li><p><strong>Release notes</strong> - which is this document itself.</p></li>
+</ul>
+</div>
+<div class="section" id="feature-requests-enhancements-implemented">
+<h2>Feature requests / enhancements implemented<a class="headerlink" href="#feature-requests-enhancements-implemented" title="Permalink to this headline"></a></h2>
+<div class="section" id="dashboard">
+<h3>Dashboard<a class="headerlink" href="#dashboard" title="Permalink to this headline"></a></h3>
+<div class="figure align-default">
+<img alt="Dashboard" src="../_images/dashboard.png" />
+</div>
+<p>SureDrop now has a user Dashboard to view personal or system wide
+statistics (depending on the user role) in a glance. As shown in the
+picture above, the dashboard shows login history, storage graph, license
+details, group memberships etc. It also has the ability to search for
+document notifications, file shares and audit logs. Some of the key
+features are -</p>
+<div class="section" id="shares">
+<h4>Shares<a class="headerlink" href="#shares" title="Permalink to this headline"></a></h4>
+<div class="figure align-default">
+<img alt="Shared Documents" src="../_images/shares.png" />
+</div>
+<p>Users can now <strong>view and cancel</strong> shared file(s) links. They can not
+only search shares based on date and time, but also filter the rows
+displayed based on text from any column. To cancel shares they need to
+click on the red cross at the end of each row in the table. Mouse hover
+on the folder column shows the file(s) shared in the tooltip text.
+Clicking on the file will take the users to the file location.</p>
+</div>
+<div class="section" id="storage">
+<h4>Storage<a class="headerlink" href="#storage" title="Permalink to this headline"></a></h4>
+<p>As shown in the dashboard snapshot above, storage information can be
+seen either weekly, monthly or yearly in the graph. A consolidated
+storage usage information card is also present in the dashboard, along
+with group memberships, documents uploaded and number of groups owned.</p>
+</div>
+<div class="section" id="document-activity">
+<h4>Document activity<a class="headerlink" href="#document-activity" title="Permalink to this headline"></a></h4>
+<div class="figure align-default">
+<img alt="Document activity" src="../_images/doc-activity.png" />
+</div>
+<p>All document notifications can be viewed in the dashboard as shown
+above. Users can search and filter notifications in the same dialog.
+Clicking on a document name takes you to the location, selects and
+highlights the file and sorts the file table based on the selection.</p>
+</div>
+<div class="section" id="audit-information">
+<h4>Audit information<a class="headerlink" href="#audit-information" title="Permalink to this headline"></a></h4>
+<div class="figure align-default">
+<img alt="Audit Information" src="../_images/audit.png" />
+</div>
+<p>Personal or system-wide (depending on logged-in user’s role) audit logs
+can be viewed from the dialog shown above. Similar to all other dialogs
+in the dashboard, users can search and filter audit logs too.</p>
+</div>
+</div>
+<div class="section" id="office-365-integration">
+<h3>Office 365 Integration<a class="headerlink" href="#office-365-integration" title="Permalink to this headline"></a></h3>
+<p>Click the link to read about the details of <a class="reference internal" href="../integrations/Office%20365.html"><span class="doc">Office 365</span></a>.</p>
+</div>
+<div class="section" id="downloading-as-zip">
+<h3>Downloading as Zip<a class="headerlink" href="#downloading-as-zip" title="Permalink to this headline"></a></h3>
+<div class="figure align-default">
+<img alt="Download As Zip" src="../_images/zip-menu.png" />
+</div>
+<div class="figure align-default">
+<img alt="Download As Zip Context Menu" src="../_images/zip-ctx-menu.png" />
+</div>
+<p>As shown above, SureDrop files and folders now have the ability to be
+downloaded as a Zip file. Since the archive can take a long time to be
+created (depending on the file size, etc.) the users are notified
+asynchronously via email when the zip is ready to be downloaded. Users
+can choose to password protect or use strong encryption for the zip
+files too.</p>
+<div class="figure align-default">
+<img alt="Zip Modal Dialog" src="../_images/zip-modal.png" />
+</div>
+</div>
+<div class="section" id="file-actions">
+<h3>File Actions<a class="headerlink" href="#file-actions" title="Permalink to this headline"></a></h3>
+<div class="figure align-default">
+<img alt="Select All Checkbox" src="../_images/select-all.png" />
+</div>
+<div class="figure align-default">
+<img alt="File Actions Dropdown Menu" src="../_images/file-actions-dropdown.png" />
+</div>
+<p>We’ve revamped the GUI a little to make it more intuitive and
+user-friendly.</p>
+<p>There’s a separate select all and deselect all menu as shown above and
+the file action commands have been moved to a dropdown menu beside it.
+This GUI is changing quite rapidly according to UX design guidelines and
+principles. The next major version release will change the file
+selection mechanism and other parts of this view.</p>
+</div>
+<div class="section" id="file-search">
+<h3>File Search<a class="headerlink" href="#file-search" title="Permalink to this headline"></a></h3>
+<p>SureDrop now has file search-ability!</p>
+<div class="figure align-default">
+<img alt="File Search" src="../_images/search.png" />
+</div>
+<p>Based on the keyword entered in the search box, the system lists <strong>all</strong>
+files the user has access to. The tooltips show the complete file path.
+This is especially useful because now SureDrop supports multiple groups
+with the same name. But simplification is never enough, we’ve also added
+the ability to select the file when the user clicks on a row in the
+search result. The file is not only selected and highlighted, but also
+sorted based on selection as shown below.</p>
+<div class="figure align-default">
+<img alt="Selected" src="../_images/selected.png" />
+</div>
+</div>
+<div class="section" id="digital-rights-management">
+<h3>Digital Rights Management<a class="headerlink" href="#digital-rights-management" title="Permalink to this headline"></a></h3>
+<div class="figure align-default">
+<img alt="Digital Rights Management" src="../_images/drm.png" />
+</div>
+<p>We have implemented license activation as the first step towards its DRM
+capabilities. Users now need to install a valid license key for using
+SureDrop. The dashboard not only displays license information but also
+allows the administrators to edit license information for renewing
+licenses.</p>
+</div>
+<div class="section" id="icap">
+<h3>ICAP<a class="headerlink" href="#icap" title="Permalink to this headline"></a></h3>
+<p>Click the link to read about the details of <a class="reference internal" href="../integrations/ICAP.html"><span class="doc">ICAP</span></a>.</p>
+</div>
+</div>
+<div class="section" id="upgrade">
+<h2>Upgrade<a class="headerlink" href="#upgrade" title="Permalink to this headline"></a></h2>
+<p>SureDrop upgrade process is seamless and easy via the
+<code class="docutils literal notranslate"><span class="pre">create-suredrop.bat</span></code> script as described in <a class="hoverxref tooltip reference internal" href="../install/Windows%202016.html#upgrade"><span class="std std-ref">Upgrading or diagnosing a SureDrop instance</span></a>.</p>
+</div>
+<div class="section" id="minor-releases">
+<h2>Minor Releases<a class="headerlink" href="#minor-releases" title="Permalink to this headline"></a></h2>
+<div class="section" id="version-2-8-1-4th-dec-2019">
+<h3>Version 2.8.1 - 4th Dec 2019<a class="headerlink" href="#version-2-8-1-4th-dec-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Default Email Region</strong>: The default email region has now been set
+to Virginia to ensure that SPF and DKIM settings are generated
+correctly.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-8-2-5th-dec-2019">
+<h3>Version 2.8.2 - 5th Dec 2019<a class="headerlink" href="#version-2-8-2-5th-dec-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Missing Sharing Buttons</strong>: The sharing buttons were hidden for
+Power and Standard users when they should have been visible.</p></li>
+</ul>
+<hr></div>
+</div>
+<div class="section" id="version-2-8-3-19th-dec-2019">
+<h2>Version 2.8.3 - 19th Dec 2019<a class="headerlink" href="#version-2-8-3-19th-dec-2019" title="Permalink to this headline"></a></h2>
+<div class="section" id="feature-implemented">
+<h3>Feature implemented<a class="headerlink" href="#feature-implemented" title="Permalink to this headline"></a></h3>
+<ul>
+<li><p><strong>Binary file conversion in Office 365</strong>: SureDrop with Office 365
+does not support editing files in binary formats such as <code class="docutils literal notranslate"><span class="pre">doc</span></code>,
+<code class="docutils literal notranslate"><span class="pre">ppt</span></code>, and <code class="docutils literal notranslate"><span class="pre">xls</span></code>, directly. However, Office 365 can convert
+documents in those formats to modern formats like <code class="docutils literal notranslate"><span class="pre">docx</span></code>, <code class="docutils literal notranslate"><span class="pre">pptx</span></code>,
+and <code class="docutils literal notranslate"><span class="pre">xlsx</span></code>, so that users can then edit them in Office for the web.</p>
+<p>Conversion is almost always a lossless process, and there are
+typically very few, if any, user-visible changes to the layout and
+formatting of the document during conversion. However, this is not
+<strong>*always*</strong> the case, and hosts should be aware that users may wish
+to revert back to the previous binary version of the document after
+it has been converted.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This functionality is implemented as seamlessly as editing files in
+Office 365. The SureDrop user with appropriate rights should click on
+the Office 365 button beside the filename and he will be prompted with a
+confirmation dialog stating similar disclaimer as above. Upon clicking
+the submit button in the dialog (one with the green tick) a new tab will
+be opened which will convert and allow the user to edit the file. If
+such a file is converted more than once then each newly converted files
+will be named according to Windows standard of naming duplicate files
+(with a <code class="docutils literal notranslate"><span class="pre">(NUMBER)</span></code> at the end of the filename).</p>
+</div>
+</li>
+<li><p><strong>Create File button</strong> - now considers the permissions of the
+currently logged-in user. Previously the button was shown and when
+the user didn’t have proper rights, then file creation would fail
+silently. Now the button has been hidden for the users who are not
+allowed to edit files in a secure group.</p></li>
+<li><p><strong>SureDrop Read-Only groups</strong> - now allow Word, Excel and Powerpoint
+files to be <em>viewed</em> in Office 365. If the user has appropriate
+rights for altering the file (such as group owners, administrators
+etc.) then they can also edit the file within Office 365 by choosing
+the <code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">in</span> <span class="pre">browser</span></code> button.</p></li>
+<li><p><strong>Office 365 and PDF files</strong> - PDF viewing in Office for the web is
+not included as part of SureDrop. There was an Office 365 button
+beside the filename in SureDrop which was a no-op, this button has
+been removed. This functionality has been deprecated by Microsoft for
+their own products too such as OneDrive. OneDrive no longer uses
+Office for the web for PDF viewing. Much has changed since Office for
+the web originally added PDF viewing support. In particular, most
+modern browsers have excellent built-in PDF support within the
+browser, and most mobile devices have excellent native PDF support as
+well. These industry advances have made the reasons support was
+originally added obsolete. Albeit SureDrop doesn’t have sandbox PDF
+file viewing ability, it is only a matter of time …</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="2.9.x.html" class="btn btn-neutral float-left" title="Version 2.9.x" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="2.7.x.html" class="btn btn-neutral float-right" title="Version 2.7.x" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Senetas Corporation Limited.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

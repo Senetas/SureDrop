@@ -1,0 +1,94 @@
+.. _version2-12-x:
+
+|sparkle| Version 2.12.0-certified
+==================================
+
+.. admonition:: Welcome to the March 2022 release of SureDrop version 2.12.0-certified
+
+   In addition to a few updates and minor bug fixes, the following new features have been implemented in this version:
+
+-  `Archiving <#archiving>`__ - users can now securely archive files.
+-  `Sharing enhancements <#sharing-enhancements>`__ - 
+-  `Link enhancements <#link-enhancements>`__ - 
+-  `Shared documents <#shared-documents>`__ - 
+-  `File Search <#file-search>`__ - 
+-  `My Documents folder <#my-documents-folder>`__ - 
+-  `Side bar <#side-bar>`__ - 
+
+.. important::
+   Please run the following command to download the latest install script:
+
+   .. code:: sh
+
+      wget "https://s3-ap-southeast-2.amazonaws.com/suredrop-downloads/compose/create-suredrop.bat" -outfile "create-suredrop.bat"
+
+
+Features / enhancements implemented
+-----------------------------------
+
+Archiving
+~~~~~~~~~
+
+- Automatic purging of un-accessed files
+- Automatic hard delete of files that are purged
+- Automatic delete of logs
+
+Sharing enhancements
+~~~~~~~~~~~~~~~~~~~~
+
+- Company wide text
+- Disable downloads
+- Default sharing life
+
+Link enhancements
+~~~~~~~~~~~~~~~~~
+
+- Links for groups
+- Existing links
+
+Shared documents 
+~~~~~~~~~~~~~~~~
+
+Introduction of a gadget to export to eXcel
+
+File Search 
+~~~~~~~~~~~
+
+Additional enhancements to the search processes
+
+My Documents folder
+~~~~~~~~~~~~~~~~~~~
+
+Abiity to Turn the My Documents folder On and Off 
+
+Side bar
+~~~~~~~~
+
+Enhancements and additional functionality added.
+
+Minor Releases
+--------------
+
+Version 2.11.7 (SP14) - 16th July 2021
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **SP14** - Latest culmative service pack update.
+
+- **Security and Stability fixes** - Minor security and stability fixes.
+
+- **Office365 integration fix** - In some cases attempting to open an office365 document raised an error
+
+
+Version 2.11.7 (SP15) - 19th July 2021
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **SP15** - Latest culmative service pack update.
+
+- **Security and Stability fixes** - Minor security and stability fixes.
+
+Version 2.11.7 (SP18) - 30th Aug 2021
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- **SP18** - Latest culmative service pack update.
+
+- **Security and Stability fixes** - Minor security and stability fixes.

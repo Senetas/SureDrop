@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Version 2.7.x &mdash; SureDrop  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster.custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster.bundle.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-shadow.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-punk.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-noir.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-light.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/tooltipster-sideTip-borderless.min.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/micromodal.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/sphinx_prompt_css.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/sphinx_rtd_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css\rtd_sphinx_search.min.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/hoverxref.js"></script>
+        <script src="../_static/js/tooltipster.bundle.min.js"></script>
+        <script src="../_static/js/micromodal.min.js"></script>
+        <script src="../_static/tabs.js"></script>
+        <script src="../_static/js\rtd_sphinx_search.min.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../_static/js/expand_tabs.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Version 2.8.x" href="2.8.x.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html">
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">SureDrop Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SDOver/SD-overview.html">SureDrop Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SureDrop Installation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install/On%20Premise.html">On Premise Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Version.html">Select the SureDrop version to Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Common%20configuration%20tasks.html">Common configuration tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Windows%202016.html">New Install - Windows 2016</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Windows%202019.html">New Install - Windows 2019</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/SureDropVm.html">New Install - Virtual Machine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Create-cloud-login.html">Create SaaS login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Uninstall.html">Uninstall</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Diagnostics.html">Diagnostics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install/Health%20check.html">Health check</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Using SureDrop</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Open%20Application.html">Open Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Create%20Users.html">Create Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Send%20Files.html">Send Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Using/Archiving.html">Archiving</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integrations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../integrations/IDP.html">Identity Providers</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Senetas Key Orchestrator</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Installing.html">Installing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Running.html">Running</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Providers.html">Providers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Using.html">Using</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SKC/Suredrop%20Integration.html">SureDrop Integration</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Detailed Functionality</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../deep/SureDrop-Architectures.html">Architectures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Azure%20Architecture.html">A Standard Azure SureDrop SaaS Implementation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Rest%20API.html">Rest API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Roles.html">Roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Manually%20Import%20Users.html">Manually Import Users</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/Backup.html">Backup a single stack deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../deep/X.509.html">X.509 Certificates</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference Material</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../reference/faq.html">❓ Frequently Asked Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/known_issues.html">Known Issues</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Enhancements &amp; Amendments</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="2.12.html">✨ Version 2.12.0-certified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2.11.x.html">Version 2.11.0-certified</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2.10.x.html">Version 2.10.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2.9.x.html">Version 2.9.x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2.8.x.html">Version 2.8.x</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Version 2.7.x</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#table-of-contents">Table of contents</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#version-information">Version Information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deliverables">Deliverables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#feature-requests-enhancements-implemented">Feature requests / enhancements implemented</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gui-revamp">GUI revamp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#groups">Groups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#admin-page">Admin page</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#upgrades">Upgrades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#air-gapped-suredrop">Air gapped SureDrop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#windows-2019">Windows 2019</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#defects-resolved">Defects resolved</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#upgrade">Upgrade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#downgrade">Downgrade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#minor-releases">Minor Releases</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-1-21st-june-2019">Version 2.7.1 - 21st June 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-2-21st-june-2019">Version 2.7.2 - 21st June 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-3-26th-june-2019">Version 2.7.3 - 26th June 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-4-27th-june-2019">Version 2.7.4 - 27th June 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-5-28th-june-2019">Version 2.7.5 - 28th June 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-6-3rd-july-2019">Version 2.7.6 - 3rd July 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-7-9th-july-2019">Version 2.7.7 - 9th July 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-8-12th-july-2019">Version 2.7.8 - 12th July 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-9-17th-july-2019">Version 2.7.9 - 17th July 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-10-25th-july-2019">Version 2.7.10 - 25th July 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-11-26th-july-2019">Version 2.7.11 - 26th July 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-12-1st-august-2019">Version 2.7.12 - 1st August 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-13-16th-august-2019">Version 2.7.13 - 16th August 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-14-22nd-august-2019">Version 2.7.14 - 22nd August 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-15-26nd-august-2019">Version 2.7.15 - 26nd August 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-16-29th-august-2019">Version 2.7.16 - 29th August 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-17-6th-september-2019">Version 2.7.17 - 6th September 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-19-11th-september-2019">Version 2.7.19 - 11th September 2019</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-2-7-20-3rd-october-2019">Version 2.7.20 - 3rd October 2019</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">SureDrop</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Version 2.7.x</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/release/2.7.x.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="version-2-7-x">
+<h1>Version 2.7.x<a class="headerlink" href="#version-2-7-x" title="Permalink to this headline"></a></h1>
+<div class="section" id="table-of-contents">
+<h2>Table of contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="#introduction">Introduction</a></p></li>
+<li><p><a class="reference external" href="#version-information">Version information</a></p></li>
+<li><p><a class="reference external" href="#deliverables">Deliverables</a></p></li>
+<li><p>Feature requests / enhancements implemented</p></li>
+<li><p><a class="reference external" href="#gui-revamp">GUI revamp</a></p></li>
+<li><p><a class="reference external" href="#groups">Groups</a></p></li>
+<li><p><a class="reference external" href="#admin-page">Admin page</a></p></li>
+<li><p><a class="reference external" href="#upgrades">Upgrades</a></p></li>
+<li><p><a class="reference external" href="#air-gapped-suredrop">Air gapped SureDrop</a></p></li>
+<li><p><a class="reference external" href="#windows-2019">Windows 2019</a></p></li>
+<li><p><a class="reference external" href="#defects-resolved">Defects resolved</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">%</span></code> in file name</p></li>
+<li><p>SMTP errors</p></li>
+<li><p>Visual indicators for group policy</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">administrators</span></code> group removed</p></li>
+<li><p>Azure AD</p></li>
+<li><p><a class="reference external" href="#upgrade">Upgrade</a></p></li>
+<li><p><a class="reference external" href="#downgrade">Downgrade</a></p></li>
+<li><p><a class="reference external" href="#minor-releases">Minor Releases</a></p></li>
+</ul>
+</div>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline"></a></h2>
+<p>Welcome to the June 2019 release of SureDrop version 2.7.0. There are a
+few significant updates in this version that we hope you will like, some
+of the key highlights include:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="#gui-revamp">GUI revamp</a></p></li>
+<li><p><a class="reference external" href="#groups">Groups</a></p></li>
+<li><p><a class="reference external" href="#admin-page">Admin page</a></p></li>
+<li><p><a class="reference external" href="#upgrades">Upgrades</a></p></li>
+<li><p><a class="reference external" href="#air-gapped-suredrop">Air gapped SureDrop</a></p></li>
+<li><p><a class="reference external" href="#windows-2019">Windows 2019</a></p></li>
+</ul>
+<p>You can watch the SureDrop
+<a class="reference external" href="https://www.youtube.com/watch?v=MQYQ9lCl608">overview</a> and
+<a class="reference external" href="https://www.youtube.com/watch?v=hq71-FLh-eg">walk-through</a> videos in
+case you’re not familiar with the system. Other technical know-hows
+about the product can be found here in
+<a class="reference external" href="https://suredrop.readthedocs.io">SureDrop Documentation</a>.</p>
+</div>
+<div class="section" id="version-information">
+<h2>Version Information<a class="headerlink" href="#version-information" title="Permalink to this headline"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 49%" />
+<col style="width: 51%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Component</p></th>
+<th class="head"><p>Version</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Docker images</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2.7.0-final</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>User Interface</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2.7.0-final</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>API</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2.7.0</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Database</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">2.7.0</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="deliverables">
+<h2>Deliverables<a class="headerlink" href="#deliverables" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><strong>Docker images</strong> - which can either be downloaded from <a class="reference external" href="https://hub.docker.com/">Docker
+Hub</a> with the credentials provided during
+installation; or through the <code class="docutils literal notranslate"><span class="pre">create-suredrop.bat</span></code> installation and
+upgrade script.</p></li>
+<li><p><strong>Docker volumes</strong> - which are installed automagically as part of the
+installation process. We now have a volume associated with each of
+our containers.</p></li>
+<li><p><strong>Release notes</strong> - which is this document itself.</p></li>
+</ul>
+</div>
+<div class="section" id="feature-requests-enhancements-implemented">
+<h2>Feature requests / enhancements implemented<a class="headerlink" href="#feature-requests-enhancements-implemented" title="Permalink to this headline"></a></h2>
+<div class="section" id="gui-revamp">
+<h3>GUI revamp<a class="headerlink" href="#gui-revamp" title="Permalink to this headline"></a></h3>
+<p>We have completely redesigned and streamlined our GUI to make it
+snazzier, user friendly and easy to use. The introduction of a
+collapsible sidebar for the groups and admin functions provide more real
+estate for smaller screens. The user management page has been decoupled
+from the groups and moved to where it always belonged; in the admin
+page. Company settings have moved to the admin page too. User management
+for groups is done by clicking the button with a plus sign. There’s a
+lot more intuitive simplifications to delight the user.</p>
+</div>
+<div class="section" id="groups">
+<h3>Groups<a class="headerlink" href="#groups" title="Permalink to this headline"></a></h3>
+<p>SureDrop now has the ability to rename groups and have multiple groups
+with the same name. Group policy edits are now more streamlined in the
+GUI. We’ve also added visual indicators for whether a group is read only
+or has sharing disabled. The default <code class="docutils literal notranslate"><span class="pre">administrators</span></code> group in older
+versions has now been removed due to security reasons. The group names
+have been obfuscated by using a SHA256 hash. This not only hides the
+group name in the storage location but also gives us the ability to have
+some special characters like a space in the group name. Groups imported
+from Azure AD or other windows directory services have a colon <code class="docutils literal notranslate"><span class="pre">:</span></code>
+character in their unique identifier.</p>
+</div>
+<div class="section" id="admin-page">
+<h3>Admin page<a class="headerlink" href="#admin-page" title="Permalink to this headline"></a></h3>
+<p>SureDrop now has an admin page for customising company settings and
+managing users. This page can be opened only by a SureDrop
+administrator.</p>
+</div>
+<div class="section" id="upgrades">
+<h3>Upgrades<a class="headerlink" href="#upgrades" title="Permalink to this headline"></a></h3>
+<p>SureDrop now creates the client database on the fly during initialising
+the company. Database upgrades for on-prem installations are no longer
+complicated (as the previous release notes stated). The system
+administrator needs to login to the system after a backend upgrade, and
+open the company settings dialog from within the general settings menu
+in the admin page. This window gives the administrator the ability to
+upgrade his database with a single click!!</p>
+</div>
+<div class="section" id="air-gapped-suredrop">
+<h3>Air gapped SureDrop<a class="headerlink" href="#air-gapped-suredrop" title="Permalink to this headline"></a></h3>
+<p>SureDrop can now operate in an air gapped on-prem network without
+internet connectivity. We’ve enhanced the GUI and backend by removing
+any dependency on external resources at runtime. However, it still needs
+internet connectivity to install the system. There are a couple of minor
+caveats to this deployment model</p>
+<ul class="simple">
+<li><p>The brand logo will need to be locally sourced from inside the air
+gapped network.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">xip.suredrop.com.au</span></code> X.509 certificate will no longer work or
+be valid. So the user either needs to setup custom private key
+infrastructure or use the IP address of the server in the browser.</p></li>
+</ul>
+</div>
+<div class="section" id="windows-2019">
+<h3>Windows 2019<a class="headerlink" href="#windows-2019" title="Permalink to this headline"></a></h3>
+<p>SureDrop can now be installed on-prem on a Windows 2019 server! The
+install instructions can be found <a class="reference internal" href="../install/Windows%202019.html"><span class="doc">here</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Prior versions only support windows 2016 for on-prem deployments.</p>
+</div>
+</div>
+</div>
+<div class="section" id="defects-resolved">
+<h2>Defects resolved<a class="headerlink" href="#defects-resolved" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p><strong>``%`` in file name</strong> - This was an edge case wherein you could
+upload files with a <code class="docutils literal notranslate"><span class="pre">%</span></code> character in the file name but trying to
+download such files caused a <code class="docutils literal notranslate"><span class="pre">400</span> <span class="pre">Bad</span> <span class="pre">Request</span></code> in nginx reverse
+proxy and the system to logout.</p></li>
+<li><p><strong>SMTP errors</strong> - We’ve added some extra logging around SMTP failures
+which now enable us to further narrow down the failure(s) as user or
+system errors.</p></li>
+<li><p><strong>Visual indicators for group policy</strong> - We’ve added visual
+indicators for whether a group is read only or has sharing disabled
+on the top right hand corner of the screen.</p></li>
+<li><p><strong>``administrators`` group removed</strong> - Previous versions had a
+default administrators group created when the system was initialised.
+Problem was that group was encrypted using a default key in the
+database. We’ve now removed that group and allowed the user to create
+their own groups using their own encryption keys.</p></li>
+<li><p><strong>Azure AD</strong> - Importing users from Azure AD failed if the unique ID
+exceeded 100 characters. This limit has now been increased to 200
+characters. The unique ID is longer than usual because it is made out
+of the Azure application’s tenant ID and the user’s full name, ID and
+phone number.</p></li>
+</ul>
+</div>
+<div class="section" id="upgrade">
+<h2>Upgrade<a class="headerlink" href="#upgrade" title="Permalink to this headline"></a></h2>
+<p>SureDrop upgrade process is seamless and easy via the
+<code class="docutils literal notranslate"><span class="pre">create-suredrop.bat</span></code> script as described in
+<a class="hoverxref tooltip reference internal" href="../install/Windows%202016.html#upgrade"><span class="std std-ref">Upgrading or diagnosing a SureDrop instance</span></a>.</p>
+</div>
+<div class="section" id="downgrade">
+<h2>Downgrade<a class="headerlink" href="#downgrade" title="Permalink to this headline"></a></h2>
+<p>SureDrop is a continuously delivered system, it <strong>does not support
+downgrades</strong>. In case of any new or induced bugs we fix them and move
+forward in terms of versioning.</p>
+</div>
+<div class="section" id="minor-releases">
+<h2>Minor Releases<a class="headerlink" href="#minor-releases" title="Permalink to this headline"></a></h2>
+<div class="section" id="version-2-7-1-21st-june-2019">
+<h3>Version 2.7.1 - 21st June 2019<a class="headerlink" href="#version-2-7-1-21st-june-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Download file</strong>: Files uploaded using previous versions of SureDrop
+(any version before 2.7.0) could not be downloaded after upgrading to
+2.7.0. This was due to hashing the group names using SHA256 hash. It
+was resolved by falling back to the legacy group names without the
+hash in case the file could not be found in the new location.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-7-2-21st-june-2019">
+<h3>Version 2.7.2 - 21st June 2019<a class="headerlink" href="#version-2-7-2-21st-june-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Browser caching</strong>: It was noticed that most Chromium browsers were
+aggressively caching SureDrop’s HTML, CSS and JavaScript code. Due to
+this aggressive caching the system didn’t work well after an upgrade,
+especially if the upgrade had any changes to those UI components.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-7-3-26th-june-2019">
+<h3>Version 2.7.3 - 26th June 2019<a class="headerlink" href="#version-2-7-3-26th-june-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Large file uploads</strong> - Files larger than 10 GB are now broken into
+100 MB chunks instead of the previous 10 MB chunks. This is done to
+reduce the performance overhead on the client browsers and make it
+more usable.</p></li>
+<li><p><strong>Upload progress bar</strong> - We discovered that during an upload if the
+user clicked on some other group or tried to use some other module of
+SureDrop, then he would lose the ability to get back to the progress
+bar. There was no way to view the progress of say a large file upload
+after moving away from the current group. This has now been resolved
+and the progress bar is always visible to the current user until the
+session is valid and the upload queue is not empty.</p></li>
+<li><p><strong>Apostrophe in group description</strong> - We resolved a minor issue with
+apostrophe character <code class="docutils literal notranslate"><span class="pre">'</span></code> in the group description. Earlier while
+creating a group this would get converted to an underscore <code class="docutils literal notranslate"><span class="pre">_</span></code> but
+could be changed to an apostrophe using <code class="docutils literal notranslate"><span class="pre">Edit</span> <span class="pre">Group</span></code> functionality.
+Now, group descriptions can contain apostrophe characters.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-7-4-27th-june-2019">
+<h3>Version 2.7.4 - 27th June 2019<a class="headerlink" href="#version-2-7-4-27th-june-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Health check</strong> - now prints the running container names only, not
+the process status of the entire docker stack.</p></li>
+<li><p><strong>Init screen</strong> - used to popup on SaaS installations after upgrading
+backend version.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-7-5-28th-june-2019">
+<h3>Version 2.7.5 - 28th June 2019<a class="headerlink" href="#version-2-7-5-28th-june-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Logging</strong> - sensitive information such as connection strings and
+passwords have been redacted from server logs.</p></li>
+<li><p><strong>Tour</strong> - used to popup every time the user logged in and there was
+no groups. Now it remembers the user selection and pops up only once
+at the first login.</p></li>
+<li><p><strong>Resizing browser</strong> - Sometimes the window did not draw correctly
+the first time it was loaded, a refresh was required to properly draw
+the screen.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-7-6-3rd-july-2019">
+<h3>Version 2.7.6 - 3rd July 2019<a class="headerlink" href="#version-2-7-6-3rd-july-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Certificate errors</strong> - sending automated emails from SureDrop was
+failing due to certificate validation errors from custom SMTP
+servers. SureDrop now trusts all x509 certificates while sending
+automated emails.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-7-7-9th-july-2019">
+<h3>Version 2.7.7 - 9th July 2019<a class="headerlink" href="#version-2-7-7-9th-july-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Azure federated login</strong> - was not working because SureDrop couldn’t
+figure out the rest API endpoint after the redirect from Microsoft.
+This was a timing issue which was resolved by adding the rest
+endpoint as a state information in the federated login request. This
+state information is passed back in the response and therefore
+SureDrop doesn’t need any further lookup for it.</p></li>
+<li><p><strong>Azure/LDAP sync</strong> - SureDrop adds users while synchronising Azure
+AD or local LDAP directories. If the user existed in the system it
+was deleting their passwords while doing so. This lead to a timing
+bug when the administrator enabled 2FA for the entire company, the
+LDAP users couldn’t login any more if the background synchronisation
+happened before they attempted their first login with 2FA enabled.
+The issue has been corrected by not deleting the user password when
+adding them as part of synchronisation. This is a right fix because
+the login credentials for these imported users are managed in Azure
+AD or LDAP directory, not in SureDrop.</p></li>
+<li><p><strong>Validate button in welcome page</strong> - The validate button in the
+welcome page for enabling 2FA was not working. This is supposed to
+validate the 2FA code and redirect the user to the login page if
+successful or show a meaningful error message to the user. This has
+now been fixed as per this expectation.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-7-8-12th-july-2019">
+<h3>Version 2.7.8 - 12th July 2019<a class="headerlink" href="#version-2-7-8-12th-july-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Init screen</strong> - The init screen now refreshes correctly after the
+init button is pressed.</p></li>
+<li><p><strong>Update init screen</strong> - It is now possible to update the defaults in
+the init screen from the admin page</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-7-9-17th-july-2019">
+<h3>Version 2.7.9 - 17th July 2019<a class="headerlink" href="#version-2-7-9-17th-july-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>ICAP Server</strong> - SureDrop now supports installing and configuring an
+open source <a class="reference internal" href="../integrations/ICAP.html"><span class="doc">ICAP</span></a> server.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-7-10-25th-july-2019">
+<h3>Version 2.7.10 - 25th July 2019<a class="headerlink" href="#version-2-7-10-25th-july-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Default sorting of file table</strong> - Between versions 1.2.18 and 2.7.9
+we had lost the ability to sort the table containing files and
+folders correctly. This defect has now been fixed and now all folders
+are listed before files and they’re all sorted alphabetically by
+default.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-7-11-26th-july-2019">
+<h3>Version 2.7.11 - 26th July 2019<a class="headerlink" href="#version-2-7-11-26th-july-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Browser Caching</strong> - In some cased the browser cache would not allow
+the new version of SureDrop to be loaded in the browser. By default
+the Index.html page has now been set to <em>no-store</em> via the http
+header which should prevent this from happening in the future.</p></li>
+</ul>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">location = /index.html {</span>
+  <span class="l l-Scalar l-Scalar-Plain">internal;</span>
+  <span class="l l-Scalar l-Scalar-Plain">add_header Cache-Control &#39;no-store&#39;;</span>
+<span class="l l-Scalar l-Scalar-Plain">}</span>
+</pre></div>
+</div>
+<hr></div>
+<div class="section" id="version-2-7-12-1st-august-2019">
+<h3>Version 2.7.12 - 1st August 2019<a class="headerlink" href="#version-2-7-12-1st-august-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Resolved issue where sub-directories were incorrectly created one
+directory up when creating a new directory.</p></li>
+<li><p>Resolved issue where the group list on the left did not refresh
+correctly</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-7-13-16th-august-2019">
+<h3>Version 2.7.13 - 16th August 2019<a class="headerlink" href="#version-2-7-13-16th-august-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Resolved XSS scripting vulnerability.</p></li>
+<li><p>Resolved issue where forward and back slashes were interpreted
+incorrectly</p></li>
+<li><p>Resolved issue where some documents were shown twice in the document
+list</p></li>
+<li><p>Resolved issue where the group icons were not visible if disabled.</p></li>
+<li><p>Resolved issue where add/remove users was displayed incorrectly for
+external windows groups</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-7-14-22nd-august-2019">
+<h3>Version 2.7.14 - 22nd August 2019<a class="headerlink" href="#version-2-7-14-22nd-august-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Resolved multiple email alerts sent from sharing a folder or file</p></li>
+<li><p>Email alerts are now only sent when a file a shared file is
+downloaded, and the filename is now highlighted.</p></li>
+<li><p>Fixed an issue where some files did not display correctly when
+shared.</p></li>
+<li><p>Fixed an issue where email file notifications showed the group GUID
+instead of the group name</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-7-15-26nd-august-2019">
+<h3>Version 2.7.15 - 26nd August 2019<a class="headerlink" href="#version-2-7-15-26nd-august-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Resolved issue where certificates were not installed correctly</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-7-16-29th-august-2019">
+<h3>Version 2.7.16 - 29th August 2019<a class="headerlink" href="#version-2-7-16-29th-august-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Resolved issue where DNS hosts were not resolving correctly</p></li>
+<li><p>Added option to reboot docker stack to create-suredrop</p></li>
+<li><p>Added separate option to install a root ca to create-suredrop</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-7-17-6th-september-2019">
+<h3>Version 2.7.17 - 6th September 2019<a class="headerlink" href="#version-2-7-17-6th-september-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Delete folder keeps folder structure</strong> – create a new folder with
+the same name as a deleted folder and it used to show up all old
+subdirectories and files of the older one. Creating a new folder with
+the same name as a deleted or purged folder has now been restricted.
+Please ask your system administrator to recover the older folder.</p></li>
+<li><p><strong>XSS filter removed ALL ``&amp;``</strong> - we made it impossible to add a
+<code class="docutils literal notranslate"><span class="pre">&amp;lt;</span></code> (good) but also broke <code class="docutils literal notranslate"><span class="pre">R&amp;D</span></code> (unfortunate). Thus we have
+added the ability to use <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> in the secure group name and folder
+names. We still however don’t allow <code class="docutils literal notranslate"><span class="pre">&amp;</span></code> character in the company
+name and file name.</p></li>
+<li><p><strong>Multiline group description</strong> - it was impossible to add multiline
+descriptions for groups as pressing the <code class="docutils literal notranslate"><span class="pre">Enter</span></code> key used to close
+the modal window. We’ve corrected this and now the user can enter
+multiline descriptions using <code class="docutils literal notranslate"><span class="pre">Enter</span></code>. That means to close the modal
+window the user either needs to click on the submit buttons or press
+the <code class="docutils literal notranslate"><span class="pre">Esc</span></code> key.</p></li>
+<li><p><strong>Downloading deleted files from shares</strong> - SureDrop now doesn’t
+allow downloading files which are not available (deleted / purged /
+processing / unavailable) from file share links. Deleted files can
+still be downloaded from within SureDrop if the user has appropriate
+permissions.</p></li>
+<li><p><strong>Icons missing</strong> - Few dropdown menu icons were missing from the
+<code class="docutils literal notranslate"><span class="pre">Bulk</span> <span class="pre">Actions</span></code> button in <code class="docutils literal notranslate"><span class="pre">Group</span> <span class="pre">Membership</span></code> section.</p></li>
+<li><p><strong>Grammar in shared page</strong> - The page for accessing shared files had
+a grammatical error. It used to say <code class="docutils literal notranslate"><span class="pre">the</span> <span class="pre">page</span> <span class="pre">will</span> <span class="pre">expire</span> <span class="pre">...</span></code> for
+expired pages. This has been resolved and the new heading reads
+<code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">page</span> <span class="pre">expired</span> <span class="pre">...</span></code></p></li>
+<li><p><strong>Failed to download shared files</strong> - If file(s) were shared without
+the <code class="docutils literal notranslate"><span class="pre">Receive</span> <span class="pre">notifications</span></code> option selected, users couldn’t
+download those files from the shared link. Clicking the file(s) would
+result in a JSON response
+<code class="docutils literal notranslate"><span class="pre">{&quot;error&quot;:&quot;Object</span> <span class="pre">reference</span> <span class="pre">not</span> <span class="pre">set</span> <span class="pre">to</span> <span class="pre">an</span> <span class="pre">instance</span> <span class="pre">of</span> <span class="pre">an</span> <span class="pre">object.&quot;}</span></code>.
+It was a coding error and has now been resolved.</p></li>
+<li><p><strong>SureDrop Tour</strong> - The <code class="docutils literal notranslate"><span class="pre">Show</span> <span class="pre">Tour</span></code> user preference is now a
+singleton object. It cancels (/removes) and existing tours before
+popping up the tour start confirmation dialog.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-7-19-11th-september-2019">
+<h3>Version 2.7.19 - 11th September 2019<a class="headerlink" href="#version-2-7-19-11th-september-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Typing error</strong> - Notification email said
+<code class="docutils literal notranslate"><span class="pre">The</span> <span class="pre">following</span> <span class="pre">file</span> <span class="pre">has</span> <span class="pre">been</span> <span class="pre">download</span></code>. This has now been changed
+to <code class="docutils literal notranslate"><span class="pre">The</span> <span class="pre">following</span> <span class="pre">file</span> <span class="pre">has</span> <span class="pre">been</span> <span class="pre">downloaded</span></code>.</p></li>
+<li><p><strong>Notification email</strong> - Notification email recipient was incorrect.
+When a SureDrop user A shared a file with an external user B with the
+notification option turned on, then on downloading the shared file
+SureDrop was sending notification email to user B instead of A. This
+was a coding error which has been resolved.</p></li>
+</ul>
+<hr></div>
+<div class="section" id="version-2-7-20-3rd-october-2019">
+<h3>Version 2.7.20 - 3rd October 2019<a class="headerlink" href="#version-2-7-20-3rd-october-2019" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><strong>Audit notifications missing</strong> - Some audit notifications were not
+being logged from shared files.</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="2.8.x.html" class="btn btn-neutral float-left" title="Version 2.8.x" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, Senetas Corporation Limited.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
