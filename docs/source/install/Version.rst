@@ -155,8 +155,21 @@ with same name)
          "azure_access_key": "**REPLACE-ME**",
          "optLdap": "False",
          "optSta": "False",
-         "staOptions": {},
-         "ldapOptions": {}
+         "ldapOptions": {},
+         "staOptions": {
+            "ClientId": "",
+            "ClientSecret": "",
+            "AuthEndpoint": "",
+            "TokenEndpoint": "",
+            "UserInfoEndpoint": "",
+            "ConfigEndpoint": "",
+            "RestApiDetails": {
+               "Endpoint": "",
+               "Key": "",
+               "PageSize": 10
+            },
+            "SupportDetails": "Support Admin for SureDrop Beta - Adrian.Tankard@senetas.com"
+            }
        }'
        )
 
