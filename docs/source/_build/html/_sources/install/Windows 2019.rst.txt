@@ -382,18 +382,6 @@ Installation of SureDrop
 For any questions or if you have any issues following this document,
 please email admin@suredrop.com.au.
 
-Long Filename Support
----------------------
-
-Long filename support is only required if you selected a :guilabel:`local share` as your
-storage option and the share name + company name combined equal a length of more than 45 characters. 
-
-To enable long file support run the following powershell command:
-
-.. code:: sh
-	
-	New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem" -Name "LongPathsEnabled" -Value 1 -PropertyType DWORD -Force
-
 
 Large File Support
 ------------------
