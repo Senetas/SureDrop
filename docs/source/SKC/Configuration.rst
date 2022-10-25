@@ -18,7 +18,7 @@ Before we can use SKC we need to configure at least one Key Management Solution 
 
 As an example we will show how to configure SKC using an Amazon KMS provider.  
 
-First follow these instructions for creating an AWS KMS key.
+First follow these instructions for creating an AWS KMS key within AWS.
 
 [Configuring an AWS KMS provider](https://github.com/Senetas/SKC/wiki/Configuring-an-AWS-KMS-provider)  
 
