@@ -1,7 +1,7 @@
 Configuration  
 =============
 
-When SKC is running interactively it does not require that the service is running to add/edit/delete keys, providers or users. SKC accesses the encrypted database directly. If SKC is also running as a service then the interactive instance will ensure that the cache has been flushed on the service each time an add/edit/delete is performed on the database to ensure consistency.  
+When SKC is running interactively it does not require that the service is running to add/edit/delete keys, providers or users. SKC accesses the encrypted database directly. If SKC is also running as a service then it is reccomended that the service be restarted if chnages have been made to the database. 
 
 SKC runs as both a host service and also as a client. The previous topic showed how to run SKC as a service, to run it as a client run SKC with the following parameters. (If SKC is running on the default ports then just run it with no parameters) It is important to note that the client accesses the SKC database file directly for most configuration functions and therefore the client needs to be run on the same host as the service. The client must also be run in the same directory as the service or the -db parameter will need to be used to specify the location of the database file.
 
