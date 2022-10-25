@@ -64,7 +64,7 @@ To start the service:
 Diagnosing Issues
 -----------------
 
-To diagnose issue you can run an interactive version of SKC by running the following command
+To diagnose issues you can run an interactive version of SKC by running the following command
 
 .. code:: sh
 
