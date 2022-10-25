@@ -60,3 +60,13 @@ To start the service:
 
 	skc start
 
+
+Diagnosing Issues
+-----------------
+
+To diagnose issue you can run an interactive version of SKC by running the following command
+
+.. code:: sh
+
+	skc run -s public -p 8443 -mp 8080
+
