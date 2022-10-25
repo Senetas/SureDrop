@@ -3,6 +3,17 @@ Configuration
 
 When SKC is running interactively it does not require that the service is running to add/edit/delete keys, providers or users. SKC accesses the encrypted database directly. If SKC is also running as a service then the interactive instance will ensure that the cache has been flushed on the service each time an add/edit/delete is performed on the database to ensure consistency.  
 
+SKC runs as both a host service and also as a client. The previous topic showed how to run SKC as a service, to run it as a client run SKC with the following parameters. (If SKC is running on the default ports then just run it with no parameters) It is important to note that the client accesses the SKC database file directly for most configuration functions and therefore the client needs to be run on the same host as the service. The client must also be run in the same directory as the service or the -db parameter will need to be used to specify the location of the database file.
+
+.. code:: sh
+
+	skc -p 8443 -mp 8080
+
+Where -p is the port that you set the SKC service toi run on, and -MP is the management port.
+
+If this is the first time then you will be prompted to enter a password of a minimum of 10 chracters.
+You will also need to enter a database key and cache size. The defaults are usually ok.
+
 Before we can use SKC we need to configure at least one Key Management Solution (KMS) provider at a minimum.  A provider provides a Key Encryption Key (KEK) to ensure that the Data Encryption Key (DEK) is encrypted appropriately.  
 
 As an example we will show how to configure SKC using an Amazon KMS provider.  
