@@ -9,7 +9,7 @@ SKC runs as both a host service and also as a client. The previous topic showed 
 
 	skc -p 8443 -mp 8080
 
-Where -p is the port that you set the SKC service toi run on, and -MP is the management port.
+Where -p is the port that you set the SKC service toi run on, and -mp is the management port.
 
 If this is the first time then you will be prompted to enter a password of a minimum of 10 chracters.
 You will also need to enter a database key and cache size. The defaults are usually ok.
