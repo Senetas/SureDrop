@@ -68,5 +68,5 @@ To diagnose issues you can run a console version of the SKC service by running t
 
 .. code:: sh
 
-	skc run -s public -p 8443 -mp 8080
+	skc -s public -p 8443 -mp 8080
 
