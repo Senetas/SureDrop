@@ -3,26 +3,25 @@ Select the SureDrop version to Install
 
 There are several versions of SureDrop to choose from, in particular those relating to the operating system.
 
-Specifically the :guilabel:`Windows 2016` version and the :guilabel:`Windows 2019` version.
+Specifically the :guilabel:`Windows 2019` version and the :guilabel:`Windows 2022` version.
 
 Each release of SureDrop will always include the latest updates no matter which operating system is being run. There may be specific reasons as to why you would run a particular version.
 
 Available SureDrop versions
 ---------------------------
 
-The *Windows Server 2016* version
+The *Windows Server 2022* version
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This version of SureDrop has the following caveats:
 
-#. It (*WILL*) run on Windows Server 2016.
-#. It (*WILL NOT*) run on Windows Server 2019.
+#. It (*WILL*) run on Windows Server 202.
+#. It (*WILL NOT*) run on Windows 2019.
 #. It (*WILL*) run on Amazon AWS and Microsoft Azure.
-#. You (*CANNOT*) turn on automatic windows updates.
-#. You (*MAY*) need to be directed to install certain Windows Cumulative
-   Updates for a particular version of SureDrop.
-#. It (*WILL*) run with :guilabel:`Local` or :guilabel:`Remote` databases.
-   *(Refer to the Database Mode section below for information on the difference between the two types.)*
+#. You (*CAN*) turn on automatic windows Updates.
+#. It (*WILL*) run with :guilabel:`Local` or :guilabel:`Remote` databases on a bare
+   metal install of Windows 2022.
+
 
 The *Windows Server 2019* version
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -35,6 +34,15 @@ This version of SureDrop has the following caveats:
 #. You (*CAN*) turn on automatic windows Updates.
 #. It (*WILL*) run with :guilabel:`Local` or :guilabel:`Remote` databases on a bare
    metal install of Windows 2019.
+
+
+
+The *Windows Server 2016* version
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This version of SureDrop is no longer available.
+
+
 
 **Local** vs **Remote** Database modes
 --------------------------------------
